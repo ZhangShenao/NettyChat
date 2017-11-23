@@ -89,7 +89,7 @@
         </dependencies>
     </dependencyManagement>
     
-    <!-- 依赖的jar包 -->
+    <!-- 依赖的jar包 
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
@@ -140,7 +140,7 @@
 				<artifactId>slf4j-log4j12</artifactId>
 			</dependency>
     </dependencies>
-    
+    -->
     <build>
     	<!-- 插件管理 -->
         <pluginManagement>

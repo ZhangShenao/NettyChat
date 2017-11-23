@@ -6,4 +6,23 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>ChatCommon</artifactId>
+  
+  <dependencies>
+  	<dependency>
+       <groupId>io.netty</groupId>
+       <artifactId>netty-all</artifactId>
+    </dependency>
+  	<dependency>
+       <groupId>junit</groupId>
+       <artifactId>junit</artifactId>
+     </dependency>
+     <dependency>
+	    <groupId>com.google.protobuf</groupId>
+	    <artifactId>protobuf-java</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	</dependency>
+  </dependencies>
 </project>
