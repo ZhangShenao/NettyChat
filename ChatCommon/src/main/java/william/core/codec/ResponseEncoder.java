@@ -1,6 +1,6 @@
 package william.core.codec;
 
-import william.core.module.Response;
+import william.core.entity.Response;
 import william.util.LogUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

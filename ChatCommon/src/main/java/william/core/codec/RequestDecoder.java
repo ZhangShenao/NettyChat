@@ -3,8 +3,11 @@ package william.core.codec;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
+
 import java.util.List;
-import william.core.module.Request;
+
+import william.core.entity.Request;
+import william.util.BaseDecoder;
 
 /**
  * 请求消息解码器
@@ -26,57 +29,41 @@ public class RequestDecoder extends ByteToMessageDecoder {
 	
 	@Override
 	protected void decode(ChannelHandlerContext ctx, ByteBuf buffer, List<Object> out) throws Exception {
-		
-		while(buffer.readableBytes() >= ConstantValue.REQUEST_BASE_LENTH){
-			//第一个可读数据包的起始位置
-			int beginIndex;
-			
-			while(true) {
-				//包头开始游标点
-				beginIndex = buffer.readerIndex();
-				//标记初始读游标位置
-				buffer.markReaderIndex();
-				if (buffer.readInt() == ConstantValue.HEADER_FLAG) {
-					break;
-				}
-				//未读到包头标识略过一个字节
-				buffer.resetReaderIndex();
-				buffer.readByte();
-				
-				//不满足
-				if(buffer.readableBytes() < ConstantValue.REQUEST_BASE_LENTH){
-					return ;
-				}
-			}
-			//读取命令号
-			short module = buffer.readShort();
-			short cmd = buffer.readShort();
-			
-			//读取数据长度 
-			int lenth = buffer.readInt();
-			if(lenth < 0){
-				ctx.channel().close();
-			}
-			
-			//数据包还没到齐
-			if(buffer.readableBytes() < lenth){
-				buffer.readerIndex(beginIndex);
-				return;
-			}
-			
-			//读数据部分
-			byte[] data = new byte[lenth];
-			buffer.readBytes(data);
-			
-			Request message = new Request();
-			message.setModule(module);
-			message.setCmd(cmd);
-			message.setData(data);
-			//解析出消息对象，继续往下面的handler传递
-			out.add(message);
+		//校验消息长度和消息头
+		int beginIndex = BaseDecoder.readHeaderBeginIndex(ConstantValue.REQUEST_BASE_LENTH, buffer);
+		if (beginIndex < 0){
+			return;
 		}
 		
-		//数据不完整，等待完整的数据包
-		return ;
+		//读取命令号
+		short module = buffer.readShort();
+		short cmd = buffer.readShort();
+		
+		//读取数据长度,长度<0表示关闭链路
+		int length = buffer.readInt();
+		if(length < 0){
+			ctx.channel().close();
+		}
+		
+		//如果数据包还没到齐,则重置readerIndex并跳过,等待完整数据包
+		if(buffer.readableBytes() < length){
+			buffer.readerIndex(beginIndex);
+			return;
+		}
+		
+		//读模块号和命令号
+		Request message = new Request();
+		message.setModule(module);
+		message.setCmd(cmd);
+		
+		//读数据部分
+		if (length > 0){
+			byte[] data = new byte[length];
+			buffer.readBytes(data);
+			message.setData(data);
+		}
+		
+		//解析出消息对象，继续往下面的handler传递
+		out.add(message);
 	}
 }

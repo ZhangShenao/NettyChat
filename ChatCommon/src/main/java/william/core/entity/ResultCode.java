@@ -1,4 +1,4 @@
-package william.core.module;
+package william.core.entity;
 
 /**
  * 

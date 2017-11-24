@@ -2,7 +2,7 @@ package william.core.codec;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import william.core.module.Request;
+import william.core.entity.Request;
 
 /**
  * 请求消息编码器
@@ -29,7 +29,7 @@ public class RequestEncoder extends MessageToByteEncoder<Request>{
 		buffer.writeShort(message.getCmd());
 		
 		//长度
-		int lenth = message.getData()==null? 0 : message.getData().length;
+		int lenth = message.getData() == null ? 0 : message.getData().length;
 		
 		//数据
 		if(lenth <= 0){
