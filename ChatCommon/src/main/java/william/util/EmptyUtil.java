@@ -25,5 +25,9 @@ public class EmptyUtil {
 	public static boolean isEmpty(Map<?,?> map){
 		return (null == map || map.size() == 0);
 	}
+
+	public static <T> boolean isEmpty(T[] array) {
+		return ((null == array || array.length == 0));
+	}
 	
 }

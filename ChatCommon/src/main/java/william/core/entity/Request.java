@@ -53,4 +53,11 @@ public class Request {
 	public void setCmd(short cmd) {
 		this.cmd = cmd;
 	}
+
+	@Override
+	public String toString() {
+		return "Request [module=" + module + ", cmd=" + cmd + ", data=" + "]";
+	}
+	
+	
 }

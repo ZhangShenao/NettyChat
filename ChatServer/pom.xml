@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>william</groupId>
+    <artifactId>Netty-Chat-Base</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>ChatServer</artifactId>
+  
+   <dependencies>
+  	<dependency>
+       <groupId>io.netty</groupId>
+       <artifactId>netty-all</artifactId>
+    </dependency>
+  	<dependency>
+       <groupId>junit</groupId>
+       <artifactId>junit</artifactId>
+     </dependency>
+     <dependency>
+	    <groupId>com.google.protobuf</groupId>
+	    <artifactId>protobuf-java</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>william</groupId>
+    	<artifactId>ChatCommon</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
+</project>
