@@ -8,26 +8,26 @@
   <artifactId>ChatServer</artifactId>
   
    <dependencies>
-  	<dependency>
-       <groupId>io.netty</groupId>
-       <artifactId>netty-all</artifactId>
-    </dependency>
-  	<dependency>
-       <groupId>junit</groupId>
-       <artifactId>junit</artifactId>
-     </dependency>
-     <dependency>
-	    <groupId>com.google.protobuf</groupId>
-	    <artifactId>protobuf-java</artifactId>
-	</dependency>
-	<dependency>
-	    <groupId>log4j</groupId>
-	    <artifactId>log4j</artifactId>
-	</dependency>
 	<dependency>
 		<groupId>william</groupId>
     	<artifactId>ChatCommon</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
 	</dependency>
   </dependencies>
 </project>

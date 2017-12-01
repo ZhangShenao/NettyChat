@@ -7,7 +7,7 @@ package william.core.entity;
  * @author ZhangShenao
  * @date 2017年11月21日
  */
-public class Response {
+public class Response implements ChatMessage{
 	/**
 	 * 模块号
 	 */

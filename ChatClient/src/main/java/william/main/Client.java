@@ -14,7 +14,7 @@ import io.netty.handler.logging.LoggingHandler;
 import william.core.codec.RequestEncoder;
 import william.core.codec.ResponseDecoder;
 import william.core.constant.ConnectionConst;
-import william.handler.ChatClientHandler;
+import william.nettyhandler.ChatClientHandler;
 import william.util.LogUtil;
 
 /**

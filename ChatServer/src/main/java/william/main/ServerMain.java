@@ -1,5 +1,8 @@
 package william.main;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import william.util.CommonUtil;
 
 /**
@@ -10,8 +13,10 @@ import william.util.CommonUtil;
  */
 public class ServerMain {
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Server server = applicationContext.getBean(william.main.Server.class);
 		int port = CommonUtil.parsePort(args);
-		Server server = new Server();
 		server.start(port);
 	}
 	

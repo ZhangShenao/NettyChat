@@ -6,7 +6,7 @@ package william.core.entity;
  * @author ZhangShenao
  * @date 2017年11月21日
  */
-public class Request {
+public class Request implements ChatMessage{
 	/**
 	 * 模块号
 	 */
@@ -56,7 +56,7 @@ public class Request {
 
 	@Override
 	public String toString() {
-		return "Request [module=" + module + ", cmd=" + cmd + ", data=" + "]";
+		return "Request [module=" + module + ", cmd=" + cmd + "]";
 	}
 	
 	

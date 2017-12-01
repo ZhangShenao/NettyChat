@@ -6,6 +6,7 @@ import java.util.List;
 import william.core.serial.Serializer;
 
 public class Player extends Serializer{
+	private long playerKey;
 	private String name;
 	private int age;
 	private List<Skill> skills = new ArrayList<Skill>();
@@ -31,6 +32,7 @@ public class Player extends Serializer{
 	
 	@Override
 	public void unmarshal() {
+		this.playerKey = readLong();
 		this.name = readString();
 		this.age = readInt();
 		this.skills = readList(Skill.class);
@@ -38,16 +40,27 @@ public class Player extends Serializer{
 	
 	@Override
 	public void marshal() {
+		writeLong(playerKey);
 		writeString(name);
 		writeInt(age);
 		writeList(skills);
 	}
 	
+	public long getPlayerKey() {
+		return playerKey;
+	}
+	public void setPlayerKey(long playerKey) {
+		this.playerKey = playerKey;
+	}
+	public void setSkills(List<Skill> skills) {
+		this.skills = skills;
+	}
 	@Override
 	public String toString() {
-		return "Player [name=" + name + ", age=" + age + ", skills=" + skills
-				+ "]";
+		return "Player [playerKey=" + playerKey + ", name=" + name + ", age="
+				+ age + ", skills=" + skills + "]";
 	}
+	
 	
 	
 }

@@ -1,5 +1,7 @@
 package william.main;
 
+import org.springframework.stereotype.Component;
+
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -13,7 +15,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import william.core.codec.RequestDecoder;
 import william.core.codec.ResponseEncoder;
-import william.handler.ChatServerHandler;
+import william.nettyhandler.ChatServerHandler;
 import william.util.LogUtil;
 
 /**
@@ -22,6 +24,7 @@ import william.util.LogUtil;
  * @author ZhangShenao
  * @date 2017年11月27日
  */
+@Component
 public class Server {
 	private ServerBootstrap serverBootstrap;
 	private EventLoopGroup bossGroup;

@@ -1,4 +1,4 @@
-package william.handler;
+package william.nettyhandler;
 
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;

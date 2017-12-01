@@ -89,7 +89,7 @@
         </dependencies>
     </dependencyManagement>
     
-    <!-- 依赖的jar包 
+    <!-- 依赖的jar包  -->
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
@@ -116,31 +116,14 @@
 				<artifactId>jboss-marshalling-serial</artifactId>
 		</dependency>
 		<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.hibernate</groupId>
-				<artifactId>hibernate-entitymanager</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-			</dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
     </dependencies>
-    -->
     <build>
     	<!-- 插件管理 -->
         <pluginManagement>
@@ -185,5 +168,6 @@
     	<module>ChatCommon</module>
     	<module>ChatServer</module>
     	<module>ChatClient</module>
+    	<module>?</module>
     </modules>
 </project>

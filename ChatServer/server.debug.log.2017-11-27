@@ -1,0 +1,185 @@
+2017-11-27 14:38:59  [ main:0 ] - [ DEBUG ]  Using Log4J as the default logging framework
+2017-11-27 14:38:59  [ main:8 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-11-27 14:38:59  [ main:72 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-11-27 14:38:59  [ main:74 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-11-27 14:38:59  [ main:328 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-11-27 14:38:59  [ main:337 ] - [ DEBUG ]  -Dio.netty.processId: 3868 (auto-detected)
+2017-11-27 14:38:59  [ main:429 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0xd201867186569b15
+2017-11-27 14:38:59  [ main:448 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-11-27 14:38:59  [ main:503 ] - [ DEBUG ]  Platform: Windows
+2017-11-27 14:38:59  [ main:503 ] - [ DEBUG ]  Java version: 7
+2017-11-27 14:38:59  [ main:503 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-11-27 14:38:59  [ main:504 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-11-27 14:38:59  [ main:504 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-11-27 14:38:59  [ main:505 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-11-27 14:38:59  [ main:505 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-11-27 14:38:59  [ main:506 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-11-27 14:38:59  [ main:507 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-11-27 14:38:59  [ main:507 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-11-27 14:38:59  [ main:508 ] - [ DEBUG ]  Javassist: unavailable
+2017-11-27 14:38:59  [ main:508 ] - [ DEBUG ]  You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2017-11-27 14:38:59  [ main:508 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-11-27 14:38:59  [ main:568 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-11-27 14:38:59  [ main:569 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-11-27 14:38:59  [ main:569 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-11-27 14:38:59  [ main:579 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6462 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] REGISTERED
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6462 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] ACTIVE
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6474 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6482 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0e 00 00 00 00 |..9.............|
+|00000010| 00 00 00 01 00 04 4b 6f 62 65                   |......Kobe      |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6485 ] - [ DEBUG ]  接收到客户端请求: Request [module=1, cmd=2, data=]
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6487 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 4
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6487 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 4
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6487 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6488 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6488 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6500 ] - [ INFO ]  返回请求:module:1 cmd:2 resultCode:0
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6501 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] WRITE: 30B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 00 00 00 00 0e |..9.............|
+|00000010| 00 00 00 00 00 00 00 01 00 04 4b 6f 62 65       |..........Kobe  |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6501 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] FLUSH
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6502 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6504 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-11-27 14:39:05  [ nioEventLoopGroup-3-1:6505 ] - [ INFO ]  [id: 0x82e1553c, /127.0.0.1:50622 :> /127.0.0.1:8080] INACTIVE
+2017-11-27 14:46:21  [ main:0 ] - [ DEBUG ]  Using Log4J as the default logging framework
+2017-11-27 14:46:21  [ main:7 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-11-27 14:46:21  [ main:20 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-11-27 14:46:21  [ main:22 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-11-27 14:46:22  [ main:210 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-11-27 14:46:22  [ main:218 ] - [ DEBUG ]  -Dio.netty.processId: 5264 (auto-detected)
+2017-11-27 14:46:22  [ main:288 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0x7e4080aaf3907a83
+2017-11-27 14:46:22  [ main:295 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-11-27 14:46:22  [ main:313 ] - [ DEBUG ]  Platform: Windows
+2017-11-27 14:46:22  [ main:314 ] - [ DEBUG ]  Java version: 7
+2017-11-27 14:46:22  [ main:314 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-11-27 14:46:22  [ main:315 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-11-27 14:46:22  [ main:315 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-11-27 14:46:22  [ main:315 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-11-27 14:46:22  [ main:316 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-11-27 14:46:22  [ main:316 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-11-27 14:46:22  [ main:317 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-11-27 14:46:22  [ main:317 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-11-27 14:46:22  [ main:318 ] - [ DEBUG ]  Javassist: unavailable
+2017-11-27 14:46:22  [ main:318 ] - [ DEBUG ]  You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2017-11-27 14:46:22  [ main:319 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-11-27 14:46:22  [ main:369 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-11-27 14:46:22  [ main:370 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-11-27 14:46:22  [ main:370 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-11-27 14:46:22  [ main:380 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3458 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 => /127.0.0.1:8080] REGISTERED
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3458 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 => /127.0.0.1:8080] ACTIVE
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3463 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3471 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0e 00 00 00 00 |..9.............|
+|00000010| 00 00 00 01 00 04 4b 6f 62 65                   |......Kobe      |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3473 ] - [ DEBUG ]  接收到客户端请求: Request [module=1, cmd=2, data=]
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3476 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 4
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3476 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 4
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3476 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3476 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3476 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3486 ] - [ INFO ]  返回请求:module:1 cmd:2 resultCode:0
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3487 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 => /127.0.0.1:8080] WRITE: 30B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 00 00 00 00 0e |..9.............|
+|00000010| 00 00 00 00 00 00 00 01 00 04 4b 6f 62 65       |..........Kobe  |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3487 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 => /127.0.0.1:8080] FLUSH
+2017-11-27 14:46:25  [ nioEventLoopGroup-3-1:3491 ] - [ INFO ]  [id: 0x8d1524d7, /127.0.0.1:50695 :> /127.0.0.1:8080] INACTIVE
+2017-11-27 14:47:19  [ main:0 ] - [ DEBUG ]  Using Log4J as the default logging framework
+2017-11-27 14:47:19  [ main:6 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-11-27 14:47:19  [ main:20 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-11-27 14:47:19  [ main:22 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-11-27 14:47:20  [ main:217 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-11-27 14:47:20  [ main:226 ] - [ DEBUG ]  -Dio.netty.processId: 5344 (auto-detected)
+2017-11-27 14:47:20  [ main:292 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0x84149e1fb4a4d877
+2017-11-27 14:47:20  [ main:298 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-11-27 14:47:20  [ main:316 ] - [ DEBUG ]  Platform: Windows
+2017-11-27 14:47:20  [ main:316 ] - [ DEBUG ]  Java version: 7
+2017-11-27 14:47:20  [ main:317 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-11-27 14:47:20  [ main:318 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-11-27 14:47:20  [ main:318 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-11-27 14:47:20  [ main:318 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-11-27 14:47:20  [ main:319 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-11-27 14:47:20  [ main:319 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-11-27 14:47:20  [ main:320 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-11-27 14:47:20  [ main:320 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-11-27 14:47:20  [ main:321 ] - [ DEBUG ]  Javassist: unavailable
+2017-11-27 14:47:20  [ main:321 ] - [ DEBUG ]  You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2017-11-27 14:47:20  [ main:321 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-11-27 14:47:20  [ main:371 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-11-27 14:47:20  [ main:371 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-11-27 14:47:20  [ main:372 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-11-27 14:47:20  [ main:381 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3435 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 => /127.0.0.1:8080] REGISTERED
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3435 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 => /127.0.0.1:8080] ACTIVE
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3441 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3448 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0e 00 00 00 00 |..9.............|
+|00000010| 00 00 00 01 00 04 4b 6f 62 65                   |......Kobe      |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3450 ] - [ DEBUG ]  接收到客户端请求: Request [module=1, cmd=2, data=]
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3452 ] - [ DEBUG ]  -Dio.netty.allocator.numHeapArenas: 4
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3453 ] - [ DEBUG ]  -Dio.netty.allocator.numDirectArenas: 4
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3453 ] - [ DEBUG ]  -Dio.netty.allocator.pageSize: 8192
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3453 ] - [ DEBUG ]  -Dio.netty.allocator.maxOrder: 11
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3453 ] - [ DEBUG ]  -Dio.netty.allocator.chunkSize: 16777216
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3463 ] - [ INFO ]  返回请求:module:1 cmd:2 resultCode:0
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3464 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 => /127.0.0.1:8080] WRITE: 30B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 00 00 00 00 0e |..9.............|
+|00000010| 00 00 00 00 00 00 00 01 00 04 4b 6f 62 65       |..........Kobe  |
++--------+-------------------------------------------------+----------------+
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3464 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 => /127.0.0.1:8080] FLUSH
+2017-11-27 14:47:23  [ nioEventLoopGroup-3-1:3468 ] - [ INFO ]  [id: 0x560cadb4, /127.0.0.1:50745 :> /127.0.0.1:8080] INACTIVE
