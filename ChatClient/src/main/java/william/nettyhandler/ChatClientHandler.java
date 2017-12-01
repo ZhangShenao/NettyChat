@@ -1,15 +1,10 @@
 package william.nettyhandler;
 
-import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.util.concurrent.Future;
-import io.netty.util.concurrent.FutureListener;
-import william.core.entity.Request;
+import io.netty.channel.SimpleChannelInboundHandler;
 import william.core.entity.Response;
-import william.entity.request.PlayerLoginRequest;
-import william.entity.response.PlayerLoginResponse;
-import william.module.ModuleId;
-import william.module.player.PlayerCmd;
+import william.invoker.Invoker;
+import william.invoker.InvokerHolder;
 import william.util.LogUtil;
 
 /**
@@ -18,43 +13,28 @@ import william.util.LogUtil;
  * @author ZhangShenao
  * @date 2017年11月27日
  */
-public class ChatClientHandler extends ChannelHandlerAdapter{
+public class ChatClientHandler extends SimpleChannelInboundHandler<Response>{
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-		LogUtil.debug("连接到远程主机: " + ctx.channel().remoteAddress());
-		
-		//向服务器发送请求
-		PlayerLoginRequest playerLoginRequest = new PlayerLoginRequest();
-		playerLoginRequest.setPlayerKey(1L);
-		playerLoginRequest.setPlayerName("Kobe");
-		Request request = new Request();
-		request.setModule(ModuleId.PLAYER);
-		request.setCmd(PlayerCmd.LOGIN);
-		request.setData(playerLoginRequest.getBytes());
-		ctx.writeAndFlush(request);
+		super.channelActive(ctx);
+		LogUtil.debug(ctx.channel().localAddress() + ",连接到远程主机: " + ctx.channel().remoteAddress());
 	}
 	
 	@Override
-	public void channelRead(ChannelHandlerContext ctx, Object msg)
+	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+		super.channelInactive(ctx);
+		LogUtil.debug(ctx.channel().localAddress() + "与远程主机断开连接");
+	}
+	
+	@Override
+	protected void messageReceived(ChannelHandlerContext ctx, Response msg)
 			throws Exception {
-		if (!(msg instanceof Response)){
-			super.channelRead(ctx, msg);
-			return;
+		//获取执行器,执行业务逻辑
+		Invoker invoker = InvokerHolder.getInvoker(msg.getModule(), msg.getCmd());
+		if (null == invoker){
+			LogUtil.debug("无法找到执行器,moduleId: " + msg.getModule() + ",cmdId: " + msg.getCmd());
 		}
-		Response response = (Response)msg;
-		//TODO 待优化
-		if (response.getModule() == ModuleId.PLAYER && response.getCmd() == PlayerCmd.LOGIN){
-			PlayerLoginResponse playerLoginResponse = new PlayerLoginResponse();
-			playerLoginResponse.readFromBytes(response.getData());
-			LogUtil.debug("接收到用户登录响应,playerKey: " + playerLoginResponse.getPlayerKey() + ",playerName: "
-					+ playerLoginResponse.getPlayerName());
-			ctx.close().addListener(new FutureListener<Void>() {
-				@Override
-				public void operationComplete(Future<Void> future)
-						throws Exception {
-					LogUtil.debug("客户端关闭");
-				}
-			});
-		}
+		
+		invoker.invoke(msg.getStateCode(),msg.getData());
 	}
 }

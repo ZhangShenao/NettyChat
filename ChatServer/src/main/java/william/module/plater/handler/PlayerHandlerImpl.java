@@ -26,7 +26,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 	@Override
 	public Result<PlayerResponse> registerAndLogin(Session session, byte[] data) {
 		PlayerResponse playerResponse = null;
-		System.out.println("请求注册并登录");
+		System.err.println("请求注册并登录");
 		LogUtil.info("请求注册并登录");
 		
 		try {
@@ -43,7 +43,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 
 	@Override
 	public Result<PlayerResponse> login(Session session, byte[] data) {
-		System.out.println("请求登录");
+		System.err.println("请求登录");
 		LogUtil.info("请求登录");
 		PlayerResponse playerResponse = null;
 		
