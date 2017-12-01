@@ -3,7 +3,7 @@ package william.main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import william.util.CommonUtil;
+import william.swing.SwingClient;
 
 /**
  * 
@@ -15,9 +15,8 @@ public class ClientMain {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-		Client client = applicationContext.getBean(Client.class);
-		int port = CommonUtil.parsePort(args);
-		client.connect(port);
+		SwingClient swingClient = applicationContext.getBean(SwingClient.class);
+		swingClient.setVisible(true);
 	}
 	
 }

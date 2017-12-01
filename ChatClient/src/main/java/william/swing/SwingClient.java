@@ -29,13 +29,13 @@ import william.module.player.proto.PlayerModule.PlayerResponse;
 import william.module.player.proto.PlayerModule.RegisterRequest;
 import william.swing.constant.ButtonCommand;
 
-@Component
 /**
  * 
  * <p>Description:Swing客户端</p>
  * @author ZhangShenao
  * @date 2017年12月1日
  */
+@Component
 public class SwingClient extends JFrame implements ActionListener {
 	
 	@Autowired
