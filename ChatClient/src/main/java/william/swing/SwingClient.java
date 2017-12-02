@@ -6,15 +6,18 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
+
 import william.core.entity.Request;
 import william.main.Client;
 import william.module.ModuleId;
@@ -37,13 +40,9 @@ import william.swing.constant.ButtonCommand;
  */
 @Component
 public class SwingClient extends JFrame implements ActionListener {
-	
 	@Autowired
-	private Client client;	//Netty客户端实例
+	private Client client;			//Netty客户端实例
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 2572235358190956651L;
 	
 	/**
@@ -184,7 +183,6 @@ public class SwingClient extends JFrame implements ActionListener {
 		tips.setBounds(76, 488, 200, 15);
 		getContentPane().add(tips);
 		
-
 		int weigh = 500;
 		int heigh = 600;
 		int w = (Toolkit.getDefaultToolkit().getScreenSize().width - weigh) / 2;
@@ -295,5 +293,9 @@ public class SwingClient extends JFrame implements ActionListener {
 
 	public PlayerResponse getPlayerResponse() {
 		return playerResponse;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
 	}
 }

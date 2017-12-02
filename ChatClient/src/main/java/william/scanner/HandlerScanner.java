@@ -15,7 +15,8 @@ import william.util.LogUtil;
 
 /**
  * 
- * <p>Description:Handler的扫描器,利用Spring的BeanPostProcessor,在启动时加载所有的Handler</p>
+ * <p>Description:Handler的扫描器,利用Spring的BeanPostProcessor,在启动时加载所有的Handler,
+ * 并将每一个Handler封装成一个Invoker,保存起来以实现复用</p>
  * @author ZhangShenao
  * @date 2017年11月29日
  */

@@ -13,3 +13,331 @@
 2017-12-01 14:02:17  [ main:470 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 2017-12-01 14:02:17  [ main:480 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resultCodeTip': Invocation of init method failed; nested exception is java.lang.NullPointerException
 2017-12-01 14:02:17  [ main:480 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:19:45  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6e0d6ee0: startup date [Sat Dec 02 13:19:45 CST 2017]; root of context hierarchy
+2017-12-02 13:19:45  [ main:57 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 13:19:46  [ main:442 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 13:19:46  [ main:477 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e8776a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:19:46  [ main:495 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resultCodeTip': Invocation of init method failed; nested exception is java.lang.NullPointerException
+2017-12-02 13:19:46  [ main:496 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e8776a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:23:44  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 13:23:44 CST 2017]; root of context hierarchy
+2017-12-02 13:23:44  [ main:79 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 13:23:45  [ main:385 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 13:23:45  [ main:424 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47125a42: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:23:45  [ main:436 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resultCodeTip': Invocation of init method failed; nested exception is java.lang.NullPointerException
+2017-12-02 13:23:45  [ main:436 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47125a42: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:24:58  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 13:24:58 CST 2017]; root of context hierarchy
+2017-12-02 13:24:58  [ main:51 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 13:24:59  [ main:376 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 13:24:59  [ main:376 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 13:24:59  [ main:407 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f7f2faa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,client,handlerScanner,resultCodeTip,swingClient,server,playerHandlerImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 13:25:05  [ AWT-EventQueue-0:6231 ] - [ ERROR ]  客户端Channel对象为空!!
+2017-12-02 15:13:48  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 15:13:48 CST 2017]; root of context hierarchy
+2017-12-02 15:13:48  [ main:54 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:13:48  [ main:398 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:13:48  [ main:398 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:13:48  [ main:398 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:13:48  [ main:398 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'william.main.Client#0' defined in class path resource [applicationContext.xml]: Could not resolve placeholder 'connection.remoteHost' in string value "${connection.remoteHost}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'connection.remoteHost' in string value "${connection.remoteHost}"
+2017-12-02 15:13:48  [ main:398 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12206e16: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:15:15  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:15:15 CST 2017]; root of context hierarchy
+2017-12-02 15:15:15  [ main:65 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:15:15  [ main:378 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:15:15  [ main:379 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:15:15  [ main:379 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:15:15  [ main:399 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:15:16  [ main:597 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerHandlerImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private william.swing.SwingClient william.module.player.handler.PlayerHandlerImpl.swingClient; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swingClient': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private william.main.Client william.swing.SwingClient.client; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'william.main.Client#0' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Property or field 'connection' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext' - maybe not public?
+2017-12-02 15:15:16  [ main:597 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:18:24  [ main:10 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:18:24 CST 2017]; root of context hierarchy
+2017-12-02 15:18:24  [ main:54 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:18:24  [ main:379 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:18:24  [ main:380 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:18:24  [ main:380 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:18:24  [ main:406 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:18:34  [ AWT-EventQueue-0:9813 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:18:34  [ nioEventLoopGroup-2-1:9851 ] - [ INFO ]  [id: 0x0f46b363] REGISTERED
+2017-12-02 15:18:34  [ nioEventLoopGroup-2-1:9852 ] - [ INFO ]  [id: 0x0f46b363] CONNECT: /127.0.0.1:8080
+2017-12-02 15:18:35  [ nioEventLoopGroup-2-1:10871 ] - [ INFO ]  [id: 0x0f46b363] CLOSE
+2017-12-02 15:19:14  [ main:1 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:19:14 CST 2017]; root of context hierarchy
+2017-12-02 15:19:14  [ main:65 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:19:14  [ main:408 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:19:14  [ main:408 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:19:14  [ main:408 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:19:14  [ main:433 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@523f0309: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:19:22  [ AWT-EventQueue-0:8453 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8486 ] - [ INFO ]  [id: 0x738e7456] REGISTERED
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8486 ] - [ INFO ]  [id: 0x738e7456] CONNECT: /127.0.0.1:8080
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8486 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8486 ] - [ INFO ]  /127.0.0.1:61688,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8502 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:19:22  [ nioEventLoopGroup-2-1:8502 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:19:23  [ nioEventLoopGroup-2-1:8598 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:19:59  [ nioEventLoopGroup-2-1:44594 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:19:59  [ nioEventLoopGroup-2-1:44596 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:19:59  [ nioEventLoopGroup-2-1:44597 ] - [ INFO ]  [id: 0x738e7456, /127.0.0.1:61688 :> /127.0.0.1:8080] INACTIVE
+2017-12-02 15:21:15  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 15:21:15 CST 2017]; root of context hierarchy
+2017-12-02 15:21:15  [ main:64 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:21:15  [ main:390 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:21:15  [ main:390 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:21:15  [ main:390 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:21:15  [ main:415 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12206e16: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:21:23  [ main:8 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:21:23 CST 2017]; root of context hierarchy
+2017-12-02 15:21:23  [ main:63 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:21:23  [ main:373 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:21:23  [ main:373 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:21:23  [ main:373 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:21:23  [ main:407 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:21:31  [ AWT-EventQueue-0:8060 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8081 ] - [ INFO ]  [id: 0x77164310] REGISTERED
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8097 ] - [ INFO ]  [id: 0x77164310] CONNECT: /127.0.0.1:8080
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8100 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8101 ] - [ INFO ]  /127.0.0.1:61836,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8105 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8105 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:21:31  [ nioEventLoopGroup-2-1:8206 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:27:58  [ nioEventLoopGroup-2-1:395779 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 => /127.0.0.1:8080] CLOSE
+2017-12-02 15:27:58  [ nioEventLoopGroup-2-1:395779 ] - [ INFO ]  [id: 0x77164310, /127.0.0.1:61836 :> /127.0.0.1:8080] INACTIVE
+2017-12-02 15:31:10  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:31:10 CST 2017]; root of context hierarchy
+2017-12-02 15:31:10  [ main:66 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:31:11  [ main:371 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:31:11  [ main:371 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:31:11  [ main:371 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:31:11  [ main:403 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:31:17  [ AWT-EventQueue-0:6701 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6736 ] - [ INFO ]  [id: 0xd53c4ef5] REGISTERED
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6736 ] - [ INFO ]  [id: 0xd53c4ef5] CONNECT: /127.0.0.1:8080
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6736 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6736 ] - [ INFO ]  /127.0.0.1:62167,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6754 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0c 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 04 31 32 33 34                         |be..1234        |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6754 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:31:17  [ nioEventLoopGroup-2-1:6846 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:31:30  [ nioEventLoopGroup-2-1:20033 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:31:30  [ nioEventLoopGroup-2-1:20035 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:31:30  [ nioEventLoopGroup-2-1:20036 ] - [ INFO ]  [id: 0xd53c4ef5, /127.0.0.1:62167 :> /127.0.0.1:8080] INACTIVE
+2017-12-02 15:32:19  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 15:32:19 CST 2017]; root of context hierarchy
+2017-12-02 15:32:19  [ main:53 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:32:20  [ main:387 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:32:20  [ main:387 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:32:20  [ main:387 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:32:20  [ main:421 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:32:27  [ AWT-EventQueue-0:7910 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7938 ] - [ INFO ]  [id: 0x54eec64c] REGISTERED
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7938 ] - [ INFO ]  [id: 0x54eec64c] CONNECT: /127.0.0.1:8080
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7938 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7938 ] - [ INFO ]  /127.0.0.1:62276,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7964 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0c 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 04 31 32 33 34                         |be..1234        |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:7965 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:32:27  [ nioEventLoopGroup-2-1:8043 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:33:05  [ nioEventLoopGroup-2-1:46003 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:33:05  [ nioEventLoopGroup-2-1:46005 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Thread.java:744)
+2017-12-02 15:33:05  [ nioEventLoopGroup-2-1:46006 ] - [ INFO ]  [id: 0x54eec64c, /127.0.0.1:62276 :> /127.0.0.1:8080] INACTIVE
+2017-12-02 15:33:17  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@637dffde: startup date [Sat Dec 02 15:33:17 CST 2017]; root of context hierarchy
+2017-12-02 15:33:17  [ main:54 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:33:17  [ main:377 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:33:17  [ main:377 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:33:17  [ main:377 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:33:17  [ main:392 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:33:24  [ AWT-EventQueue-0:7035 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7073 ] - [ INFO ]  [id: 0xd134a06a] REGISTERED
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7074 ] - [ INFO ]  [id: 0xd134a06a] CONNECT: /127.0.0.1:8080
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7078 ] - [ INFO ]  [id: 0xd134a06a, /127.0.0.1:62384 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7079 ] - [ INFO ]  /127.0.0.1:62384,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7093 ] - [ INFO ]  [id: 0xd134a06a, /127.0.0.1:62384 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0c 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 04 31 32 33 34                         |be..1234        |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7093 ] - [ INFO ]  [id: 0xd134a06a, /127.0.0.1:62384 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:33:24  [ nioEventLoopGroup-2-1:7127 ] - [ INFO ]  [id: 0xd134a06a, /127.0.0.1:62384 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:39:56  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 15:39:56 CST 2017]; root of context hierarchy
+2017-12-02 15:39:56  [ main:67 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:39:56  [ main:384 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:39:56  [ main:384 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:39:56  [ main:384 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:39:56  [ main:419 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12206e16: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:40:05  [ AWT-EventQueue-0:8904 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8937 ] - [ INFO ]  [id: 0x6bcc13ba] REGISTERED
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8937 ] - [ INFO ]  [id: 0x6bcc13ba] CONNECT: /127.0.0.1:8080
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8952 ] - [ INFO ]  [id: 0x6bcc13ba, /127.0.0.1:62645 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8953 ] - [ INFO ]  /127.0.0.1:62645,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8954 ] - [ INFO ]  [id: 0x6bcc13ba, /127.0.0.1:62645 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:8954 ] - [ INFO ]  [id: 0x6bcc13ba, /127.0.0.1:62645 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:40:05  [ nioEventLoopGroup-2-1:9065 ] - [ INFO ]  [id: 0x6bcc13ba, /127.0.0.1:62645 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:40:41  [ main:8 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33ea6c92: startup date [Sat Dec 02 15:40:41 CST 2017]; root of context hierarchy
+2017-12-02 15:40:41  [ main:56 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-02 15:40:41  [ main:372 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-02 15:40:41  [ main:372 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-02 15:40:41  [ main:372 ] - [ INFO ]  Loading properties file from file [D:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-02 15:40:41  [ main:397 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f1b6fa6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-02 15:40:47  [ AWT-EventQueue-0:6612 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6643 ] - [ INFO ]  [id: 0x2266c95d] REGISTERED
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6643 ] - [ INFO ]  [id: 0x2266c95d] CONNECT: /127.0.0.1:8080
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6643 ] - [ INFO ]  [id: 0x2266c95d, /127.0.0.1:62747 => /127.0.0.1:8080] ACTIVE
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6643 ] - [ INFO ]  /127.0.0.1:62747,连接到远程主机: /127.0.0.1:8080
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6659 ] - [ INFO ]  [id: 0x2266c95d, /127.0.0.1:62747 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6659 ] - [ INFO ]  [id: 0x2266c95d, /127.0.0.1:62747 => /127.0.0.1:8080] FLUSH
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6710 ] - [ INFO ]  [id: 0x2266c95d, /127.0.0.1:62747 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-02 15:40:47  [ nioEventLoopGroup-2-1:6715 ] - [ INFO ]  注册并登录成功playerId: 1,playerName: Kobe

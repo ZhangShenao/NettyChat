@@ -23,7 +23,11 @@ public class LogUtil {
 		}
 	}
 	
-	public static void error(Object message){
+	public static void error(String message){
 		logger.error(message);
+	}
+	
+	public static void error(Throwable e){
+		logger.error(e.getMessage(),e); 
 	}
 }

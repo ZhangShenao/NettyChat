@@ -1,4 +1,4 @@
-package william.module.plater.handler;
+package william.module.player.handler;
 
 import william.core.annotation.SocketCommand;
 import william.core.annotation.SocketModule;

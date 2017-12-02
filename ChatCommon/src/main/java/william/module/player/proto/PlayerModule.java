@@ -989,11 +989,11 @@ public final class PlayerModule {
     boolean hasPlayerName();
     String getPlayerName();
     
-    // required int32 level = 3;
+    // optional int32 level = 3 [default = 1];
     boolean hasLevel();
     int getLevel();
     
-    // required int32 exp = 4;
+    // optional int32 exp = 4 [default = 100];
     boolean hasExp();
     int getExp();
   }
@@ -1068,7 +1068,7 @@ public final class PlayerModule {
       }
     }
     
-    // required int32 level = 3;
+    // optional int32 level = 3 [default = 1];
     public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     public boolean hasLevel() {
@@ -1078,7 +1078,7 @@ public final class PlayerModule {
       return level_;
     }
     
-    // required int32 exp = 4;
+    // optional int32 exp = 4 [default = 100];
     public static final int EXP_FIELD_NUMBER = 4;
     private int exp_;
     public boolean hasExp() {
@@ -1091,8 +1091,8 @@ public final class PlayerModule {
     private void initFields() {
       playerId_ = 0L;
       playerName_ = "";
-      level_ = 0;
-      exp_ = 0;
+      level_ = 1;
+      exp_ = 100;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1104,14 +1104,6 @@ public final class PlayerModule {
         return false;
       }
       if (!hasPlayerName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLevel()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasExp()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1287,9 +1279,9 @@ public final class PlayerModule {
         bitField0_ = (bitField0_ & ~0x00000001);
         playerName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        level_ = 0;
+        level_ = 1;
         bitField0_ = (bitField0_ & ~0x00000004);
-        exp_ = 0;
+        exp_ = 100;
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
@@ -1383,14 +1375,6 @@ public final class PlayerModule {
           return false;
         }
         if (!hasPlayerName()) {
-          
-          return false;
-        }
-        if (!hasLevel()) {
-          
-          return false;
-        }
-        if (!hasExp()) {
           
           return false;
         }
@@ -1503,8 +1487,8 @@ public final class PlayerModule {
         onChanged();
       }
       
-      // required int32 level = 3;
-      private int level_ ;
+      // optional int32 level = 3 [default = 1];
+      private int level_ = 1;
       public boolean hasLevel() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
@@ -1519,13 +1503,13 @@ public final class PlayerModule {
       }
       public Builder clearLevel() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        level_ = 0;
+        level_ = 1;
         onChanged();
         return this;
       }
       
-      // required int32 exp = 4;
-      private int exp_ ;
+      // optional int32 exp = 4 [default = 100];
+      private int exp_ = 100;
       public boolean hasExp() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
@@ -1540,7 +1524,7 @@ public final class PlayerModule {
       }
       public Builder clearExp() {
         bitField0_ = (bitField0_ & ~0x00000008);
-        exp_ = 0;
+        exp_ = 100;
         onChanged();
         return this;
       }
@@ -1583,10 +1567,10 @@ public final class PlayerModule {
       "\n\034protofile/PlayerModule.proto\"4\n\014LoginR" +
       "equest\022\022\n\nplayerName\030\001 \002(\t\022\020\n\010passward\030\002" +
       " \002(\t\"7\n\017RegisterRequest\022\022\n\nplayerName\030\001 " +
-      "\002(\t\022\020\n\010passward\030\002 \002(\t\"R\n\016PlayerResponse\022" +
-      "\020\n\010playerId\030\001 \002(\003\022\022\n\nplayerName\030\002 \002(\t\022\r\n" +
-      "\005level\030\003 \002(\005\022\013\n\003exp\030\004 \002(\005B+\n\033william.mod" +
-      "ule.player.protoB\014PlayerModule"
+      "\002(\t\022\020\n\010passward\030\002 \002(\t\"Z\n\016PlayerResponse\022" +
+      "\020\n\010playerId\030\001 \002(\003\022\022\n\nplayerName\030\002 \002(\t\022\020\n" +
+      "\005level\030\003 \001(\005:\0011\022\020\n\003exp\030\004 \001(\005:\003100B+\n\033wil" +
+      "liam.module.player.protoB\014PlayerModule"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {

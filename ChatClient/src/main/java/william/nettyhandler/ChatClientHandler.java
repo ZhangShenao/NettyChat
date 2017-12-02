@@ -5,6 +5,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import william.core.entity.Response;
 import william.invoker.Invoker;
 import william.invoker.InvokerHolder;
+import william.swing.SwingClient;
 import william.util.LogUtil;
 
 /**
@@ -14,15 +15,22 @@ import william.util.LogUtil;
  * @date 2017年11月27日
  */
 public class ChatClientHandler extends SimpleChannelInboundHandler<Response>{
+	private final SwingClient swingClient;
+	
+	public ChatClientHandler(SwingClient swingClient) {
+		this.swingClient = swingClient;
+	}
+
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		super.channelActive(ctx);
-		LogUtil.debug(ctx.channel().localAddress() + ",连接到远程主机: " + ctx.channel().remoteAddress());
+		LogUtil.info(ctx.channel().localAddress() + ",连接到远程主机: " + ctx.channel().remoteAddress());
 	}
 	
 	@Override
 	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 		super.channelInactive(ctx);
+		swingClient.getTips().setText("与远程主机断开连接~~~");
 		LogUtil.debug(ctx.channel().localAddress() + "与远程主机断开连接");
 	}
 	

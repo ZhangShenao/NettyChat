@@ -73,6 +73,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 				else {
 					response.setStateCode(ResultCode.WRONG_MSG_TYPE);
 				}
+				LogUtil.error("处理客户端请求成功,响应结果: " + result.getResultCode());
 			}
 			//处理失败
 			else {

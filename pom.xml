@@ -168,6 +168,5 @@
     	<module>ChatCommon</module>
     	<module>ChatServer</module>
     	<module>ChatClient</module>
-    	<module>?</module>
     </modules>
 </project>

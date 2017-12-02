@@ -17,6 +17,6 @@ message RegisterRequest{
 message PlayerResponse{
 	required int64 playerId = 1;
 	required string playerName = 2;
-	required int32 level = 3;
-	required int32 exp = 4;
+	optional int32 level = 3 [default = 1];
+	optional int32 exp = 4 [default = 100];
 }

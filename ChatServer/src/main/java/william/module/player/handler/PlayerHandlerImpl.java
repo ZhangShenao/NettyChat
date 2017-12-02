@@ -1,4 +1,4 @@
-package william.module.plater.handler;
+package william.module.player.handler;
 
 import org.springframework.stereotype.Component;
 
@@ -26,12 +26,12 @@ public class PlayerHandlerImpl implements PlayerHandler{
 	@Override
 	public Result<PlayerResponse> registerAndLogin(Session session, byte[] data) {
 		PlayerResponse playerResponse = null;
-		System.err.println("请求注册并登录");
-		LogUtil.info("请求注册并登录");
 		
 		try {
 			RegisterRequest registerRequest = PlayerModule.RegisterRequest.parseFrom(data);
+			LogUtil.info(registerRequest.getPlayerName() + "请求注册并登录");
 			Builder builder = PlayerModule.PlayerResponse.newBuilder();
+			builder.setPlayerId(1L);
 			builder.setPlayerName(registerRequest.getPlayerName());
 			playerResponse = builder.build();
 			return Result.success(playerResponse);
@@ -43,13 +43,13 @@ public class PlayerHandlerImpl implements PlayerHandler{
 
 	@Override
 	public Result<PlayerResponse> login(Session session, byte[] data) {
-		System.err.println("请求登录");
-		LogUtil.info("请求登录");
 		PlayerResponse playerResponse = null;
 		
 		try {
 			LoginRequest loginRequest = PlayerModule.LoginRequest.parseFrom(data);
+			LogUtil.info(loginRequest.getPlayerName() + "请求登录");
 			Builder builder = PlayerModule.PlayerResponse.newBuilder();
+			builder.setPlayerId(1L);
 			builder.setPlayerName(loginRequest.getPlayerName());
 			playerResponse = builder.build();
 			return Result.success(playerResponse);
