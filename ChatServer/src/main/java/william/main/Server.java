@@ -1,7 +1,5 @@
 package william.main;
 
-import org.springframework.stereotype.Component;
-
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -13,6 +11,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import org.springframework.stereotype.Component;
 import william.core.codec.RequestDecoder;
 import william.core.codec.ResponseEncoder;
 import william.nettyhandler.ChatServerHandler;

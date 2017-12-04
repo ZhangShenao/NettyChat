@@ -28,7 +28,7 @@ public class CommonUtil {
 	/**
 	 * 判断是否为合法的端口号
 	 */
-	private static final boolean isLegalPort(int port){
+	public static final boolean isLegalPort(int port){
 		return port > 0 && port < 65535;
 	}
 }

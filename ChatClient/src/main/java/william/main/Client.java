@@ -1,6 +1,6 @@
 package william.main;
 
-import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
@@ -14,11 +14,15 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import william.core.codec.RequestEncoder;
 import william.core.codec.ResponseDecoder;
 import william.core.constant.ConnectionConst;
 import william.core.entity.Request;
 import william.nettyhandler.ChatClientHandler;
+import william.swing.SwingClient;
+import william.util.CommonUtil;
+import william.util.EmptyUtil;
 import william.util.LogUtil;
 
 /**
@@ -27,17 +31,31 @@ import william.util.LogUtil;
  * @author ZhangShenao
  * @date 2017年11月27日
  */
-@Component
 public class Client {
+	//Netty组件相关
 	private Bootstrap bootstrap;
 	private EventLoopGroup workerGroup;
 	private Channel channel;
 	
+	//远程连接相关
+	private String remoteHost;		//远程ip地址
+	private int remotePort;			//远程端口号
+	
+	@Autowired
+	private SwingClient swingClient;	//Swing客户端实例
+	
 	/**
-	 * 客户端连接到远程服务器
-	 * @param port 端口
+	 * Netty客户端初始化
 	 */
-	public void connect(int port){
+	@PostConstruct
+	public void init(){
+		if (EmptyUtil.isEmpty(remoteHost)){
+			remoteHost = ConnectionConst.DEFAULT_HOST;
+		}
+		if (!CommonUtil.isLegalPort(remotePort)){
+			remotePort = ConnectionConst.DEFAULT_PORT;
+		}
+		
 		try {
 			bootstrap = new Bootstrap();
 			workerGroup = new NioEventLoopGroup();
@@ -54,13 +72,25 @@ public class Client {
 					pipeline.addLast("Logging",new LoggingHandler(LogLevel.INFO))
 					.addLast("RequestEncoder",new RequestEncoder())
 					.addLast("ResponseDecoder",new ResponseDecoder())
-					.addLast("ChatClientHandler", new ChatClientHandler());
+					.addLast("ChatClientHandler", new ChatClientHandler(swingClient));
 				}
 			});
 			
-			ChannelFuture channelFuture = bootstrap.connect(ConnectionConst.DEFAULT_HOST, port).sync();
-			channel = channelFuture.channel();
 		}catch (Exception e){
+			LogUtil.error(e);
+		}
+	}
+	
+	/**
+	 * 客户端连接到远程服务器
+	 * @param port 端口
+	 */
+	public void connect(){
+		ChannelFuture channelFuture;
+		try {
+			channelFuture = bootstrap.connect(remoteHost, remotePort).sync();
+			channel = channelFuture.channel();
+		} catch (InterruptedException e) {
 			LogUtil.error(e);
 		}
 	}
@@ -69,9 +99,9 @@ public class Client {
 	 * 发送客户端请求
 	 */
 	public void sendRequest(Request request) {
-		if (null == channel){
-			LogUtil.error("客户端Channel对象为空!!");
-			return;
+		//如果连接还没有建立,则先建立连接
+		if (null == channel || !channel.isActive()){
+			connect();
 		}
 		channel.writeAndFlush(request);
 	}
@@ -91,4 +121,17 @@ public class Client {
 			}
 		});
 	}
+
+	public int getRemotePort() {
+		return remotePort;
+	}
+
+	public void setRemotePort(int remotePort) {
+		this.remotePort = remotePort;
+	}
+
+	public void setRemoteHost(String remoteHost) {
+		this.remoteHost = remoteHost;
+	}
+	
 }

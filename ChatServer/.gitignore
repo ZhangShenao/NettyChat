@@ -1,1 +1,3 @@
 /target/
+/server.debug.log
+/server.info.log

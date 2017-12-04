@@ -59,5 +59,4 @@ public class Request implements ChatMessage{
 		return "Request [module=" + module + ", cmd=" + cmd + "]";
 	}
 	
-	
 }
