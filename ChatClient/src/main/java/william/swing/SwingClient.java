@@ -31,6 +31,7 @@ import william.module.player.proto.PlayerModule.LoginRequest;
 import william.module.player.proto.PlayerModule.PlayerResponse;
 import william.module.player.proto.PlayerModule.RegisterRequest;
 import william.swing.constant.ButtonCommand;
+import william.util.LogUtil;
 
 /**
  * 
@@ -196,7 +197,6 @@ public class SwingClient extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent event) {
-		
 		switch (event.getActionCommand()) {
 		//登录
 		case ButtonCommand.LOGIN:
@@ -205,14 +205,14 @@ public class SwingClient extends JFrame implements ActionListener {
 						.setPlayerName(playerName.getText())
 						.setPassward(passward.getText())
 						.build();
-				//构建请求
-				Request request = Request.valueOf(ModuleId.PLAYER, PlayerCmd.LOGIN, loginRequest.toByteArray());
-				client.sendRequest(request);
+				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.LOGIN, loginRequest.toByteArray());
 			} catch (Exception e) {
+				LogUtil.error(e);
 				tips.setText("无法连接服务器");
 			}
 			break;
-		//注册
+			
+		//注册并登录
 		case ButtonCommand.REGISTER:
 			try {
 				RegisterRequest registerRequest = PlayerModule.RegisterRequest.newBuilder()
@@ -220,26 +220,26 @@ public class SwingClient extends JFrame implements ActionListener {
 						.setPassward(passward.getText())
 						.build();
 				
-				//构建请求
-				Request request = Request.valueOf(ModuleId.PLAYER, PlayerCmd.REGISTER_AND_LOGIN, registerRequest.toByteArray());
-				client.sendRequest(request);
+				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.REGISTER_AND_LOGIN, registerRequest.toByteArray());
 			} catch (Exception e) {
+				LogUtil.error(e);
 				tips.setText("无法连接服务器");
 			}
 			break;
+			
 		//发送消息
 		case ButtonCommand.SEND:
 			try {
-				//判断是广播还是私聊
+				//广播消息
 				if(StringUtils.isEmpty(targetPlayer.getText()) && !StringUtils.isEmpty(message.getText())){
 					PublicChatRequest publicChatRequest = ChatModule.PublicChatRequest.newBuilder()
 							.setContext(message.getText())
 							.build();
-					
-					//构建请求
-					Request request = Request.valueOf(ModuleId.CHAT, ChatCmd.PUBLIC_CHAT, publicChatRequest.toByteArray());
-					client.sendRequest(request);
-				}else{
+					buildAndSendReq(ModuleId.CHAT,  ChatCmd.PUBLIC_CHAT, publicChatRequest.toByteArray());
+				}
+				
+				//私聊消息
+				else{
 					if(StringUtils.isEmpty(message.getText())){
 						tips.setText("发送内容不能为空");
 						return;
@@ -256,12 +256,10 @@ public class SwingClient extends JFrame implements ActionListener {
 							.setContext(message.getText())
 							.setTargetPlayerId(palyerId)
 							.build();
-					
-					//构建请求
-					Request request = Request.valueOf(ModuleId.CHAT, ChatCmd.PRIVATE_CHAT, privateChatRequest.toByteArray());
-					client.sendRequest(request);
+					buildAndSendReq(ModuleId.CHAT, ChatCmd.PRIVATE_CHAT, privateChatRequest.toByteArray());
 				}
 			} catch (Exception e) {
+				LogUtil.error(e);
 				tips.setText("无法连接服务器");
 			}
 			break;
@@ -277,6 +275,14 @@ public class SwingClient extends JFrame implements ActionListener {
 			client.shutdown();
 		}
 		super.processWindowEvent(e);
+	}
+	
+	/**
+	 * 构建并发送请求
+	 */
+	private void buildAndSendReq(short moduleId,short cmdId,byte[] data){
+		Request request = Request.valueOf(moduleId,cmdId, data);
+		client.sendRequest(request);
 	}
 
 	public JTextArea getChatContext() {

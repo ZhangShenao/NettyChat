@@ -1,5 +1,9 @@
 /target/
 /client.debug.log
+<<<<<<< HEAD
 /client.debug.log.2017-11-27
 /client.info.log
 /client.info.log.2017-11-27
+=======
+/client.info.log
+>>>>>>> 024b6379fd416b9ddbbd2b011765f11bdc777da9

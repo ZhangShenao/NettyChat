@@ -1,6 +1,7 @@
 package william.nettyhandler;
 
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
 import io.netty.channel.SimpleChannelInboundHandler;
 import william.core.entity.Response;
 import william.invoker.Invoker;
@@ -44,5 +45,12 @@ public class ChatClientHandler extends SimpleChannelInboundHandler<Response>{
 		}
 		
 		invoker.invoke(msg.getStateCode(),msg.getData());
+	}
+	
+	@Override
+	public void close(ChannelHandlerContext ctx, ChannelPromise promise)
+			throws Exception {
+		super.close(ctx, promise);
+		LogUtil.debug(ctx.channel().localAddress() + "链路关闭");
 	}
 }

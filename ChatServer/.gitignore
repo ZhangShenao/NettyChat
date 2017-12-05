@@ -1,7 +1,11 @@
 /target/
 /server.debug.log
+<<<<<<< HEAD
 /server.debug.log.2017-11-27
 /server.debug.log.2017-11-29
 /server.info.log
 /server.info.log.2017-11-27
 /server.info.log.2017-11-29
+=======
+/server.info.log
+>>>>>>> 024b6379fd416b9ddbbd2b011765f11bdc777da9

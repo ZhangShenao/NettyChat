@@ -1,17 +1,17 @@
 package william.module.player.handler;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import com.google.protobuf.InvalidProtocolBufferException;
-
 import william.core.entity.Result;
 import william.core.entity.ResultCode;
 import william.core.session.Session;
 import william.module.player.proto.PlayerModule;
 import william.module.player.proto.PlayerModule.LoginRequest;
 import william.module.player.proto.PlayerModule.PlayerResponse;
-import william.module.player.proto.PlayerModule.PlayerResponse.Builder;
 import william.module.player.proto.PlayerModule.RegisterRequest;
+import william.module.player.service.PlayerService;
+import william.util.EmptyUtil;
 import william.util.LogUtil;
 
 /**
@@ -22,19 +22,24 @@ import william.util.LogUtil;
  */
 @Component
 public class PlayerHandlerImpl implements PlayerHandler{
-
+	@Autowired
+	private PlayerService playerService;
+	
 	@Override
 	public Result<PlayerResponse> registerAndLogin(Session session, byte[] data) {
-		PlayerResponse playerResponse = null;
-		
 		try {
 			RegisterRequest registerRequest = PlayerModule.RegisterRequest.parseFrom(data);
+			
+			//数据校验
+			String playerName = registerRequest.getPlayerName();
+			String passward = registerRequest.getPassward();
 			LogUtil.info(registerRequest.getPlayerName() + "请求注册并登录");
-			Builder builder = PlayerModule.PlayerResponse.newBuilder();
-			builder.setPlayerId(1L);
-			builder.setPlayerName(registerRequest.getPlayerName());
-			playerResponse = builder.build();
-			return Result.success(playerResponse);
+			if (EmptyUtil.isEmpty(playerName) || EmptyUtil.isEmpty(passward)){
+				return Result.error(ResultCode.PLAYERNAME_NULL);
+			}
+			//执行业务
+			PlayerResponse response = playerService.registerAndLogin(session, playerName, passward);
+			return Result.success(response);
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
@@ -43,16 +48,19 @@ public class PlayerHandlerImpl implements PlayerHandler{
 
 	@Override
 	public Result<PlayerResponse> login(Session session, byte[] data) {
-		PlayerResponse playerResponse = null;
-		
 		try {
 			LoginRequest loginRequest = PlayerModule.LoginRequest.parseFrom(data);
+			
+			//数据校验
+			String playerName = loginRequest.getPlayerName();
+			String passward = loginRequest.getPassward();
 			LogUtil.info(loginRequest.getPlayerName() + "请求登录");
-			Builder builder = PlayerModule.PlayerResponse.newBuilder();
-			builder.setPlayerId(1L);
-			builder.setPlayerName(loginRequest.getPlayerName());
-			playerResponse = builder.build();
-			return Result.success(playerResponse);
+			if (EmptyUtil.isEmpty(playerName) || EmptyUtil.isEmpty(passward)){
+				return Result.error(ResultCode.PLAYERNAME_NULL);
+			}
+			//执行业务
+			PlayerResponse response = playerService.login(session, playerName, passward);
+			return Result.success(response);
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);

@@ -10,10 +10,10 @@ import william.core.entity.ResultCode;
 import william.core.serial.Serializer;
 import william.core.session.NettySessionImpl;
 import william.core.session.Session;
+import william.entity.player.Player;
 import william.invoker.Invoker;
 import william.invoker.InvokerHolder;
 import william.module.ModuleId;
-import william.module.Player;
 import william.util.LogUtil;
 
 /**
@@ -69,9 +69,6 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 				else if (content instanceof GeneratedMessage){
 					GeneratedMessage generatedMessage = (GeneratedMessage)content;
 					response.setData(generatedMessage.toByteArray());
-				}
-				else {
-					response.setStateCode(ResultCode.WRONG_MSG_TYPE);
 				}
 				LogUtil.error("处理客户端请求成功,响应结果: " + result.getResultCode());
 			}
