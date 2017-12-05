@@ -30,7 +30,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			try {
 				PlayerResponse playerResponse = PlayerModule.PlayerResponse.parseFrom(data);
 				
-				LogUtil.info("注册并登录成功playerId: " + playerResponse.getPlayerId() + ",playerName: " + playerResponse.getPlayerName());
+				LogUtil.info("注册并登录成功。playerId: " + playerResponse.getPlayerId() + ",playerName: " + playerResponse.getPlayerName());
 				swingClient.setPlayerResponse(playerResponse);
 				swingClient.getTips().setText("注册并登录成功");
 			} catch (InvalidProtocolBufferException e) {
@@ -46,7 +46,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 		if (ResultCode.SUCCESS == resultCode){
 			try {
 				PlayerResponse playerResponse = PlayerModule.PlayerResponse.parseFrom(data);
-				LogUtil.info("注册并登录成功playerId: " + playerResponse.getPlayerId() + ",playerName: " + playerResponse.getPlayerName());
+				LogUtil.info("登录成功。playerId: " + playerResponse.getPlayerId() + ",playerName: " + playerResponse.getPlayerName());
 				swingClient.setPlayerResponse(playerResponse);
 				swingClient.getTips().setText("登录成功");
 			} catch (InvalidProtocolBufferException e) {

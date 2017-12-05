@@ -1,0 +1,180 @@
+2017-12-04 13:22:53  [ main:8 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Mon Dec 04 13:22:53 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 13:22:54  [ main:134 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 13:22:54  [ main:851 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 13:22:54  [ main:900 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6e233c17: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,playerHandlerImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16571 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 => /127.0.0.1:8080] REGISTERED
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16571 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 => /127.0.0.1:8080] ACTIVE
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16668 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 07 31 32 33 34 35 36 37                |be..1234567     |
++--------+-------------------------------------------------+----------------+
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16673 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16686 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16689 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16689 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16690 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-04 13:23:10  [ nioEventLoopGroup-3-1:16690 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 => /127.0.0.1:8080] FLUSH
+2017-12-04 13:23:17  [ nioEventLoopGroup-3-1:23296 ] - [ INFO ]  [id: 0x7c6ce0f6, /127.0.0.1:51556 :> /127.0.0.1:8080] INACTIVE
+2017-12-04 18:08:44  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Mon Dec 04 18:08:44 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 18:08:44  [ main:47 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 18:08:44  [ main:312 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 18:08:44  [ main:343 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:08:44  [ main:359 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatHandlerImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [william.module.chat.service.ChatService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-12-04 18:08:44  [ main:359 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:10:07  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Mon Dec 04 18:10:07 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 18:10:07  [ main:63 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 18:10:07  [ main:343 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 18:10:07  [ main:375 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:10:07  [ main:390 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatHandlerImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [william.module.chat.service.ChatService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-12-04 18:10:07  [ main:390 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:10:47  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Mon Dec 04 18:10:47 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 18:10:47  [ main:47 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 18:10:47  [ main:328 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 18:10:47  [ main:343 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18583 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 => /127.0.0.1:8080] REGISTERED
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18583 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 => /127.0.0.1:8080] ACTIVE
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18598 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18598 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18615 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18615 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18615 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18615 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:11:06  [ nioEventLoopGroup-3-1:18615 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 => /127.0.0.1:8080] FLUSH
+2017-12-04 18:11:41  [ nioEventLoopGroup-3-1:54230 ] - [ INFO ]  [id: 0xb4195cea, /127.0.0.1:52901 :> /127.0.0.1:8080] INACTIVE
+2017-12-04 18:14:01  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Mon Dec 04 18:14:01 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 18:14:01  [ main:46 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 18:14:01  [ main:312 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 18:14:01  [ main:327 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14495 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 => /127.0.0.1:8080] REGISTERED
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14495 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 => /127.0.0.1:8080] ACTIVE
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14495 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:14:15  [ nioEventLoopGroup-3-1:14512 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 => /127.0.0.1:8080] FLUSH
+2017-12-04 18:14:25  [ nioEventLoopGroup-3-1:23684 ] - [ INFO ]  [id: 0xccbeb3e5, /127.0.0.1:53016 :> /127.0.0.1:8080] INACTIVE
+2017-12-04 18:14:43  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Mon Dec 04 18:14:43 GMT+08:00 2017]; root of context hierarchy
+2017-12-04 18:14:43  [ main:63 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-04 18:14:43  [ main:328 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-04 18:14:43  [ main:344 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647f84c9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11406 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] REGISTERED
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11406 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] ACTIVE
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11422 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4b 6f |..9...........Ko|
+|00000010| 62 65 20 12 06 31 32 33 34 35 36                |be ..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11422 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11438 ] - [ INFO ]  Kobe 请求注册并登录
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11438 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11438 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11438 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 01 12 05 4b 6f 62 65 20                      |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:14:54  [ nioEventLoopGroup-3-1:11438 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] FLUSH
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20097 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 => /127.0.0.1:8080] REGISTERED
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20097 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 => /127.0.0.1:8080] ACTIVE
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  James请求注册并登录
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 01 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:15:03  [ nioEventLoopGroup-3-2:20113 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 => /127.0.0.1:8080] FLUSH
+2017-12-04 18:16:18  [ nioEventLoopGroup-3-1:95446 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 => /127.0.0.1:8080] RECEIVED: 22B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0a 08 01 12 06 |..9.............|
+|00000010| 48 65 6c 6c 6f 20                               |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-04 18:16:18  [ nioEventLoopGroup-3-1:95446 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-04 18:16:18  [ nioEventLoopGroup-3-1:95446 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NoClassDefFoundError: william/module/Player
+	at william.nettyhandler.ChatServerHandler.handleChatMsg(ChatServerHandler.java:106)
+	at william.nettyhandler.ChatServerHandler.handleMessage(ChatServerHandler.java:59)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:29)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:282)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: william.module.Player
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 23 more
+2017-12-04 18:17:12  [ nioEventLoopGroup-3-2:149078 ] - [ INFO ]  [id: 0xc61d1c05, /127.0.0.1:53082 :> /127.0.0.1:8080] INACTIVE
+2017-12-04 18:17:13  [ nioEventLoopGroup-3-1:150390 ] - [ INFO ]  [id: 0x5e3ac171, /127.0.0.1:53065 :> /127.0.0.1:8080] INACTIVE
