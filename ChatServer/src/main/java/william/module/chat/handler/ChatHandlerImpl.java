@@ -1,7 +1,7 @@
 package william.module.chat.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import william.core.entity.Result;
 import william.core.entity.ResultCode;
 import william.module.chat.proto.ChatModule;
@@ -18,7 +18,7 @@ import com.google.protobuf.InvalidProtocolBufferException;
  * @author ZhangShenao
  * @date 2017年12月4日
  */
-@Component
+@Controller
 public class ChatHandlerImpl implements ChatHandler{
 	@Autowired
 	private ChatService chatService;

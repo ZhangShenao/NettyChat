@@ -1,7 +1,7 @@
 package william.module.player.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import com.google.protobuf.InvalidProtocolBufferException;
 import william.core.entity.ResultCode;
 import william.module.player.proto.PlayerModule;
@@ -16,7 +16,7 @@ import william.util.LogUtil;
  * @author ZhangShenao
  * @date 2017年12月2日 下午2:08:00
  */
-@Component
+@Controller
 public class PlayerHandlerImpl implements PlayerHandler{
 	@Autowired
 	private SwingClient swingClient;

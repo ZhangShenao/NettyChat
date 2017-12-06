@@ -1,0 +1,342 @@
+2017-12-05 18:58:23  [ main:10 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d4cadc4: startup date [Tue Dec 05 18:58:23 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 18:58:23  [ main:74 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 18:58:23  [ main:405 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 18:58:23  [ main:428 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8577 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] REGISTERED
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8577 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8591 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 09 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 01 31                                  |be..1           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8593 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8604 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8609 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8610 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8610 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8611 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24870 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] REGISTERED
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24871 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] RECEIVED: 22B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0a 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 01 32                               |mes..2          |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  James请求注册并登录
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24889 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41232 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 04 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41233 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41238 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hello
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41239 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41239 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41240 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41241 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73891 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73892 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73892 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hi
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73893 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73893 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73894 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73894 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93323 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93323 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93324 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hi
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93325 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93325 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93326 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93327 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:00:10  [ nioEventLoopGroup-3-1:106989 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:00:12  [ nioEventLoopGroup-3-2:109229 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:01:52  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4e1a6fb3: startup date [Tue Dec 05 19:01:52 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 19:01:53  [ main:66 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 19:01:53  [ main:383 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 19:01:53  [ main:414 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c6061a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37935 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] REGISTERED
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37935 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37950 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:32  [ nioEventLoopGroup-3-1:39164 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 19:02:41  [ nioEventLoopGroup-3-1:48531 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66569 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66570 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66574 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66575 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99772 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] REGISTERED
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99772 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99791 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:34  [ nioEventLoopGroup-3-2:101494 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 19:03:43  [ nioEventLoopGroup-3-2:110627 ] - [ INFO ]  James请求注册并登录
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115896 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115897 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115898 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115899 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:04:03  [ nioEventLoopGroup-3-2:130831 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:04:05  [ nioEventLoopGroup-3-2:132109 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 19:05:54  [ nioEventLoopGroup-3-2:241807 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:34:31  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Tue Dec 05 20:34:31 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:34:32  [ main:78 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:34:32  [ main:359 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 20:34:32  [ main:374 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20811 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20811 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  James请求注册并登录
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at william.invoker.Invoker.invoke(Invoker.java:28)
+	at william.nettyhandler.ChatServerHandler.handleChatMsg(ChatServerHandler.java:107)
+	at william.nettyhandler.ChatServerHandler.handleMessage(ChatServerHandler.java:59)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:29)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:282)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.google.protobuf.UninitializedMessageException: Message missing required fields: sendPlayerName
+	at com.google.protobuf.AbstractMessage$Builder.newUninitializedMessageException(AbstractMessage.java:605)
+	at william.module.chat.proto.ChatModule$ChatResponse$Builder.build(ChatModule.java:1311)
+	at william.module.chat.service.ChatServiceImpl.privateChat(ChatServiceImpl.java:36)
+	at william.module.chat.handler.ChatHandlerImpl.privateChat(ChatHandlerImpl.java:56)
+	... 28 more
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:3
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:38  [ main:15 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Tue Dec 05 20:36:38 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:36:38  [ main:62 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:36:38  [ main:312 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 20:36:38  [ main:343 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8898 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8898 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17221 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17221 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  James请求注册并登录
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  返回请求:module:2 cmd:101 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  返回请求:module:2 cmd:101 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] WRITE: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:37:06  [ nioEventLoopGroup-3-1:28510 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:37:07  [ nioEventLoopGroup-3-2:29778 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 :> /127.0.0.1:8080] INACTIVE

@@ -22,7 +22,7 @@
 	<!-- 引入配置 -->
 	<context:property-placeholder location="classpath:/*.properties" />
 
-	<!-- 简单的数据库连接池 
+	<!-- 简单的数据库连接池 -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${jdbc.driverClassName}" />
@@ -30,9 +30,9 @@
 		<property name="username" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 	</bean>
-	-->
 	
-	<!-- session工厂 
+	
+	<!-- session工厂 -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -49,11 +49,11 @@
 			</list>
 		</property>
 	</bean>
-	-->
 	
-	<!-- hibernateTemplate配置 
+	
+	<!-- hibernateTemplate配置 -->
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	-->
+	
 </beans>

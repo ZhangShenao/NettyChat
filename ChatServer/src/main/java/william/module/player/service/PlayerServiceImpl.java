@@ -1,15 +1,16 @@
 package william.module.player.service;
 
-import java.util.concurrent.atomic.AtomicLong;
-
-import org.springframework.stereotype.Component;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import william.core.entity.ResultCode;
+import william.core.exception.ErrorCodeException;
 import william.core.session.Session;
 import william.core.session.SessionManager;
 import william.entity.player.Player;
+import william.module.player.dao.PlayerDao;
 import william.module.player.proto.PlayerModule;
 import william.module.player.proto.PlayerModule.PlayerResponse;
-import william.module.player.proto.PlayerModule.PlayerResponse.Builder;
+import william.util.EmptyUtil;
 
 /**
  * 
@@ -17,38 +18,69 @@ import william.module.player.proto.PlayerModule.PlayerResponse.Builder;
  * @author ZhangShenao
  * @date 2017年12月4日
  */
-@Component
+@Service
 public class PlayerServiceImpl implements PlayerService{
-	private static final AtomicLong playerIdGeneator = new AtomicLong(0L);
+	@Autowired
+	private PlayerDao playerDao;
 	
 	@Override
 	public PlayerResponse registerAndLogin(Session session, String playerName,
 			String passward) {
-		//TODO 测试代码
+		//校验重复注册
+		Player existPlayer = playerDao.getPlayerByName(playerName);
+		if (null != existPlayer){
+			throw new ErrorCodeException(ResultCode.PLAYER_EXIST);
+		}
 		
-		//创建新用户
+		//注册新玩家
 		Player player = new Player();
-		player.setPlayerKey(playerIdGeneator.addAndGet(1L));
 		player.setPlayerName(playerName);
 		player.setPassward(passward);
+		playerDao.createPlayer(player);
+		
+		//注册后登录
 		return login(session, playerName, passward);
 	}
 
 	@Override
 	public PlayerResponse login(Session session, String playerName,
 			String passward) {
-		Player player = new Player();
-		player.setPlayerKey(playerIdGeneator.addAndGet(1L));
-		player.setPlayerName(playerName);
-		player.setPassward(passward);
-		session.setAttachment(player);
+		//判断当前会话是否已经登录
+		if (null != session.getAttachment()){
+			throw new ErrorCodeException(ResultCode.HAS_LOGIN);
+		}
 		
-		//添加新用户的Session
+		//判断玩家是否存在
+		Player player = playerDao.getPlayerByName(playerName);
+		if (null == player){
+			throw new ErrorCodeException(ResultCode.PLAYER_NO_EXIST);
+		}
+		
+		//密码校验
+		if (EmptyUtil.isEmpty(passward) || !passward.equals(player.getPassward())){
+			throw new ErrorCodeException(ResultCode.PASSWARD_ERROR);
+		}
+		
+		//如果玩家在其他地方登录,则关闭原来的会话,并将原玩家踢下线
+		if (SessionManager.isOnline(player.getPlayerKey())){
+			Session removedSession = SessionManager.removeSession(player.getPlayerKey());
+			if (null != removedSession){
+				removedSession.removeAttachment();
+				removedSession.close();
+			}
+		}
+		
+		//加入在线玩家Session
+		session.setAttachment(player);
 		SessionManager.putSession(player.getPlayerKey(), session);
-		Builder builder = PlayerModule.PlayerResponse.newBuilder();
-		builder.setPlayerId(player.getPlayerKey());
-		builder.setPlayerName(player.getPlayerName());
-		return builder.build();
+		
+		// 创建Response传输对象返回
+		PlayerResponse playerResponse = PlayerModule.PlayerResponse.newBuilder()
+		.setPlayerId(player.getPlayerKey())
+		.setPlayerName(player.getPlayerName())
+		.setLevel(player.getLevel())
+		.setExp(player.getExp()).build();
+		return playerResponse;
 	}
 
 }

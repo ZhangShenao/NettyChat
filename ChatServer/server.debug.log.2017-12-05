@@ -1,0 +1,1006 @@
+2017-12-05 18:58:23  [ main:0 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:6 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:7 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 18:58:23  [ main:10 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d4cadc4: startup date [Tue Dec 05 18:58:23 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 18:58:23  [ main:63 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:63 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:63 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 18:58:23  [ main:74 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 18:58:23  [ main:86 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-12-05 18:58:23  [ main:113 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2017-12-05 18:58:23  [ main:118 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-12-05 18:58:23  [ main:119 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2017-12-05 18:58:23  [ main:159 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+2017-12-05 18:58:23  [ main:166 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-12-05 18:58:23  [ main:178 ] - [ DEBUG ]  Loading bean definitions
+2017-12-05 18:58:23  [ main:189 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-12-05 18:58:23  [ main:216 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:217 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:217 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 18:58:23  [ main:230 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes\william]
+2017-12-05 18:58:23  [ main:231 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:233 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:233 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:235 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:236 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:237 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\main] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:238 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:238 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:239 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:240 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:240 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:241 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:241 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:242 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:242 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:244 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatCommon\target\classes\william]
+2017-12-05 18:58:23  [ main:244 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:245 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:245 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:245 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:246 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:247 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:247 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:248 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:249 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:249 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:249 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:251 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:251 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:252 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 18:58:23  [ main:254 ] - [ DEBUG ]  Resolved location pattern [classpath*:william/**/*.class] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player\Player.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request\PlayerLoginRequest.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response\PlayerLoginResponse.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\Invoker.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\InvokerHolder.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server$1.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\ServerMain.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler\ChatServerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketCommand.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ConstantValue.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant\ConnectionConst.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ChatMessage.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Request.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Response.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Result.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ResultCode.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\BufFactory.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\Serializer.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\NettySessionImpl.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\Session.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager$SingletonHolder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\ChatCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\ModuleId.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\PlayerCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\BaseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\CommonUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\EmptyUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\LogUtil.class]]
+2017-12-05 18:58:23  [ main:277 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class]
+2017-12-05 18:58:23  [ main:280 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class]
+2017-12-05 18:58:23  [ main:281 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class]
+2017-12-05 18:58:23  [ main:282 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class]
+2017-12-05 18:58:23  [ main:282 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class]
+2017-12-05 18:58:23  [ main:296 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class]
+2017-12-05 18:58:23  [ main:317 ] - [ DEBUG ]  Loaded 12 bean definitions from location pattern [applicationContext.xml]
+2017-12-05 18:58:23  [ main:317 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@2d4cadc4: org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0]; root of factory hierarchy
+2017-12-05 18:58:23  [ main:332 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 18:58:23  [ main:332 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 18:58:23  [ main:346 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:348 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 18:58:23  [ main:379 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 18:58:23  [ main:379 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 18:58:23  [ main:380 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:403 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes]
+2017-12-05 18:58:23  [ main:404 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/*.properties]
+2017-12-05 18:58:23  [ main:404 ] - [ DEBUG ]  Resolved location pattern [classpath:/*.properties] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]]
+2017-12-05 18:58:23  [ main:405 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 18:58:23  [ main:405 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:405 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 18:58:23  [ main:406 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2017-12-05 18:58:23  [ main:409 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:409 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:410 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:410 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:411 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:411 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:411 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:411 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:412 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 18:58:23  [ main:412 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 18:58:23  [ main:415 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:415 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 18:58:23  [ main:416 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 18:58:23  [ main:416 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 18:58:23  [ main:416 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:416 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 18:58:23  [ main:416 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 18:58:23  [ main:417 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 18:58:23  [ main:417 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:417 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 18:58:23  [ main:417 ] - [ DEBUG ]  Creating shared instance of singleton bean 'handlerScanner'
+2017-12-05 18:58:23  [ main:417 ] - [ DEBUG ]  Creating instance of bean 'handlerScanner'
+2017-12-05 18:58:23  [ main:419 ] - [ DEBUG ]  Eagerly caching bean 'handlerScanner' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:422 ] - [ DEBUG ]  Finished creating instance of bean 'handlerScanner'
+2017-12-05 18:58:23  [ main:424 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@40ae49d5]
+2017-12-05 18:58:23  [ main:426 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@523f0309]
+2017-12-05 18:58:23  [ main:428 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 18:58:23  [ main:428 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 18:58:23  [ main:428 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:428 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 18:58:23  [ main:428 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 18:58:23  [ main:429 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 18:58:23  [ main:429 ] - [ DEBUG ]  Creating shared instance of singleton bean 'server'
+2017-12-05 18:58:23  [ main:429 ] - [ DEBUG ]  Creating instance of bean 'server'
+2017-12-05 18:58:23  [ main:434 ] - [ DEBUG ]  Eagerly caching bean 'server' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:443 ] - [ DEBUG ]  Finished creating instance of bean 'server'
+2017-12-05 18:58:23  [ main:443 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatHandlerImpl'
+2017-12-05 18:58:23  [ main:444 ] - [ DEBUG ]  Creating instance of bean 'chatHandlerImpl'
+2017-12-05 18:58:23  [ main:448 ] - [ DEBUG ]  Registered injected element on class [william.module.chat.handler.ChatHandlerImpl]: AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 18:58:23  [ main:448 ] - [ DEBUG ]  Eagerly caching bean 'chatHandlerImpl' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:450 ] - [ DEBUG ]  Processing injected element of bean 'chatHandlerImpl': AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 18:58:23  [ main:451 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatServiceImpl'
+2017-12-05 18:58:23  [ main:452 ] - [ DEBUG ]  Creating instance of bean 'chatServiceImpl'
+2017-12-05 18:58:23  [ main:452 ] - [ DEBUG ]  Eagerly caching bean 'chatServiceImpl' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:453 ] - [ DEBUG ]  Finished creating instance of bean 'chatServiceImpl'
+2017-12-05 18:58:23  [ main:454 ] - [ DEBUG ]  Autowiring by type from bean name 'chatHandlerImpl' to bean named 'chatServiceImpl'
+2017-12-05 18:58:23  [ main:458 ] - [ DEBUG ]  Finished creating instance of bean 'chatHandlerImpl'
+2017-12-05 18:58:23  [ main:458 ] - [ DEBUG ]  Returning cached instance of singleton bean 'chatServiceImpl'
+2017-12-05 18:58:23  [ main:459 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerHandlerImpl'
+2017-12-05 18:58:23  [ main:459 ] - [ DEBUG ]  Creating instance of bean 'playerHandlerImpl'
+2017-12-05 18:58:23  [ main:460 ] - [ DEBUG ]  Registered injected element on class [william.module.player.handler.PlayerHandlerImpl]: AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 18:58:23  [ main:460 ] - [ DEBUG ]  Eagerly caching bean 'playerHandlerImpl' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:464 ] - [ DEBUG ]  Processing injected element of bean 'playerHandlerImpl': AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 18:58:23  [ main:464 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerServiceImpl'
+2017-12-05 18:58:23  [ main:464 ] - [ DEBUG ]  Creating instance of bean 'playerServiceImpl'
+2017-12-05 18:58:23  [ main:465 ] - [ DEBUG ]  Eagerly caching bean 'playerServiceImpl' to allow for resolving potential circular references
+2017-12-05 18:58:23  [ main:466 ] - [ DEBUG ]  Finished creating instance of bean 'playerServiceImpl'
+2017-12-05 18:58:23  [ main:466 ] - [ DEBUG ]  Autowiring by type from bean name 'playerHandlerImpl' to bean named 'playerServiceImpl'
+2017-12-05 18:58:23  [ main:466 ] - [ DEBUG ]  Finished creating instance of bean 'playerHandlerImpl'
+2017-12-05 18:58:23  [ main:467 ] - [ DEBUG ]  Returning cached instance of singleton bean 'playerServiceImpl'
+2017-12-05 18:58:23  [ main:467 ] - [ DEBUG ]  Returning cached instance of singleton bean 'handlerScanner'
+2017-12-05 18:58:23  [ main:467 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 18:58:23  [ main:467 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 18:58:23  [ main:468 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@75371ddd]
+2017-12-05 18:58:23  [ main:468 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-12-05 18:58:23  [ main:470 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-12-05 18:58:23  [ main:470 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-12-05 18:58:23  [ main:470 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-12-05 18:58:23  [ main:470 ] - [ DEBUG ]  Returning cached instance of singleton bean 'server'
+2017-12-05 18:58:23  [ main:481 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2017-12-05 18:58:23  [ main:485 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-12-05 18:58:23  [ main:502 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-12-05 18:58:23  [ main:503 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-12-05 18:58:23  [ main:697 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-12-05 18:58:23  [ main:755 ] - [ DEBUG ]  -Dio.netty.processId: 6156 (auto-detected)
+2017-12-05 18:58:23  [ main:851 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0x163fd0f5220119b9
+2017-12-05 18:58:23  [ main:859 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-12-05 18:58:23  [ main:873 ] - [ DEBUG ]  Platform: Windows
+2017-12-05 18:58:23  [ main:874 ] - [ DEBUG ]  Java version: 7
+2017-12-05 18:58:23  [ main:874 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-12-05 18:58:23  [ main:875 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-12-05 18:58:23  [ main:876 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-12-05 18:58:23  [ main:876 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-12-05 18:58:23  [ main:876 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-12-05 18:58:23  [ main:876 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-12-05 18:58:23  [ main:876 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-12-05 18:58:23  [ main:877 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-12-05 18:58:24  [ main:950 ] - [ DEBUG ]  Javassist: available
+2017-12-05 18:58:24  [ main:951 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-12-05 18:58:24  [ main:1024 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-12-05 18:58:24  [ main:1025 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-12-05 18:58:24  [ main:1025 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-12-05 18:58:24  [ main:1038 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8571 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.ResponseMatcher
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8574 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.RequestMatcher
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8577 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] REGISTERED
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8577 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8583 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8591 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 09 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 01 31                                  |be..1           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8593 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8604 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8609 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8610 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8610 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-3-1:8611 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24870 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] REGISTERED
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24871 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] RECEIVED: 22B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0a 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 01 32                               |mes..2          |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24887 ] - [ INFO ]  James请求注册并登录
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24888 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-3-2:24889 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41232 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 04 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41233 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41238 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hello
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41239 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41239 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41240 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:04  [ nioEventLoopGroup-3-1:41241 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73891 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73892 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73892 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hi
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73893 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73893 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73894 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-3-1:73894 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93323 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93323 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93324 ] - [ INFO ]  playerKey:2向: 4 发送消息: Hi
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93325 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93325 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:13
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93326 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-3-1:93327 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:00:10  [ nioEventLoopGroup-3-1:106989 ] - [ INFO ]  [id: 0xfb3f84e0, /127.0.0.1:53460 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:00:12  [ nioEventLoopGroup-3-2:109229 ] - [ INFO ]  [id: 0xf207b095, /127.0.0.1:53477 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:01:52  [ main:0 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 19:01:52  [ main:5 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 19:01:52  [ main:6 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 19:01:52  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4e1a6fb3: startup date [Tue Dec 05 19:01:52 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 19:01:52  [ main:52 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 19:01:52  [ main:53 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 19:01:52  [ main:53 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 19:01:53  [ main:66 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 19:01:53  [ main:77 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-12-05 19:01:53  [ main:102 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2017-12-05 19:01:53  [ main:107 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-12-05 19:01:53  [ main:109 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2017-12-05 19:01:53  [ main:146 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+2017-12-05 19:01:53  [ main:153 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-12-05 19:01:53  [ main:168 ] - [ DEBUG ]  Loading bean definitions
+2017-12-05 19:01:53  [ main:179 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-12-05 19:01:53  [ main:207 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 19:01:53  [ main:207 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 19:01:53  [ main:207 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 19:01:53  [ main:220 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes\william]
+2017-12-05 19:01:53  [ main:220 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:221 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:222 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:222 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:223 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:223 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:224 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\main] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:225 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:225 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:225 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:226 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:226 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:227 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:228 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:229 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:230 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:232 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatCommon\target\classes\william]
+2017-12-05 19:01:53  [ main:233 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:233 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:235 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:236 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:237 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:237 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:238 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:238 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:239 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:240 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:240 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:242 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 19:01:53  [ main:243 ] - [ DEBUG ]  Resolved location pattern [classpath*:william/**/*.class] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player\Player.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request\PlayerLoginRequest.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response\PlayerLoginResponse.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\Invoker.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\InvokerHolder.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server$1.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\ServerMain.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler\ChatServerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketCommand.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ConstantValue.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant\ConnectionConst.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ChatMessage.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Request.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Response.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Result.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ResultCode.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\BufFactory.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\Serializer.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\NettySessionImpl.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\Session.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager$SingletonHolder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\ChatCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\ModuleId.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\PlayerCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\BaseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\CommonUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\EmptyUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\LogUtil.class]]
+2017-12-05 19:01:53  [ main:267 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class]
+2017-12-05 19:01:53  [ main:270 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class]
+2017-12-05 19:01:53  [ main:271 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class]
+2017-12-05 19:01:53  [ main:272 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class]
+2017-12-05 19:01:53  [ main:272 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class]
+2017-12-05 19:01:53  [ main:273 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class]
+2017-12-05 19:01:53  [ main:295 ] - [ DEBUG ]  Loaded 12 bean definitions from location pattern [applicationContext.xml]
+2017-12-05 19:01:53  [ main:296 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@4e1a6fb3: org.springframework.beans.factory.support.DefaultListableBeanFactory@2c6061a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0]; root of factory hierarchy
+2017-12-05 19:01:53  [ main:311 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 19:01:53  [ main:312 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 19:01:53  [ main:325 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 19:01:53  [ main:352 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 19:01:53  [ main:353 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 19:01:53  [ main:354 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:381 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes]
+2017-12-05 19:01:53  [ main:382 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/*.properties]
+2017-12-05 19:01:53  [ main:382 ] - [ DEBUG ]  Resolved location pattern [classpath:/*.properties] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]]
+2017-12-05 19:01:53  [ main:383 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 19:01:53  [ main:383 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2017-12-05 19:01:53  [ main:383 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 19:01:53  [ main:384 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2017-12-05 19:01:53  [ main:388 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:388 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:389 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:389 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:389 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:389 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:390 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:390 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:390 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 19:01:53  [ main:390 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 19:01:53  [ main:394 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:395 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 19:01:53  [ main:395 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 19:01:53  [ main:395 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 19:01:53  [ main:396 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:396 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 19:01:53  [ main:396 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 19:01:53  [ main:396 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 19:01:53  [ main:397 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:397 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 19:01:53  [ main:398 ] - [ DEBUG ]  Creating shared instance of singleton bean 'handlerScanner'
+2017-12-05 19:01:53  [ main:398 ] - [ DEBUG ]  Creating instance of bean 'handlerScanner'
+2017-12-05 19:01:53  [ main:400 ] - [ DEBUG ]  Eagerly caching bean 'handlerScanner' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:402 ] - [ DEBUG ]  Finished creating instance of bean 'handlerScanner'
+2017-12-05 19:01:53  [ main:410 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@4006c7be]
+2017-12-05 19:01:53  [ main:412 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@77df3248]
+2017-12-05 19:01:53  [ main:414 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c6061a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Creating shared instance of singleton bean 'server'
+2017-12-05 19:01:53  [ main:414 ] - [ DEBUG ]  Creating instance of bean 'server'
+2017-12-05 19:01:53  [ main:418 ] - [ DEBUG ]  Eagerly caching bean 'server' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:420 ] - [ DEBUG ]  Finished creating instance of bean 'server'
+2017-12-05 19:01:53  [ main:420 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatHandlerImpl'
+2017-12-05 19:01:53  [ main:420 ] - [ DEBUG ]  Creating instance of bean 'chatHandlerImpl'
+2017-12-05 19:01:53  [ main:424 ] - [ DEBUG ]  Registered injected element on class [william.module.chat.handler.ChatHandlerImpl]: AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 19:01:53  [ main:424 ] - [ DEBUG ]  Eagerly caching bean 'chatHandlerImpl' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:427 ] - [ DEBUG ]  Processing injected element of bean 'chatHandlerImpl': AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 19:01:53  [ main:431 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatServiceImpl'
+2017-12-05 19:01:53  [ main:431 ] - [ DEBUG ]  Creating instance of bean 'chatServiceImpl'
+2017-12-05 19:01:53  [ main:432 ] - [ DEBUG ]  Eagerly caching bean 'chatServiceImpl' to allow for resolving potential circular references
+2017-12-05 19:01:53  [ main:435 ] - [ DEBUG ]  Finished creating instance of bean 'chatServiceImpl'
+2017-12-05 19:01:53  [ main:435 ] - [ DEBUG ]  Autowiring by type from bean name 'chatHandlerImpl' to bean named 'chatServiceImpl'
+2017-12-05 19:01:59  [ main:7009 ] - [ DEBUG ]  Finished creating instance of bean 'chatHandlerImpl'
+2017-12-05 19:01:59  [ main:7010 ] - [ DEBUG ]  Returning cached instance of singleton bean 'chatServiceImpl'
+2017-12-05 19:01:59  [ main:7010 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerHandlerImpl'
+2017-12-05 19:01:59  [ main:7011 ] - [ DEBUG ]  Creating instance of bean 'playerHandlerImpl'
+2017-12-05 19:01:59  [ main:7015 ] - [ DEBUG ]  Registered injected element on class [william.module.player.handler.PlayerHandlerImpl]: AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 19:01:59  [ main:7016 ] - [ DEBUG ]  Eagerly caching bean 'playerHandlerImpl' to allow for resolving potential circular references
+2017-12-05 19:01:59  [ main:7032 ] - [ DEBUG ]  Processing injected element of bean 'playerHandlerImpl': AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 19:01:59  [ main:7033 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerServiceImpl'
+2017-12-05 19:01:59  [ main:7034 ] - [ DEBUG ]  Creating instance of bean 'playerServiceImpl'
+2017-12-05 19:01:59  [ main:7036 ] - [ DEBUG ]  Eagerly caching bean 'playerServiceImpl' to allow for resolving potential circular references
+2017-12-05 19:01:59  [ main:7040 ] - [ DEBUG ]  Finished creating instance of bean 'playerServiceImpl'
+2017-12-05 19:01:59  [ main:7040 ] - [ DEBUG ]  Autowiring by type from bean name 'playerHandlerImpl' to bean named 'playerServiceImpl'
+2017-12-05 19:02:00  [ main:8018 ] - [ DEBUG ]  Finished creating instance of bean 'playerHandlerImpl'
+2017-12-05 19:02:00  [ main:8019 ] - [ DEBUG ]  Returning cached instance of singleton bean 'playerServiceImpl'
+2017-12-05 19:02:00  [ main:8020 ] - [ DEBUG ]  Returning cached instance of singleton bean 'handlerScanner'
+2017-12-05 19:02:00  [ main:8020 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 19:02:00  [ main:8021 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 19:02:00  [ main:8027 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@d3f4809]
+2017-12-05 19:02:00  [ main:8029 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-12-05 19:02:00  [ main:8035 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-12-05 19:02:00  [ main:8035 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-12-05 19:02:00  [ main:8036 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-12-05 19:02:00  [ main:8036 ] - [ DEBUG ]  Returning cached instance of singleton bean 'server'
+2017-12-05 19:02:01  [ main:8062 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2017-12-05 19:02:01  [ main:8067 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-12-05 19:02:01  [ main:8085 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-12-05 19:02:01  [ main:8085 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-12-05 19:02:01  [ main:8293 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-12-05 19:02:01  [ main:8297 ] - [ DEBUG ]  -Dio.netty.processId: 5240 (auto-detected)
+2017-12-05 19:02:01  [ main:8375 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0xe0ce1b2c1fc86eb7
+2017-12-05 19:02:01  [ main:8383 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-12-05 19:02:01  [ main:8398 ] - [ DEBUG ]  Platform: Windows
+2017-12-05 19:02:01  [ main:8399 ] - [ DEBUG ]  Java version: 7
+2017-12-05 19:02:01  [ main:8399 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-12-05 19:02:01  [ main:8400 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-12-05 19:02:01  [ main:8400 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-12-05 19:02:01  [ main:8400 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-12-05 19:02:01  [ main:8400 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-12-05 19:02:01  [ main:8401 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-12-05 19:02:01  [ main:8401 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-12-05 19:02:01  [ main:8401 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-12-05 19:02:01  [ main:8472 ] - [ DEBUG ]  Javassist: available
+2017-12-05 19:02:01  [ main:8472 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-12-05 19:02:01  [ main:8537 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-12-05 19:02:01  [ main:8538 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-12-05 19:02:01  [ main:8538 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-12-05 19:02:01  [ main:8548 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37924 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.ResponseMatcher
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37932 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.RequestMatcher
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37935 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] REGISTERED
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37935 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37941 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-12-05 19:02:30  [ nioEventLoopGroup-3-1:37950 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:32  [ nioEventLoopGroup-3-1:39164 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 19:02:41  [ nioEventLoopGroup-3-1:48531 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66569 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66570 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66574 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:59  [ nioEventLoopGroup-3-1:66575 ] - [ INFO ]  [id: 0x879493ae, /127.0.0.1:53533 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99772 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] REGISTERED
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99772 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:03:32  [ nioEventLoopGroup-3-2:99791 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:34  [ nioEventLoopGroup-3-2:101494 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 19:03:43  [ nioEventLoopGroup-3-2:110627 ] - [ INFO ]  James请求注册并登录
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115896 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115897 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115898 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:48  [ nioEventLoopGroup-3-2:115899 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:04:03  [ nioEventLoopGroup-3-2:130831 ] - [ INFO ]  [id: 0x668f5810, /127.0.0.1:53554 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:04:05  [ nioEventLoopGroup-3-2:132109 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 19:05:54  [ nioEventLoopGroup-3-2:241807 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:34:31  [ main:0 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:34:31  [ main:0 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:34:31  [ main:0 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:34:31  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Tue Dec 05 20:34:31 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:34:32  [ main:62 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:62 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:62 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:34:32  [ main:78 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:34:32  [ main:78 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-12-05 20:34:32  [ main:109 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2017-12-05 20:34:32  [ main:109 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-12-05 20:34:32  [ main:109 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2017-12-05 20:34:32  [ main:140 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+2017-12-05 20:34:32  [ main:156 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-12-05 20:34:32  [ main:156 ] - [ DEBUG ]  Loading bean definitions
+2017-12-05 20:34:32  [ main:172 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-12-05 20:34:32  [ main:203 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:203 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:203 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:34:32  [ main:203 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes\william]
+2017-12-05 20:34:32  [ main:203 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\main] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatCommon\target\classes\william]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:218 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:234 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:34:32  [ main:234 ] - [ DEBUG ]  Resolved location pattern [classpath*:william/**/*.class] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player\Player.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request\PlayerLoginRequest.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response\PlayerLoginResponse.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\Invoker.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\InvokerHolder.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server$1.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\ServerMain.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler\ChatServerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketCommand.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ConstantValue.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant\ConnectionConst.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ChatMessage.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Request.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Response.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Result.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ResultCode.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\BufFactory.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\Serializer.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\NettySessionImpl.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\Session.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager$SingletonHolder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\ChatCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\ModuleId.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\PlayerCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\BaseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\CommonUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\EmptyUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\LogUtil.class]]
+2017-12-05 20:34:32  [ main:250 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class]
+2017-12-05 20:34:32  [ main:250 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class]
+2017-12-05 20:34:32  [ main:250 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class]
+2017-12-05 20:34:32  [ main:250 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class]
+2017-12-05 20:34:32  [ main:250 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class]
+2017-12-05 20:34:32  [ main:265 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class]
+2017-12-05 20:34:32  [ main:281 ] - [ DEBUG ]  Loaded 12 bean definitions from location pattern [applicationContext.xml]
+2017-12-05 20:34:32  [ main:281 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0]; root of factory hierarchy
+2017-12-05 20:34:32  [ main:296 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:34:32  [ main:296 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:34:32  [ main:312 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:312 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:34:32  [ main:328 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:34:32  [ main:328 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:34:32  [ main:328 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes]
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/*.properties]
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Resolved location pattern [classpath:/*.properties] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]]
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:359 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:34:32  [ main:359 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'handlerScanner'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'handlerScanner'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'handlerScanner' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'handlerScanner'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@cb6c1e9]
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@7107ed29]
+2017-12-05 20:34:32  [ main:374 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'server'
+2017-12-05 20:34:32  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'server'
+2017-12-05 20:34:32  [ main:390 ] - [ DEBUG ]  Eagerly caching bean 'server' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:390 ] - [ DEBUG ]  Finished creating instance of bean 'server'
+2017-12-05 20:34:32  [ main:390 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatHandlerImpl'
+2017-12-05 20:34:32  [ main:390 ] - [ DEBUG ]  Creating instance of bean 'chatHandlerImpl'
+2017-12-05 20:34:32  [ main:390 ] - [ DEBUG ]  Registered injected element on class [william.module.chat.handler.ChatHandlerImpl]: AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Eagerly caching bean 'chatHandlerImpl' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Processing injected element of bean 'chatHandlerImpl': AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatServiceImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Creating instance of bean 'chatServiceImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Eagerly caching bean 'chatServiceImpl' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Finished creating instance of bean 'chatServiceImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Autowiring by type from bean name 'chatHandlerImpl' to bean named 'chatServiceImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Finished creating instance of bean 'chatHandlerImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Returning cached instance of singleton bean 'chatServiceImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerHandlerImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Creating instance of bean 'playerHandlerImpl'
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Registered injected element on class [william.module.player.handler.PlayerHandlerImpl]: AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 20:34:32  [ main:406 ] - [ DEBUG ]  Eagerly caching bean 'playerHandlerImpl' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Processing injected element of bean 'playerHandlerImpl': AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerServiceImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Creating instance of bean 'playerServiceImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Eagerly caching bean 'playerServiceImpl' to allow for resolving potential circular references
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Finished creating instance of bean 'playerServiceImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Autowiring by type from bean name 'playerHandlerImpl' to bean named 'playerServiceImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Finished creating instance of bean 'playerHandlerImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'playerServiceImpl'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'handlerScanner'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@42367c17]
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-12-05 20:34:32  [ main:421 ] - [ DEBUG ]  Returning cached instance of singleton bean 'server'
+2017-12-05 20:34:32  [ main:437 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2017-12-05 20:34:32  [ main:437 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-12-05 20:34:32  [ main:452 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-12-05 20:34:32  [ main:452 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-12-05 20:34:32  [ main:671 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-12-05 20:34:32  [ main:671 ] - [ DEBUG ]  -Dio.netty.processId: 6156 (auto-detected)
+2017-12-05 20:34:32  [ main:750 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0x09baeb5cf9f6a59e
+2017-12-05 20:34:32  [ main:765 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  Platform: Windows
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  Java version: 7
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-12-05 20:34:32  [ main:781 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-12-05 20:34:32  [ main:843 ] - [ DEBUG ]  Javassist: available
+2017-12-05 20:34:32  [ main:843 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-12-05 20:34:32  [ main:906 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-12-05 20:34:32  [ main:906 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-12-05 20:34:32  [ main:906 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-12-05 20:34:32  [ main:921 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10334 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.ResponseMatcher
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.RequestMatcher
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10350 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10366 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-3-1:10382 ] - [ INFO ]  [id: 0x83757107, /127.0.0.1:54011 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20811 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20811 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  James请求注册并登录
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-3-2:20826 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31596 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ ERROR ]  
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at william.invoker.Invoker.invoke(Invoker.java:28)
+	at william.nettyhandler.ChatServerHandler.handleChatMsg(ChatServerHandler.java:107)
+	at william.nettyhandler.ChatServerHandler.handleMessage(ChatServerHandler.java:59)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:29)
+	at william.nettyhandler.ChatServerHandler.messageReceived(ChatServerHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:103)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:154)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:282)
+	at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelReadNow(ChannelHandlerInvokerUtil.java:74)
+	at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelRead(DefaultChannelHandlerInvoker.java:138)
+	at io.netty.channel.DefaultChannelHandlerContext.fireChannelRead(DefaultChannelHandlerContext.java:320)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:127)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.google.protobuf.UninitializedMessageException: Message missing required fields: sendPlayerName
+	at com.google.protobuf.AbstractMessage$Builder.newUninitializedMessageException(AbstractMessage.java:605)
+	at william.module.chat.proto.ChatModule$ChatResponse$Builder.build(ChatModule.java:1311)
+	at william.module.chat.service.ChatServiceImpl.privateChat(ChatServiceImpl.java:36)
+	at william.module.chat.handler.ChatHandlerImpl.privateChat(ChatHandlerImpl.java:56)
+	... 28 more
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:3
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:03  [ nioEventLoopGroup-3-2:31679 ] - [ INFO ]  [id: 0x63b59654, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:38  [ main:0 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:0 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:0 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:36:38  [ main:15 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Tue Dec 05 20:36:38 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:36:38  [ main:46 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:46 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:46 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:36:38  [ main:62 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:36:38  [ main:62 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-12-05 20:36:38  [ main:78 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2017-12-05 20:36:38  [ main:93 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-12-05 20:36:38  [ main:93 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2017-12-05 20:36:38  [ main:124 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+2017-12-05 20:36:38  [ main:124 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-12-05 20:36:38  [ main:140 ] - [ DEBUG ]  Loading bean definitions
+2017-12-05 20:36:38  [ main:140 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-12-05 20:36:38  [ main:171 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:171 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:171 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes\william]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\main] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatCommon\target\classes\william]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:187 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:202 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:202 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:202 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:202 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util] for files matching pattern [E:/GitResp/NettyChat/ChatCommon/target/classes/william/**/*.class]
+2017-12-05 20:36:38  [ main:202 ] - [ DEBUG ]  Resolved location pattern [classpath*:william/**/*.class] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\player\Player.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\request\PlayerLoginRequest.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\entity\response\PlayerLoginResponse.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\Invoker.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\invoker\InvokerHolder.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server$1.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\ServerMain.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerService.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\nettyhandler\ChatServerHandler.class], file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketCommand.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\annotation\SocketModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ConstantValue.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\RequestEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\codec\ResponseEncoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\constant\ConnectionConst.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ChatMessage.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Request.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Response.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\Result.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\entity\ResultCode.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\BufFactory.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\serial\Serializer.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\NettySessionImpl.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\Session.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager$SingletonHolder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\core\session\SessionManager.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\ChatCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$ChatType.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PrivateChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule$PublicChatRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\chat\proto\ChatModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\ModuleId.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\PlayerCmd.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$1.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$LoginRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponse.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$PlayerResponseOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest$Builder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequest.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule$RegisterRequestOrBuilder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\module\player\proto\PlayerModule.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\BaseDecoder.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\CommonUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\EmptyUtil.class], file [E:\GitResp\NettyChat\ChatCommon\target\classes\william\util\LogUtil.class]]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\main\Server.class]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\handler\ChatHandlerImpl.class]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\chat\service\ChatServiceImpl.class]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\handler\PlayerHandlerImpl.class]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\module\player\service\PlayerServiceImpl.class]
+2017-12-05 20:36:38  [ main:218 ] - [ DEBUG ]  Identified candidate component class: file [E:\GitResp\NettyChat\ChatServer\target\classes\william\scanner\HandlerScanner.class]
+2017-12-05 20:36:38  [ main:249 ] - [ DEBUG ]  Loaded 12 bean definitions from location pattern [applicationContext.xml]
+2017-12-05 20:36:38  [ main:249 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0]; root of factory hierarchy
+2017-12-05 20:36:38  [ main:249 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:36:38  [ main:249 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:36:38  [ main:265 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:265 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:36:38  [ main:296 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:36:38  [ main:296 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:36:38  [ main:296 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Looking for matching resources in directory tree [E:\GitResp\NettyChat\ChatServer\target\classes]
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Searching directory [E:\GitResp\NettyChat\ChatServer\target\classes] for files matching pattern [E:/GitResp/NettyChat/ChatServer/target/classes/*.properties]
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Resolved location pattern [classpath:/*.properties] to resources [file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]]
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:312 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatServer\target\classes\log4j.properties]
+2017-12-05 20:36:38  [ main:312 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating shared instance of singleton bean 'handlerScanner'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Creating instance of bean 'handlerScanner'
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Eagerly caching bean 'handlerScanner' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:327 ] - [ DEBUG ]  Finished creating instance of bean 'handlerScanner'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@185d3a64]
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@60c6b797]
+2017-12-05 20:36:38  [ main:343 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6fe6dbaa: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,server,chatHandlerImpl,chatServiceImpl,playerHandlerImpl,playerServiceImpl,handlerScanner,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Creating shared instance of singleton bean 'server'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Creating instance of bean 'server'
+2017-12-05 20:36:38  [ main:343 ] - [ DEBUG ]  Eagerly caching bean 'server' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Finished creating instance of bean 'server'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatHandlerImpl'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Creating instance of bean 'chatHandlerImpl'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Registered injected element on class [william.module.chat.handler.ChatHandlerImpl]: AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Eagerly caching bean 'chatHandlerImpl' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Processing injected element of bean 'chatHandlerImpl': AutowiredFieldElement for private william.module.chat.service.ChatService william.module.chat.handler.ChatHandlerImpl.chatService
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Creating shared instance of singleton bean 'chatServiceImpl'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Creating instance of bean 'chatServiceImpl'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Eagerly caching bean 'chatServiceImpl' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Finished creating instance of bean 'chatServiceImpl'
+2017-12-05 20:36:38  [ main:358 ] - [ DEBUG ]  Autowiring by type from bean name 'chatHandlerImpl' to bean named 'chatServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'chatHandlerImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'chatServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerHandlerImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'playerHandlerImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Registered injected element on class [william.module.player.handler.PlayerHandlerImpl]: AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'playerHandlerImpl' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Processing injected element of bean 'playerHandlerImpl': AutowiredFieldElement for private william.module.player.service.PlayerService william.module.player.handler.PlayerHandlerImpl.playerService
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Creating shared instance of singleton bean 'playerServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Creating instance of bean 'playerServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Eagerly caching bean 'playerServiceImpl' to allow for resolving potential circular references
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'playerServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Autowiring by type from bean name 'playerHandlerImpl' to bean named 'playerServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Finished creating instance of bean 'playerHandlerImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'playerServiceImpl'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'handlerScanner'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@6157a8be]
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-12-05 20:36:38  [ main:374 ] - [ DEBUG ]  Returning cached instance of singleton bean 'server'
+2017-12-05 20:36:38  [ main:390 ] - [ DEBUG ]  Using SLF4J as the default logging framework
+2017-12-05 20:36:38  [ main:390 ] - [ DEBUG ]  -Dio.netty.eventLoopThreads: 8
+2017-12-05 20:36:38  [ main:405 ] - [ DEBUG ]  -Dio.netty.noKeySetOptimization: false
+2017-12-05 20:36:38  [ main:405 ] - [ DEBUG ]  -Dio.netty.selectorAutoRebuildThreshold: 512
+2017-12-05 20:36:38  [ main:577 ] - [ DEBUG ]  -Dio.netty.machineId: 48:4d:7e:c2:0f:aa:00:00 (auto-detected)
+2017-12-05 20:36:38  [ main:577 ] - [ DEBUG ]  -Dio.netty.processId: 5692 (auto-detected)
+2017-12-05 20:36:38  [ main:639 ] - [ DEBUG ]  -Dio.netty.initialSeedUniquifier: 0xd6e82a63ad82280a
+2017-12-05 20:36:38  [ main:639 ] - [ DEBUG ]  -Dio.netty.threadLocalDirectBufferSize: 65536
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  Platform: Windows
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  Java version: 7
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  -Dio.netty.noUnsafe: false
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  java.nio.ByteBuffer.cleaner: available
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  java.nio.Buffer.address: available
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  sun.misc.Unsafe.theUnsafe: available
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  sun.misc.Unsafe.copyMemory: available
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  java.nio.Bits.unaligned: true
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  sun.misc.Unsafe: available
+2017-12-05 20:36:38  [ main:655 ] - [ DEBUG ]  -Dio.netty.noJavassist: false
+2017-12-05 20:36:38  [ main:717 ] - [ DEBUG ]  Javassist: available
+2017-12-05 20:36:38  [ main:717 ] - [ DEBUG ]  -Dio.netty.noPreferDirect: false
+2017-12-05 20:36:38  [ main:795 ] - [ DEBUG ]  Loopback interface: Software Loopback Interface 1
+2017-12-05 20:36:38  [ main:795 ] - [ DEBUG ]  Loopback address: /127.0.0.1 (primary)
+2017-12-05 20:36:38  [ main:795 ] - [ DEBUG ]  Loopback address: /0:0:0:0:0:0:0:1
+2017-12-05 20:36:38  [ main:795 ] - [ DEBUG ]  聊天服务器启动： /0:0:0:0:0:0:0:0:8080
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.ResponseMatcher
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ DEBUG ]  Generated: io.netty.util.internal.__matchers__.william.core.entity.RequestMatcher
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8882 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8898 ] - [ DEBUG ]  -Dio.netty.leakDetectionLevel: simple
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8898 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] RECEIVED: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8898 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  Kobe请求注册并登录
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-3-1:8915 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17221 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] REGISTERED
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17221 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  接收到客户端请求: Request [module=1, cmd=1]
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  James请求注册并登录
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  返回请求:module:1 cmd:1 resultCode:0
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-3-2:17237 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  接收到客户端请求: Request [module=2, cmd=2]
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21031 ] - [ INFO ]  playerKey:4向: 2 发送消息: Hello
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  返回请求:module:2 cmd:101 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  返回请求:module:2 cmd:101 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] WRITE: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-1:21048 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ ERROR ]  处理客户端请求成功,响应结果: 0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  返回请求:module:2 cmd:2 resultCode:0
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-3-2:21048 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:37:06  [ nioEventLoopGroup-3-1:28510 ] - [ INFO ]  [id: 0x47362d4f, /127.0.0.1:54085 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:37:07  [ nioEventLoopGroup-3-2:29778 ] - [ INFO ]  [id: 0x87760b0f, /127.0.0.1:54102 :> /127.0.0.1:8080] INACTIVE
