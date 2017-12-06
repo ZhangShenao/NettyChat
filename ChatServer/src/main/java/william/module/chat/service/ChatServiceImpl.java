@@ -46,7 +46,7 @@ public class ChatServiceImpl implements ChatService{
 		
 		//构造响应对象
 		Builder builder = ChatModule.ChatResponse.newBuilder();
-		ChatResponse chatResponse = builder.setSendPlayerId(senderKey)
+		ChatResponse chatResponse = builder.setSendPlayerKey(senderKey)
 		.setSendPlayerName(sender.getPlayerName())
 		.setChatType(ChatType.PUBLIC)
 		.setMessage(content).build();
@@ -83,7 +83,7 @@ public class ChatServiceImpl implements ChatService{
 		//创建消息对象
 		ChatResponse chatResponse = ChatModule.ChatResponse.newBuilder()
 		.setChatType(ChatType.PRIVATE)
-		.setSendPlayerId(sender.getPlayerKey())
+		.setSendPlayerKey(sender.getPlayerKey())
 		.setSendPlayerName(sender.getPlayerName())
 		.setTargetPlayerName(receiver.getPlayerName())
 		.setMessage(content)

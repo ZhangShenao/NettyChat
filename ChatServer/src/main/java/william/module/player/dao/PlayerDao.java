@@ -50,9 +50,9 @@ public class PlayerDao {
 	}
 	
 	/**
-	 * 创建新玩家
+	 * 保存新玩家
 	 */
-	public Player createPlayer(Player player){
+	public Player savePlayer(Player player){
 		long playerKey = (long) hibernateTemplate.save(player);
 		player.setPlayerKey(playerKey);
 		return player;

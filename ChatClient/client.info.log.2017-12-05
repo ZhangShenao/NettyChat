@@ -1,0 +1,450 @@
+2017-12-05 18:58:26  [ main:14 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 18:58:26 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 18:58:26  [ main:73 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 18:58:27  [ main:417 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 18:58:27  [ main:418 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 18:58:27  [ main:418 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 18:58:27  [ main:450 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@698c6916: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 18:58:31  [ AWT-EventQueue-0:4831 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4856 ] - [ INFO ]  [id: 0xc9cb972b] REGISTERED
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4857 ] - [ INFO ]  [id: 0xc9cb972b] CONNECT: /127.0.0.1:8080
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4860 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4861 ] - [ INFO ]  /127.0.0.1:53460,连接到远程主机: /127.0.0.1:8080
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4879 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 09 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 01 31                                  |be..1           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4880 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4924 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:31  [ nioEventLoopGroup-2-1:4928 ] - [ INFO ]  注册并登录成功。playerId: 2,playerName: Kobe
+2017-12-05 18:58:41  [ main:10 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 18:58:41 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 18:58:41  [ main:73 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 18:58:41  [ main:455 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 18:58:41  [ main:455 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 18:58:41  [ main:456 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 18:58:41  [ main:485 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70533ff6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 18:58:47  [ AWT-EventQueue-0:6803 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6828 ] - [ INFO ]  [id: 0x70165899] REGISTERED
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6829 ] - [ INFO ]  [id: 0x70165899] CONNECT: /127.0.0.1:8080
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6836 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 => /127.0.0.1:8080] ACTIVE
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6837 ] - [ INFO ]  /127.0.0.1:53477,连接到远程主机: /127.0.0.1:8080
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6851 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 => /127.0.0.1:8080] WRITE: 22B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0a 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 01 32                               |mes..2          |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6852 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6856 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 => /127.0.0.1:8080] RECEIVED: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:58:47  [ nioEventLoopGroup-2-1:6861 ] - [ INFO ]  注册并登录成功。playerId: 4,playerName: James
+2017-12-05 18:59:04  [ nioEventLoopGroup-2-1:37541 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 04 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:04  [ nioEventLoopGroup-2-1:37543 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:04  [ nioEventLoopGroup-2-1:37554 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-2-1:70201 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:36  [ nioEventLoopGroup-2-1:70202 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:36  [ nioEventLoopGroup-2-1:70207 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-2-1:89633 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] WRITE: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 04 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-05 18:59:56  [ nioEventLoopGroup-2-1:89634 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] FLUSH
+2017-12-05 18:59:56  [ nioEventLoopGroup-2-1:89640 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 0d 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:00:10  [ nioEventLoopGroup-2-1:103298 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 => /127.0.0.1:8080] CLOSE
+2017-12-05 19:00:10  [ nioEventLoopGroup-2-1:103302 ] - [ INFO ]  [id: 0xc9cb972b, /127.0.0.1:53460 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:00:12  [ nioEventLoopGroup-2-1:91192 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 => /127.0.0.1:8080] CLOSE
+2017-12-05 19:00:12  [ nioEventLoopGroup-2-1:91197 ] - [ INFO ]  [id: 0x70165899, /127.0.0.1:53477 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:02:18  [ main:11 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@18de9738: startup date [Tue Dec 05 19:02:18 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 19:02:18  [ main:69 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 19:02:18  [ main:423 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 19:02:18  [ main:423 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 19:02:18  [ main:423 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 19:02:18  [ main:457 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7c03092a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 19:02:30  [ AWT-EventQueue-0:12576 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12604 ] - [ INFO ]  [id: 0x4920f6cb] REGISTERED
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12605 ] - [ INFO ]  [id: 0x4920f6cb] CONNECT: /127.0.0.1:8080
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12609 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12609 ] - [ INFO ]  /127.0.0.1:53533,连接到远程主机: /127.0.0.1:8080
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12630 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:30  [ nioEventLoopGroup-2-1:12630 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:02:59  [ nioEventLoopGroup-2-1:41288 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:02:59  [ nioEventLoopGroup-2-1:41306 ] - [ INFO ]  注册并登录成功。playerId: 2,playerName: Kobe
+2017-12-05 19:03:25  [ main:9 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@31706444: startup date [Tue Dec 05 19:03:25 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 19:03:25  [ main:73 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 19:03:25  [ main:441 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 19:03:25  [ main:442 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 19:03:25  [ main:442 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 19:03:25  [ main:473 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@410dd09: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 19:03:32  [ AWT-EventQueue-0:7596 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7627 ] - [ INFO ]  [id: 0x0c1c6870] REGISTERED
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7628 ] - [ INFO ]  [id: 0x0c1c6870] CONNECT: /127.0.0.1:8080
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7632 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] ACTIVE
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7632 ] - [ INFO ]  /127.0.0.1:53554,连接到远程主机: /127.0.0.1:8080
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7649 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] WRITE: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:32  [ nioEventLoopGroup-2-1:7650 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:03:48  [ nioEventLoopGroup-2-1:23762 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] RECEIVED: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:03:48  [ nioEventLoopGroup-2-1:23780 ] - [ INFO ]  注册并登录成功。playerId: 4,playerName: James
+2017-12-05 19:04:03  [ nioEventLoopGroup-2-1:38688 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 19:04:03  [ nioEventLoopGroup-2-1:38690 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] FLUSH
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:188730 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:188733 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:188734 ] - [ INFO ]  [id: 0x0c1c6870, /127.0.0.1:53554 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:255584 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:255593 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 19:06:33  [ nioEventLoopGroup-2-1:255594 ] - [ INFO ]  [id: 0x4920f6cb, /127.0.0.1:53533 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:34:36  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 20:34:36 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:34:36  [ main:78 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:34:36  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 20:34:36  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 20:34:36  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 20:34:36  [ main:422 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@698c6916: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:34:42  [ AWT-EventQueue-0:6166 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6198 ] - [ INFO ]  [id: 0xca90f0f9] REGISTERED
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6198 ] - [ INFO ]  [id: 0xca90f0f9] CONNECT: /127.0.0.1:8080
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6198 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6198 ] - [ INFO ]  /127.0.0.1:54011,连接到远程主机: /127.0.0.1:8080
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6213 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6213 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6261 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:42  [ nioEventLoopGroup-2-1:6261 ] - [ INFO ]  注册并登录成功。playerId: 2,playerName: Kobe
+2017-12-05 20:34:47  [ main:15 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 20:34:47 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:34:47  [ main:78 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:34:47  [ main:405 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 20:34:47  [ main:405 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 20:34:47  [ main:405 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 20:34:47  [ main:437 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70533ff6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:34:52  [ AWT-EventQueue-0:5512 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5543 ] - [ INFO ]  [id: 0x3cd8c77c] REGISTERED
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5543 ] - [ INFO ]  [id: 0x3cd8c77c] CONNECT: /127.0.0.1:8080
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5543 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5543 ] - [ INFO ]  /127.0.0.1:54028,连接到远程主机: /127.0.0.1:8080
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:34:52  [ nioEventLoopGroup-2-1:5575 ] - [ INFO ]  注册并登录成功。playerId: 4,playerName: James
+2017-12-05 20:35:03  [ nioEventLoopGroup-2-1:16328 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:03  [ nioEventLoopGroup-2-1:16328 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:35:03  [ nioEventLoopGroup-2-1:16411 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:65651 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:65651 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:76798 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:76798 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:65651 ] - [ INFO ]  [id: 0x3cd8c77c, /127.0.0.1:54028 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:35:52  [ nioEventLoopGroup-2-1:76798 ] - [ INFO ]  [id: 0xca90f0f9, /127.0.0.1:54011 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:36:41  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 20:36:41 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:36:41  [ main:47 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:36:41  [ main:343 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 20:36:41  [ main:343 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 20:36:41  [ main:343 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 20:36:41  [ main:375 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70533ff6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:36:46  [ AWT-EventQueue-0:5542 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5573 ] - [ INFO ]  [id: 0x6f4a3f2a] REGISTERED
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5573 ] - [ INFO ]  [id: 0x6f4a3f2a] CONNECT: /127.0.0.1:8080
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5573 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5573 ] - [ INFO ]  /127.0.0.1:54085,连接到远程主机: /127.0.0.1:8080
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5589 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5589 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5622 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] RECEIVED: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 08 |..9.............|
+|00000010| 08 02 12 04 4b 6f 62 65                         |....Kobe        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:46  [ nioEventLoopGroup-2-1:5622 ] - [ INFO ]  注册并登录成功。playerId: 2,playerName: Kobe
+2017-12-05 20:36:49  [ main:0 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Tue Dec 05 20:36:49 GMT+08:00 2017]; root of context hierarchy
+2017-12-05 20:36:49  [ main:47 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-05 20:36:50  [ main:360 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-05 20:36:50  [ main:360 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-05 20:36:50  [ main:360 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-05 20:36:50  [ main:391 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70533ff6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-05 20:36:55  [ AWT-EventQueue-0:5527 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x1fa5b576] REGISTERED
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x1fa5b576] CONNECT: /127.0.0.1:8080
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] ACTIVE
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5558 ] - [ INFO ]  /127.0.0.1:54102,连接到远程主机: /127.0.0.1:8080
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5574 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5574 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5574 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 25B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 09 |..9.............|
+|00000010| 08 04 12 05 4a 61 6d 65 73                      |....James       |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:55  [ nioEventLoopGroup-2-1:5591 ] - [ INFO ]  注册并登录成功。playerId: 4,playerName: James
+2017-12-05 20:36:59  [ nioEventLoopGroup-2-1:9352 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-2-1:9352 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] FLUSH
+2017-12-05 20:36:59  [ nioEventLoopGroup-2-1:9385 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-2-1:17755 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] RECEIVED: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 04 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:36:59  [ nioEventLoopGroup-2-1:9417 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-05 20:37:06  [ nioEventLoopGroup-2-1:25217 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 => /127.0.0.1:8080] CLOSE
+2017-12-05 20:37:06  [ nioEventLoopGroup-2-1:25233 ] - [ INFO ]  [id: 0x6f4a3f2a, /127.0.0.1:54085 :> /127.0.0.1:8080] INACTIVE
+2017-12-05 20:37:07  [ nioEventLoopGroup-2-1:18115 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 => /127.0.0.1:8080] CLOSE
+2017-12-05 20:37:07  [ nioEventLoopGroup-2-1:18115 ] - [ INFO ]  [id: 0x1fa5b576, /127.0.0.1:54102 :> /127.0.0.1:8080] INACTIVE

@@ -48,12 +48,12 @@ public class ChatHandlerImpl implements ChatHandler{
 			PrivateChatRequest privateChatRequest = ChatModule.PrivateChatRequest.parseFrom(data);
 			//参数校验
 			String context = privateChatRequest.getContext();
-			if (EmptyUtil.isEmpty(context) || privateChatRequest.getTargetPlayerId() <= 0){
+			if (EmptyUtil.isEmpty(context) || privateChatRequest.getTargetPlayerKey() <= 0){
 				return Result.error(ResultCode.AGRUMENT_ERROR);
 			}
 			
 			//执行业务
-			chatService.privateChat(playerKey, privateChatRequest.getTargetPlayerId(), context);
+			chatService.privateChat(playerKey, privateChatRequest.getTargetPlayerKey(), context);
 			return Result.success();
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);

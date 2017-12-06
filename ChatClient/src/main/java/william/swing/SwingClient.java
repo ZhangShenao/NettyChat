@@ -203,7 +203,7 @@ public class SwingClient extends JFrame implements ActionListener {
 			try {
 				LoginRequest loginRequest = PlayerModule.LoginRequest.newBuilder()
 						.setPlayerName(playerName.getText())
-						.setPassward(passward.getText())
+						.setPassword(passward.getText())
 						.build();
 				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.LOGIN, loginRequest.toByteArray());
 			} catch (Exception e) {
@@ -217,7 +217,7 @@ public class SwingClient extends JFrame implements ActionListener {
 			try {
 				RegisterRequest registerRequest = PlayerModule.RegisterRequest.newBuilder()
 						.setPlayerName(playerName.getText())
-						.setPassward(passward.getText())
+						.setPassword(passward.getText())
 						.build();
 				
 				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.REGISTER_AND_LOGIN, registerRequest.toByteArray());
@@ -254,7 +254,7 @@ public class SwingClient extends JFrame implements ActionListener {
 					}
 					PrivateChatRequest privateChatRequest = ChatModule.PrivateChatRequest.newBuilder()
 							.setContext(message.getText())
-							.setTargetPlayerId(palyerId)
+							.setTargetPlayerKey(palyerId)
 							.build();
 					buildAndSendReq(ModuleId.CHAT, ChatCmd.PRIVATE_CHAT, privateChatRequest.toByteArray());
 				}

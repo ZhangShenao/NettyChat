@@ -4,18 +4,18 @@ option java_outer_classname = "PlayerModule" ;
 //登录请求
 message LoginRequest{
 	required string playerName = 1 ;
-	required string passward = 2;
+	required string password = 2;
 }
 
 //注册请求
 message RegisterRequest{
 	required string playerName = 1 ;
-	required string passward = 2;
+	required string password = 2;
 }
 
 //玩家信息
 message PlayerResponse{
-	required int64 playerId = 1;
+	required int64 playerKey = 1;
 	required string playerName = 2;
 	optional int32 level = 3 [default = 1];
 	optional int32 exp = 4 [default = 100];

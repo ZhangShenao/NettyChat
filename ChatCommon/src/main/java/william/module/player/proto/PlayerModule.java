@@ -15,9 +15,9 @@ public final class PlayerModule {
     boolean hasPlayerName();
     String getPlayerName();
     
-    // required string passward = 2;
-    boolean hasPassward();
-    String getPassward();
+    // required string password = 2;
+    boolean hasPassword();
+    String getPassword();
   }
   public static final class LoginRequest extends
       com.google.protobuf.GeneratedMessage
@@ -80,14 +80,14 @@ public final class PlayerModule {
       }
     }
     
-    // required string passward = 2;
-    public static final int PASSWARD_FIELD_NUMBER = 2;
-    private java.lang.Object passward_;
-    public boolean hasPassward() {
+    // required string password = 2;
+    public static final int PASSWORD_FIELD_NUMBER = 2;
+    private java.lang.Object password_;
+    public boolean hasPassword() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getPassward() {
-      java.lang.Object ref = passward_;
+    public String getPassword() {
+      java.lang.Object ref = password_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -95,17 +95,17 @@ public final class PlayerModule {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          passward_ = s;
+          password_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPasswardBytes() {
-      java.lang.Object ref = passward_;
+    private com.google.protobuf.ByteString getPasswordBytes() {
+      java.lang.Object ref = password_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        passward_ = b;
+        password_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -114,7 +114,7 @@ public final class PlayerModule {
     
     private void initFields() {
       playerName_ = "";
-      passward_ = "";
+      password_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -125,7 +125,7 @@ public final class PlayerModule {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasPassward()) {
+      if (!hasPassword()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -140,7 +140,7 @@ public final class PlayerModule {
         output.writeBytes(1, getPlayerNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getPasswardBytes());
+        output.writeBytes(2, getPasswordBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -157,7 +157,7 @@ public final class PlayerModule {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getPasswardBytes());
+          .computeBytesSize(2, getPasswordBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -285,7 +285,7 @@ public final class PlayerModule {
         super.clear();
         playerName_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        passward_ = "";
+        password_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -332,7 +332,7 @@ public final class PlayerModule {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.passward_ = passward_;
+        result.password_ = password_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -352,8 +352,8 @@ public final class PlayerModule {
         if (other.hasPlayerName()) {
           setPlayerName(other.getPlayerName());
         }
-        if (other.hasPassward()) {
-          setPassward(other.getPassward());
+        if (other.hasPassword()) {
+          setPassword(other.getPassword());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -364,7 +364,7 @@ public final class PlayerModule {
           
           return false;
         }
-        if (!hasPassward()) {
+        if (!hasPassword()) {
           
           return false;
         }
@@ -401,7 +401,7 @@ public final class PlayerModule {
             }
             case 18: {
               bitField0_ |= 0x00000002;
-              passward_ = input.readBytes();
+              password_ = input.readBytes();
               break;
             }
           }
@@ -446,39 +446,39 @@ public final class PlayerModule {
         onChanged();
       }
       
-      // required string passward = 2;
-      private java.lang.Object passward_ = "";
-      public boolean hasPassward() {
+      // required string password = 2;
+      private java.lang.Object password_ = "";
+      public boolean hasPassword() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getPassward() {
-        java.lang.Object ref = passward_;
+      public String getPassword() {
+        java.lang.Object ref = password_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          passward_ = s;
+          password_ = s;
           return s;
         } else {
           return (String) ref;
         }
       }
-      public Builder setPassward(String value) {
+      public Builder setPassword(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-        passward_ = value;
+        password_ = value;
         onChanged();
         return this;
       }
-      public Builder clearPassward() {
+      public Builder clearPassword() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        passward_ = getDefaultInstance().getPassward();
+        password_ = getDefaultInstance().getPassword();
         onChanged();
         return this;
       }
-      void setPassward(com.google.protobuf.ByteString value) {
+      void setPassword(com.google.protobuf.ByteString value) {
         bitField0_ |= 0x00000002;
-        passward_ = value;
+        password_ = value;
         onChanged();
       }
       
@@ -500,9 +500,9 @@ public final class PlayerModule {
     boolean hasPlayerName();
     String getPlayerName();
     
-    // required string passward = 2;
-    boolean hasPassward();
-    String getPassward();
+    // required string password = 2;
+    boolean hasPassword();
+    String getPassword();
   }
   public static final class RegisterRequest extends
       com.google.protobuf.GeneratedMessage
@@ -565,14 +565,14 @@ public final class PlayerModule {
       }
     }
     
-    // required string passward = 2;
-    public static final int PASSWARD_FIELD_NUMBER = 2;
-    private java.lang.Object passward_;
-    public boolean hasPassward() {
+    // required string password = 2;
+    public static final int PASSWORD_FIELD_NUMBER = 2;
+    private java.lang.Object password_;
+    public boolean hasPassword() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public String getPassward() {
-      java.lang.Object ref = passward_;
+    public String getPassword() {
+      java.lang.Object ref = password_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -580,17 +580,17 @@ public final class PlayerModule {
             (com.google.protobuf.ByteString) ref;
         String s = bs.toStringUtf8();
         if (com.google.protobuf.Internal.isValidUtf8(bs)) {
-          passward_ = s;
+          password_ = s;
         }
         return s;
       }
     }
-    private com.google.protobuf.ByteString getPasswardBytes() {
-      java.lang.Object ref = passward_;
+    private com.google.protobuf.ByteString getPasswordBytes() {
+      java.lang.Object ref = password_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
-        passward_ = b;
+        password_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -599,7 +599,7 @@ public final class PlayerModule {
     
     private void initFields() {
       playerName_ = "";
-      passward_ = "";
+      password_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -610,7 +610,7 @@ public final class PlayerModule {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasPassward()) {
+      if (!hasPassword()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -625,7 +625,7 @@ public final class PlayerModule {
         output.writeBytes(1, getPlayerNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getPasswardBytes());
+        output.writeBytes(2, getPasswordBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -642,7 +642,7 @@ public final class PlayerModule {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getPasswardBytes());
+          .computeBytesSize(2, getPasswordBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -770,7 +770,7 @@ public final class PlayerModule {
         super.clear();
         playerName_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        passward_ = "";
+        password_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -817,7 +817,7 @@ public final class PlayerModule {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.passward_ = passward_;
+        result.password_ = password_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -837,8 +837,8 @@ public final class PlayerModule {
         if (other.hasPlayerName()) {
           setPlayerName(other.getPlayerName());
         }
-        if (other.hasPassward()) {
-          setPassward(other.getPassward());
+        if (other.hasPassword()) {
+          setPassword(other.getPassword());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -849,7 +849,7 @@ public final class PlayerModule {
           
           return false;
         }
-        if (!hasPassward()) {
+        if (!hasPassword()) {
           
           return false;
         }
@@ -886,7 +886,7 @@ public final class PlayerModule {
             }
             case 18: {
               bitField0_ |= 0x00000002;
-              passward_ = input.readBytes();
+              password_ = input.readBytes();
               break;
             }
           }
@@ -931,39 +931,39 @@ public final class PlayerModule {
         onChanged();
       }
       
-      // required string passward = 2;
-      private java.lang.Object passward_ = "";
-      public boolean hasPassward() {
+      // required string password = 2;
+      private java.lang.Object password_ = "";
+      public boolean hasPassword() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public String getPassward() {
-        java.lang.Object ref = passward_;
+      public String getPassword() {
+        java.lang.Object ref = password_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
-          passward_ = s;
+          password_ = s;
           return s;
         } else {
           return (String) ref;
         }
       }
-      public Builder setPassward(String value) {
+      public Builder setPassword(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000002;
-        passward_ = value;
+        password_ = value;
         onChanged();
         return this;
       }
-      public Builder clearPassward() {
+      public Builder clearPassword() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        passward_ = getDefaultInstance().getPassward();
+        password_ = getDefaultInstance().getPassword();
         onChanged();
         return this;
       }
-      void setPassward(com.google.protobuf.ByteString value) {
+      void setPassword(com.google.protobuf.ByteString value) {
         bitField0_ |= 0x00000002;
-        passward_ = value;
+        password_ = value;
         onChanged();
       }
       
@@ -981,9 +981,9 @@ public final class PlayerModule {
   public interface PlayerResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int64 playerId = 1;
-    boolean hasPlayerId();
-    long getPlayerId();
+    // required int64 playerKey = 1;
+    boolean hasPlayerKey();
+    long getPlayerKey();
     
     // required string playerName = 2;
     boolean hasPlayerName();
@@ -1026,14 +1026,14 @@ public final class PlayerModule {
     }
     
     private int bitField0_;
-    // required int64 playerId = 1;
-    public static final int PLAYERID_FIELD_NUMBER = 1;
-    private long playerId_;
-    public boolean hasPlayerId() {
+    // required int64 playerKey = 1;
+    public static final int PLAYERKEY_FIELD_NUMBER = 1;
+    private long playerKey_;
+    public boolean hasPlayerKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public long getPlayerId() {
-      return playerId_;
+    public long getPlayerKey() {
+      return playerKey_;
     }
     
     // required string playerName = 2;
@@ -1089,7 +1089,7 @@ public final class PlayerModule {
     }
     
     private void initFields() {
-      playerId_ = 0L;
+      playerKey_ = 0L;
       playerName_ = "";
       level_ = 1;
       exp_ = 100;
@@ -1099,7 +1099,7 @@ public final class PlayerModule {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasPlayerId()) {
+      if (!hasPlayerKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1115,7 +1115,7 @@ public final class PlayerModule {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, playerId_);
+        output.writeInt64(1, playerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getPlayerNameBytes());
@@ -1137,7 +1137,7 @@ public final class PlayerModule {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, playerId_);
+          .computeInt64Size(1, playerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1275,7 +1275,7 @@ public final class PlayerModule {
       
       public Builder clear() {
         super.clear();
-        playerId_ = 0L;
+        playerKey_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         playerName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -1324,7 +1324,7 @@ public final class PlayerModule {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.playerId_ = playerId_;
+        result.playerKey_ = playerKey_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -1353,8 +1353,8 @@ public final class PlayerModule {
       
       public Builder mergeFrom(william.module.player.proto.PlayerModule.PlayerResponse other) {
         if (other == william.module.player.proto.PlayerModule.PlayerResponse.getDefaultInstance()) return this;
-        if (other.hasPlayerId()) {
-          setPlayerId(other.getPlayerId());
+        if (other.hasPlayerKey()) {
+          setPlayerKey(other.getPlayerKey());
         }
         if (other.hasPlayerName()) {
           setPlayerName(other.getPlayerName());
@@ -1370,7 +1370,7 @@ public final class PlayerModule {
       }
       
       public final boolean isInitialized() {
-        if (!hasPlayerId()) {
+        if (!hasPlayerKey()) {
           
           return false;
         }
@@ -1406,7 +1406,7 @@ public final class PlayerModule {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              playerId_ = input.readInt64();
+              playerKey_ = input.readInt64();
               break;
             }
             case 18: {
@@ -1430,23 +1430,23 @@ public final class PlayerModule {
       
       private int bitField0_;
       
-      // required int64 playerId = 1;
-      private long playerId_ ;
-      public boolean hasPlayerId() {
+      // required int64 playerKey = 1;
+      private long playerKey_ ;
+      public boolean hasPlayerKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public long getPlayerId() {
-        return playerId_;
+      public long getPlayerKey() {
+        return playerKey_;
       }
-      public Builder setPlayerId(long value) {
+      public Builder setPlayerKey(long value) {
         bitField0_ |= 0x00000001;
-        playerId_ = value;
+        playerKey_ = value;
         onChanged();
         return this;
       }
-      public Builder clearPlayerId() {
+      public Builder clearPlayerKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        playerId_ = 0L;
+        playerKey_ = 0L;
         onChanged();
         return this;
       }
@@ -1565,12 +1565,12 @@ public final class PlayerModule {
   static {
     java.lang.String[] descriptorData = {
       "\n\034protofile/PlayerModule.proto\"4\n\014LoginR" +
-      "equest\022\022\n\nplayerName\030\001 \002(\t\022\020\n\010passward\030\002" +
+      "equest\022\022\n\nplayerName\030\001 \002(\t\022\020\n\010password\030\002" +
       " \002(\t\"7\n\017RegisterRequest\022\022\n\nplayerName\030\001 " +
-      "\002(\t\022\020\n\010passward\030\002 \002(\t\"Z\n\016PlayerResponse\022" +
-      "\020\n\010playerId\030\001 \002(\003\022\022\n\nplayerName\030\002 \002(\t\022\020\n" +
-      "\005level\030\003 \001(\005:\0011\022\020\n\003exp\030\004 \001(\005:\003100B+\n\033wil" +
-      "liam.module.player.protoB\014PlayerModule"
+      "\002(\t\022\020\n\010password\030\002 \002(\t\"[\n\016PlayerResponse\022" +
+      "\021\n\tplayerKey\030\001 \002(\003\022\022\n\nplayerName\030\002 \002(\t\022\020" +
+      "\n\005level\030\003 \001(\005:\0011\022\020\n\003exp\030\004 \001(\005:\003100B+\n\033wi" +
+      "lliam.module.player.protoB\014PlayerModule"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1582,7 +1582,7 @@ public final class PlayerModule {
           internal_static_LoginRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_LoginRequest_descriptor,
-              new java.lang.String[] { "PlayerName", "Passward", },
+              new java.lang.String[] { "PlayerName", "Password", },
               william.module.player.proto.PlayerModule.LoginRequest.class,
               william.module.player.proto.PlayerModule.LoginRequest.Builder.class);
           internal_static_RegisterRequest_descriptor =
@@ -1590,7 +1590,7 @@ public final class PlayerModule {
           internal_static_RegisterRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_RegisterRequest_descriptor,
-              new java.lang.String[] { "PlayerName", "Passward", },
+              new java.lang.String[] { "PlayerName", "Password", },
               william.module.player.proto.PlayerModule.RegisterRequest.class,
               william.module.player.proto.PlayerModule.RegisterRequest.Builder.class);
           internal_static_PlayerResponse_descriptor =
@@ -1598,7 +1598,7 @@ public final class PlayerModule {
           internal_static_PlayerResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_PlayerResponse_descriptor,
-              new java.lang.String[] { "PlayerId", "PlayerName", "Level", "Exp", },
+              new java.lang.String[] { "PlayerKey", "PlayerName", "Level", "Exp", },
               william.module.player.proto.PlayerModule.PlayerResponse.class,
               william.module.player.proto.PlayerModule.PlayerResponse.Builder.class);
           return null;

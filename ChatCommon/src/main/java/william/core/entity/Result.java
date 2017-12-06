@@ -1,12 +1,14 @@
 package william.core.entity;
 
+import com.google.protobuf.GeneratedMessage;
+
 /**
  * 
  * <p>Description:结果对象,封装Protobuf协议的结果</p>
  * @author ZhangShenao
  * @date 2017年11月29日
  */
-public class Result<T>{
+public class Result<T extends GeneratedMessage>{
 	/**
 	 * 结果状态码
 	 */
@@ -19,30 +21,30 @@ public class Result<T>{
 	
 	private Result() {}
 	
-	public static <T> Result<T> success(){
+	public static <T extends GeneratedMessage> Result<T> success(){
 		return success(null);
 	}
 	
-	public static <T> Result<T> success(T content){
+	public static <T extends GeneratedMessage> Result<T> success(T content){
 		Result<T> result = new Result<T>();
 		result.setResultCode(ResultCode.SUCCESS);
 		result.setContent(content);
 		return result;
 	}
 	
-	public static <T> Result<T> error(int resultCode){
+	public static <T extends GeneratedMessage> Result<T> error(int resultCode){
 		Result<T> result = new Result<T>();
 		result.resultCode = resultCode;
 		return result;
 	}
 	
-	public static <T> Result<T> empty(){
+	public static <T extends GeneratedMessage> Result<T> empty(){
 		Result<T> result = new Result<T>();
 		result.resultCode = ResultCode.EMPTY_RESULT;
 		return result;
 	}
 	
-	public static <T> Result<T> valueOf(int resultCode, T content){
+	public static <T extends GeneratedMessage> Result<T> valueOf(int resultCode, T content){
 		Result<T> result = new Result<T>();
 		result.resultCode = resultCode;
 		result.content = content;

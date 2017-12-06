@@ -32,7 +32,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			
 			//数据校验
 			String playerName = registerRequest.getPlayerName();
-			String passward = registerRequest.getPassward();
+			String passward = registerRequest.getPassword();
 			LogUtil.info(registerRequest.getPlayerName() + "请求注册并登录");
 			if (EmptyUtil.isEmpty(playerName) || EmptyUtil.isEmpty(passward)){
 				return Result.error(ResultCode.PLAYERNAME_NULL);
@@ -53,7 +53,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			
 			//数据校验
 			String playerName = loginRequest.getPlayerName();
-			String passward = loginRequest.getPassward();
+			String passward = loginRequest.getPassword();
 			LogUtil.info(loginRequest.getPlayerName() + "请求登录");
 			if (EmptyUtil.isEmpty(playerName) || EmptyUtil.isEmpty(passward)){
 				return Result.error(ResultCode.PLAYERNAME_NULL);
@@ -66,5 +66,4 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
 		}
 	}
-
 }

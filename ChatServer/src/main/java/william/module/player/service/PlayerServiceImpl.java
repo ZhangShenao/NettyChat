@@ -35,8 +35,8 @@ public class PlayerServiceImpl implements PlayerService{
 		//注册新玩家
 		Player player = new Player();
 		player.setPlayerName(playerName);
-		player.setPassward(passward);
-		playerDao.createPlayer(player);
+		player.setPassword(passward);
+		playerDao.savePlayer(player);
 		
 		//注册后登录
 		return login(session, playerName, passward);
@@ -57,7 +57,7 @@ public class PlayerServiceImpl implements PlayerService{
 		}
 		
 		//密码校验
-		if (EmptyUtil.isEmpty(passward) || !passward.equals(player.getPassward())){
+		if (EmptyUtil.isEmpty(passward) || !passward.equals(player.getPassword())){
 			throw new ErrorCodeException(ResultCode.PASSWARD_ERROR);
 		}
 		
@@ -76,7 +76,7 @@ public class PlayerServiceImpl implements PlayerService{
 		
 		// 创建Response传输对象返回
 		PlayerResponse playerResponse = PlayerModule.PlayerResponse.newBuilder()
-		.setPlayerId(player.getPlayerKey())
+		.setPlayerKey(player.getPlayerKey())
 		.setPlayerName(player.getPlayerName())
 		.setLevel(player.getLevel())
 		.setExp(player.getExp()).build();

@@ -80,9 +80,9 @@ public final class ChatModule {
   public interface PrivateChatRequestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int64 targetPlayerId = 1;
-    boolean hasTargetPlayerId();
-    long getTargetPlayerId();
+    // required int64 targetPlayerKey = 1;
+    boolean hasTargetPlayerKey();
+    long getTargetPlayerKey();
     
     // required string context = 2;
     boolean hasContext();
@@ -117,14 +117,14 @@ public final class ChatModule {
     }
     
     private int bitField0_;
-    // required int64 targetPlayerId = 1;
-    public static final int TARGETPLAYERID_FIELD_NUMBER = 1;
-    private long targetPlayerId_;
-    public boolean hasTargetPlayerId() {
+    // required int64 targetPlayerKey = 1;
+    public static final int TARGETPLAYERKEY_FIELD_NUMBER = 1;
+    private long targetPlayerKey_;
+    public boolean hasTargetPlayerKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public long getTargetPlayerId() {
-      return targetPlayerId_;
+    public long getTargetPlayerKey() {
+      return targetPlayerKey_;
     }
     
     // required string context = 2;
@@ -160,7 +160,7 @@ public final class ChatModule {
     }
     
     private void initFields() {
-      targetPlayerId_ = 0L;
+      targetPlayerKey_ = 0L;
       context_ = "";
     }
     private byte memoizedIsInitialized = -1;
@@ -168,7 +168,7 @@ public final class ChatModule {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasTargetPlayerId()) {
+      if (!hasTargetPlayerKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -184,7 +184,7 @@ public final class ChatModule {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, targetPlayerId_);
+        output.writeInt64(1, targetPlayerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getContextBytes());
@@ -200,7 +200,7 @@ public final class ChatModule {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, targetPlayerId_);
+          .computeInt64Size(1, targetPlayerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -330,7 +330,7 @@ public final class ChatModule {
       
       public Builder clear() {
         super.clear();
-        targetPlayerId_ = 0L;
+        targetPlayerKey_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         context_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -375,7 +375,7 @@ public final class ChatModule {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.targetPlayerId_ = targetPlayerId_;
+        result.targetPlayerKey_ = targetPlayerKey_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -396,8 +396,8 @@ public final class ChatModule {
       
       public Builder mergeFrom(william.module.chat.proto.ChatModule.PrivateChatRequest other) {
         if (other == william.module.chat.proto.ChatModule.PrivateChatRequest.getDefaultInstance()) return this;
-        if (other.hasTargetPlayerId()) {
-          setTargetPlayerId(other.getTargetPlayerId());
+        if (other.hasTargetPlayerKey()) {
+          setTargetPlayerKey(other.getTargetPlayerKey());
         }
         if (other.hasContext()) {
           setContext(other.getContext());
@@ -407,7 +407,7 @@ public final class ChatModule {
       }
       
       public final boolean isInitialized() {
-        if (!hasTargetPlayerId()) {
+        if (!hasTargetPlayerKey()) {
           
           return false;
         }
@@ -443,7 +443,7 @@ public final class ChatModule {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              targetPlayerId_ = input.readInt64();
+              targetPlayerKey_ = input.readInt64();
               break;
             }
             case 18: {
@@ -457,23 +457,23 @@ public final class ChatModule {
       
       private int bitField0_;
       
-      // required int64 targetPlayerId = 1;
-      private long targetPlayerId_ ;
-      public boolean hasTargetPlayerId() {
+      // required int64 targetPlayerKey = 1;
+      private long targetPlayerKey_ ;
+      public boolean hasTargetPlayerKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public long getTargetPlayerId() {
-        return targetPlayerId_;
+      public long getTargetPlayerKey() {
+        return targetPlayerKey_;
       }
-      public Builder setTargetPlayerId(long value) {
+      public Builder setTargetPlayerKey(long value) {
         bitField0_ |= 0x00000001;
-        targetPlayerId_ = value;
+        targetPlayerKey_ = value;
         onChanged();
         return this;
       }
-      public Builder clearTargetPlayerId() {
+      public Builder clearTargetPlayerKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        targetPlayerId_ = 0L;
+        targetPlayerKey_ = 0L;
         onChanged();
         return this;
       }
@@ -911,9 +911,9 @@ public final class ChatModule {
   public interface ChatResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int64 sendPlayerId = 1;
-    boolean hasSendPlayerId();
-    long getSendPlayerId();
+    // required int64 sendPlayerKey = 1;
+    boolean hasSendPlayerKey();
+    long getSendPlayerKey();
     
     // required string sendPlayerName = 2;
     boolean hasSendPlayerName();
@@ -960,14 +960,14 @@ public final class ChatModule {
     }
     
     private int bitField0_;
-    // required int64 sendPlayerId = 1;
-    public static final int SENDPLAYERID_FIELD_NUMBER = 1;
-    private long sendPlayerId_;
-    public boolean hasSendPlayerId() {
+    // required int64 sendPlayerKey = 1;
+    public static final int SENDPLAYERKEY_FIELD_NUMBER = 1;
+    private long sendPlayerKey_;
+    public boolean hasSendPlayerKey() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public long getSendPlayerId() {
-      return sendPlayerId_;
+    public long getSendPlayerKey() {
+      return sendPlayerKey_;
     }
     
     // required string sendPlayerName = 2;
@@ -1077,7 +1077,7 @@ public final class ChatModule {
     }
     
     private void initFields() {
-      sendPlayerId_ = 0L;
+      sendPlayerKey_ = 0L;
       sendPlayerName_ = "";
       targetPlayerName_ = "";
       chatType_ = william.module.chat.proto.ChatModule.ChatType.PUBLIC;
@@ -1088,7 +1088,7 @@ public final class ChatModule {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasSendPlayerId()) {
+      if (!hasSendPlayerKey()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1112,7 +1112,7 @@ public final class ChatModule {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt64(1, sendPlayerId_);
+        output.writeInt64(1, sendPlayerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBytes(2, getSendPlayerNameBytes());
@@ -1137,7 +1137,7 @@ public final class ChatModule {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, sendPlayerId_);
+          .computeInt64Size(1, sendPlayerKey_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -1279,7 +1279,7 @@ public final class ChatModule {
       
       public Builder clear() {
         super.clear();
-        sendPlayerId_ = 0L;
+        sendPlayerKey_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
         sendPlayerName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -1330,7 +1330,7 @@ public final class ChatModule {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.sendPlayerId_ = sendPlayerId_;
+        result.sendPlayerKey_ = sendPlayerKey_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -1363,8 +1363,8 @@ public final class ChatModule {
       
       public Builder mergeFrom(william.module.chat.proto.ChatModule.ChatResponse other) {
         if (other == william.module.chat.proto.ChatModule.ChatResponse.getDefaultInstance()) return this;
-        if (other.hasSendPlayerId()) {
-          setSendPlayerId(other.getSendPlayerId());
+        if (other.hasSendPlayerKey()) {
+          setSendPlayerKey(other.getSendPlayerKey());
         }
         if (other.hasSendPlayerName()) {
           setSendPlayerName(other.getSendPlayerName());
@@ -1383,7 +1383,7 @@ public final class ChatModule {
       }
       
       public final boolean isInitialized() {
-        if (!hasSendPlayerId()) {
+        if (!hasSendPlayerKey()) {
           
           return false;
         }
@@ -1427,7 +1427,7 @@ public final class ChatModule {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              sendPlayerId_ = input.readInt64();
+              sendPlayerKey_ = input.readInt64();
               break;
             }
             case 18: {
@@ -1462,23 +1462,23 @@ public final class ChatModule {
       
       private int bitField0_;
       
-      // required int64 sendPlayerId = 1;
-      private long sendPlayerId_ ;
-      public boolean hasSendPlayerId() {
+      // required int64 sendPlayerKey = 1;
+      private long sendPlayerKey_ ;
+      public boolean hasSendPlayerKey() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public long getSendPlayerId() {
-        return sendPlayerId_;
+      public long getSendPlayerKey() {
+        return sendPlayerKey_;
       }
-      public Builder setSendPlayerId(long value) {
+      public Builder setSendPlayerKey(long value) {
         bitField0_ |= 0x00000001;
-        sendPlayerId_ = value;
+        sendPlayerKey_ = value;
         onChanged();
         return this;
       }
-      public Builder clearSendPlayerId() {
+      public Builder clearSendPlayerKey() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        sendPlayerId_ = 0L;
+        sendPlayerKey_ = 0L;
         onChanged();
         return this;
       }
@@ -1650,15 +1650,15 @@ public final class ChatModule {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032protofile/ChatModule.proto\"=\n\022PrivateC" +
-      "hatRequest\022\026\n\016targetPlayerId\030\001 \002(\003\022\017\n\007co" +
-      "ntext\030\002 \002(\t\"$\n\021PublicChatRequest\022\017\n\007cont" +
-      "ext\030\001 \002(\t\"\216\001\n\014ChatResponse\022\024\n\014sendPlayer" +
-      "Id\030\001 \002(\003\022\026\n\016sendPlayerName\030\002 \002(\t\022\032\n\020targ" +
-      "etPlayerName\030\003 \001(\t:\000\022#\n\010chatType\030\004 \002(\0162\t" +
-      ".ChatType:\006PUBLIC\022\017\n\007message\030\005 \002(\t*#\n\010Ch" +
-      "atType\022\013\n\007PRIVATE\020\000\022\n\n\006PUBLIC\020\001B\'\n\031willi" +
-      "am.module.chat.protoB\nChatModule"
+      "\n\032protofile/ChatModule.proto\">\n\022PrivateC" +
+      "hatRequest\022\027\n\017targetPlayerKey\030\001 \002(\003\022\017\n\007c" +
+      "ontext\030\002 \002(\t\"$\n\021PublicChatRequest\022\017\n\007con" +
+      "text\030\001 \002(\t\"\217\001\n\014ChatResponse\022\025\n\rsendPlaye" +
+      "rKey\030\001 \002(\003\022\026\n\016sendPlayerName\030\002 \002(\t\022\032\n\020ta" +
+      "rgetPlayerName\030\003 \001(\t:\000\022#\n\010chatType\030\004 \002(\016" +
+      "2\t.ChatType:\006PUBLIC\022\017\n\007message\030\005 \002(\t*#\n\010" +
+      "ChatType\022\013\n\007PRIVATE\020\000\022\n\n\006PUBLIC\020\001B\'\n\031wil" +
+      "liam.module.chat.protoB\nChatModule"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1670,7 +1670,7 @@ public final class ChatModule {
           internal_static_PrivateChatRequest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_PrivateChatRequest_descriptor,
-              new java.lang.String[] { "TargetPlayerId", "Context", },
+              new java.lang.String[] { "TargetPlayerKey", "Context", },
               william.module.chat.proto.ChatModule.PrivateChatRequest.class,
               william.module.chat.proto.ChatModule.PrivateChatRequest.Builder.class);
           internal_static_PublicChatRequest_descriptor =
@@ -1686,7 +1686,7 @@ public final class ChatModule {
           internal_static_ChatResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_ChatResponse_descriptor,
-              new java.lang.String[] { "SendPlayerId", "SendPlayerName", "TargetPlayerName", "ChatType", "Message", },
+              new java.lang.String[] { "SendPlayerKey", "SendPlayerName", "TargetPlayerName", "ChatType", "Message", },
               william.module.chat.proto.ChatModule.ChatResponse.class,
               william.module.chat.proto.ChatModule.ChatResponse.Builder.class);
           return null;

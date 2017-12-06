@@ -1,5 +1,10 @@
 package william.entity.player;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 /**
  * 
@@ -7,10 +12,14 @@ package william.entity.player;
  * @author ZhangShenao
  * @date 2017年12月4日
  */
+@Entity
+@Table(name = "player")
 public class Player {
 	/**
 	 * 玩家key
 	 */
+	@Id
+	@GeneratedValue
 	private long playerKey;
 	
 	/**
@@ -21,17 +30,17 @@ public class Player {
 	/**
 	 * 密码
 	 */
-	private String passward;
+	private String password;
 	
 	/**
 	 * 等级
 	 */
-	private int level;
+	private int level = 1;
 	
 	/**
 	 * 经验
 	 */
-	private int exp;
+	private int exp = 0;
 
 	public long getPlayerKey() {
 		return playerKey;
@@ -49,12 +58,12 @@ public class Player {
 		this.playerName = playerName;
 	}
 
-	public String getPassward() {
-		return passward;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassward(String passward) {
-		this.passward = passward;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public int getLevel() {

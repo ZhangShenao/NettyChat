@@ -56,7 +56,7 @@ public class ChatHandlerImpl implements ChatHandler{
 				StringBuilder builder = new StringBuilder();
 				builder.append(chatResponse.getSendPlayerName());
 				builder.append("[");
-				builder.append(chatResponse.getSendPlayerId());
+				builder.append(chatResponse.getSendPlayerKey());
 				builder.append("]");
 				builder.append(" 说:\n\t");
 				builder.append(chatResponse.getMessage());
@@ -66,7 +66,7 @@ public class ChatHandlerImpl implements ChatHandler{
 			}else if(chatResponse.getChatType()==ChatType.PRIVATE){
 				StringBuilder builder = new StringBuilder();
 				
-				if(swingclient.getPlayerResponse().getPlayerId() == chatResponse.getSendPlayerId()){
+				if(swingclient.getPlayerResponse().getPlayerKey() == chatResponse.getSendPlayerKey()){
 					builder.append("你悄悄对 ");
 					builder.append("[");
 					builder.append(chatResponse.getTargetPlayerName());
@@ -77,7 +77,7 @@ public class ChatHandlerImpl implements ChatHandler{
 				}else{
 					builder.append(chatResponse.getSendPlayerName());
 					builder.append("[");
-					builder.append(chatResponse.getSendPlayerId());
+					builder.append(chatResponse.getSendPlayerKey());
 					builder.append("]");
 					builder.append(" 悄悄对你说:\n\t");
 					builder.append(chatResponse.getMessage());
