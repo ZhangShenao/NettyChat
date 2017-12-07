@@ -1,4 +1,4 @@
-option java_package = "william.module.player.proto" ;
+option java_package = "william.common.module.player.proto" ;
 option java_outer_classname = "PlayerModule" ;
 
 //登录请求

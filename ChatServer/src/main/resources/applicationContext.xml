@@ -18,7 +18,7 @@
 	<!-- 包扫描 -->
 	<context:annotation-config/>
 	
-	<context:component-scan base-package="william"></context:component-scan>
+	<context:component-scan base-package="william.server"></context:component-scan>
 	<!-- 引入配置 -->
 	<context:property-placeholder location="classpath:/*.properties" />
 
@@ -47,7 +47,7 @@
 		<!-- 扫描实体类 -->
 		<property name="packagesToScan">
 			<list>
-				<value>william.entity</value>
+				<value>william.server.entity</value>
 			</list>
 		</property>
 	</bean>

@@ -17,48 +17,14 @@
 
 	<!-- 包扫描 -->
 	<context:annotation-config/>
-	<context:component-scan base-package="william"></context:component-scan>
+	<context:component-scan base-package="william.client"></context:component-scan>
 	
 	<!-- 引入配置 -->
 	<context:property-placeholder location="classpath:/*.properties" />
 	
-	<bean class="william.main.Client" scope="singleton">
+	<bean class="william.client.main.Client" scope="singleton">
 		<property name="remoteHost" value="${remoteHost}"></property>
 		<property name="remotePort" value="${remotePort}"/>
-	</bean>
-
-	<!-- 简单的数据库连接池 -->
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="${jdbc.driverClassName}" />
-		<property name="url" value="${jdbc.url}" />
-		<property name="username" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
-	</bean>
-	 
-	
-	<!-- session工厂 -->
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
-		<property name="dataSource" ref="dataSource" />
-		<property name="hibernateProperties">
-			<props>
-				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
-				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
-			</props>
-		</property>
-		<property name="packagesToScan">
-			<list>
-				<value>com.cn.server</value>
-			</list>
-		</property>
-	</bean>
-	
-	
-	<!-- hibernateTemplate配置 -->
-	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
-		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	
 </beans>

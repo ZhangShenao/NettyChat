@@ -1,4 +1,4 @@
-option java_package = "william.module.chat.proto" ;
+option java_package = "william.common.module.chat.proto" ;
 option java_outer_classname = "ChatModule" ;
 
 //私聊请求
