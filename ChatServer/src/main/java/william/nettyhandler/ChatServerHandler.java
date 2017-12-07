@@ -6,7 +6,6 @@ import william.core.entity.Request;
 import william.core.entity.Response;
 import william.core.entity.Result;
 import william.core.entity.ResultCode;
-import william.core.exception.ErrorCodeException;
 import william.core.serial.Serializer;
 import william.core.session.NettySessionImpl;
 import william.core.session.Session;
@@ -81,11 +80,6 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 			}
 			
 			//回写数据
-			session.write(response);
-		}catch (ErrorCodeException e){
-			//错误码异常
-			LogUtil.error(e);
-			response.setStateCode(e.getErrorCode());
 			session.write(response);
 		}catch (Exception e){
 			LogUtil.error(e);

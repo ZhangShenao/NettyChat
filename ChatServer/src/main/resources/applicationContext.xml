@@ -43,9 +43,11 @@
 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
 			</props>
 		</property>
+		
+		<!-- 扫描实体类 -->
 		<property name="packagesToScan">
 			<list>
-				<value>com.cn.server</value>
+				<value>william.entity</value>
 			</list>
 		</property>
 	</bean>

@@ -2,9 +2,10 @@ package william.module.player.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import com.google.protobuf.InvalidProtocolBufferException;
+
 import william.core.entity.Result;
 import william.core.entity.ResultCode;
+import william.core.exception.ErrorCodeException;
 import william.core.session.Session;
 import william.module.player.proto.PlayerModule;
 import william.module.player.proto.PlayerModule.LoginRequest;
@@ -13,6 +14,8 @@ import william.module.player.proto.PlayerModule.RegisterRequest;
 import william.module.player.service.PlayerService;
 import william.util.EmptyUtil;
 import william.util.LogUtil;
+
+import com.google.protobuf.InvalidProtocolBufferException;
 
 /**
  * 
@@ -43,6 +46,9 @@ public class PlayerHandlerImpl implements PlayerHandler{
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
+		} catch (ErrorCodeException e) {
+			LogUtil.debug(e);
+			return Result.error(e.getErrorCode());
 		}
 	}
 
@@ -64,6 +70,9 @@ public class PlayerHandlerImpl implements PlayerHandler{
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
+		}catch (ErrorCodeException e) {
+			LogUtil.debug(e);
+			return Result.error(e.getErrorCode());
 		}
 	}
 }

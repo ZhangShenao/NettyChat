@@ -1,0 +1,563 @@
+2017-12-06 15:39:04  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Wed Dec 06 15:39:04 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 15:39:04  [ main:62 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 15:39:04  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 15:39:04  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 15:39:04  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 15:39:05  [ main:421 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b79928c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 15:39:05  [ main:655 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private william.module.player.dao.PlayerDao william.module.chat.service.ChatServiceImpl.playerDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'playerDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.orm.hibernate3.HibernateTemplate william.module.player.dao.PlayerDao.hibernateTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.springframework.orm.hibernate3.HibernateTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-12-06 15:39:05  [ main:655 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b79928c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 15:40:15  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Wed Dec 06 15:40:15 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 15:40:15  [ main:63 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 15:40:15  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 15:40:15  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 15:40:15  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\jdbc.properties]
+2017-12-06 15:40:15  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 15:40:15  [ main:421 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3fcbd2c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,dataSource,sessionFactory,hibernateTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 15:40:15  [ main:687 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-06 15:40:15  [ main:702 ] - [ INFO ]  Hibernate Annotations 3.5.6-Final
+2017-12-06 15:40:15  [ main:718 ] - [ INFO ]  Hibernate 3.5.6-Final
+2017-12-06 15:40:15  [ main:718 ] - [ INFO ]  hibernate.properties not found
+2017-12-06 15:40:15  [ main:718 ] - [ INFO ]  Bytecode provider name : javassist
+2017-12-06 15:40:15  [ main:718 ] - [ INFO ]  using JDK 1.4 java.sql.Timestamp handling
+2017-12-06 15:40:15  [ main:780 ] - [ INFO ]  Hibernate Commons Annotations 3.2.0.Final
+2017-12-06 15:40:15  [ main:812 ] - [ INFO ]  Hibernate Validator not found: ignoring
+2017-12-06 15:40:15  [ main:812 ] - [ INFO ]  Building new Hibernate SessionFactory
+2017-12-06 15:40:15  [ main:812 ] - [ INFO ]  Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-12-06 15:40:15  [ main:828 ] - [ INFO ]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2017-12-06 15:40:16  [ main:984 ] - [ INFO ]  RDBMS: MySQL, version: 5.1.73
+2017-12-06 15:40:16  [ main:984 ] - [ INFO ]  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw )
+2017-12-06 15:40:16  [ main:1000 ] - [ INFO ]  Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Automatic flush during beforeCompletion(): disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Automatic session close at end of transaction: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  JDBC batch size: 15
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  JDBC batch updates for versioned data: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Scrollable result sets: enabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  JDBC3 getGeneratedKeys(): enabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Connection release mode: auto
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Maximum outer join fetch depth: 2
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Default batch fetch size: 1
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Generate SQL with comments: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Order SQL updates by primary key: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Order SQL inserts for batching: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Using ASTQueryTranslatorFactory
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Query language substitutions: {}
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  JPA-QL strict compliance: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Second-level cache: enabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Query cache: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Optimize cache for minimal puts: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Structured second-level cache entries: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Echoing all SQL to stdout
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Statistics: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Deleted entity synthetic identifier rollback: disabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Default entity-mode: pojo
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Named query checking : enabled
+2017-12-06 15:40:16  [ main:1031 ] - [ INFO ]  Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-12-06 15:40:16  [ main:1062 ] - [ INFO ]  building session factory
+2017-12-06 15:40:16  [ main:1062 ] - [ INFO ]  Not binding factory to JNDI, no JNDI name configured
+2017-12-06 15:40:16  [ main:1062 ] - [ INFO ]  Running hbm2ddl schema update
+2017-12-06 15:40:16  [ main:1062 ] - [ INFO ]  fetching database metadata
+2017-12-06 15:40:16  [ main:1093 ] - [ INFO ]  updating schema
+2017-12-06 15:40:16  [ main:1109 ] - [ INFO ]  schema update complete
+2017-12-06 15:40:22  [ AWT-EventQueue-0:7557 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7588 ] - [ INFO ]  [id: 0x56bc7d8b] REGISTERED
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7588 ] - [ INFO ]  [id: 0x56bc7d8b] CONNECT: /127.0.0.1:8080
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7588 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 => /127.0.0.1:8080] ACTIVE
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7588 ] - [ INFO ]  /127.0.0.1:54091,连接到远程主机: /127.0.0.1:8080
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7603 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7603 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 => /127.0.0.1:8080] FLUSH
+2017-12-06 15:40:22  [ nioEventLoopGroup-2-1:7792 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 15:40:39  [ nioEventLoopGroup-2-1:24273 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-06 15:40:39  [ nioEventLoopGroup-2-1:24273 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-06 15:40:39  [ nioEventLoopGroup-2-1:24273 ] - [ INFO ]  [id: 0x56bc7d8b, /127.0.0.1:54091 :> /127.0.0.1:8080] INACTIVE
+2017-12-06 16:16:16  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d4cadc4: startup date [Wed Dec 06 16:16:16 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 16:16:16  [ main:63 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 16:16:16  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 16:16:16  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 16:16:16  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\jdbc.properties]
+2017-12-06 16:16:16  [ main:390 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 16:16:16  [ main:422 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14a61465: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,dataSource,sessionFactory,hibernateTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 16:16:16  [ main:716 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-06 16:16:16  [ main:736 ] - [ INFO ]  Hibernate Annotations 3.5.6-Final
+2017-12-06 16:16:16  [ main:743 ] - [ INFO ]  Hibernate 3.5.6-Final
+2017-12-06 16:16:16  [ main:745 ] - [ INFO ]  hibernate.properties not found
+2017-12-06 16:16:16  [ main:747 ] - [ INFO ]  Bytecode provider name : javassist
+2017-12-06 16:16:16  [ main:750 ] - [ INFO ]  using JDK 1.4 java.sql.Timestamp handling
+2017-12-06 16:16:16  [ main:816 ] - [ INFO ]  Hibernate Commons Annotations 3.2.0.Final
+2017-12-06 16:16:16  [ main:852 ] - [ INFO ]  Hibernate Validator not found: ignoring
+2017-12-06 16:16:16  [ main:852 ] - [ INFO ]  Building new Hibernate SessionFactory
+2017-12-06 16:16:16  [ main:852 ] - [ INFO ]  Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-12-06 16:16:16  [ main:852 ] - [ INFO ]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2017-12-06 16:16:17  [ main:1023 ] - [ INFO ]  RDBMS: MySQL, version: 5.1.73
+2017-12-06 16:16:17  [ main:1023 ] - [ INFO ]  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw )
+2017-12-06 16:16:17  [ main:1039 ] - [ INFO ]  Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Automatic flush during beforeCompletion(): disabled
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Automatic session close at end of transaction: disabled
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  JDBC batch size: 15
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  JDBC batch updates for versioned data: disabled
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Scrollable result sets: enabled
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  JDBC3 getGeneratedKeys(): enabled
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Connection release mode: auto
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Maximum outer join fetch depth: 2
+2017-12-06 16:16:17  [ main:1054 ] - [ INFO ]  Default batch fetch size: 1
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Generate SQL with comments: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Order SQL updates by primary key: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Order SQL inserts for batching: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Using ASTQueryTranslatorFactory
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Query language substitutions: {}
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  JPA-QL strict compliance: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Second-level cache: enabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Query cache: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Optimize cache for minimal puts: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Structured second-level cache entries: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Echoing all SQL to stdout
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Statistics: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Deleted entity synthetic identifier rollback: disabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Default entity-mode: pojo
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Named query checking : enabled
+2017-12-06 16:16:17  [ main:1070 ] - [ INFO ]  Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-12-06 16:16:17  [ main:1086 ] - [ INFO ]  building session factory
+2017-12-06 16:16:17  [ main:1101 ] - [ INFO ]  Not binding factory to JNDI, no JNDI name configured
+2017-12-06 16:16:17  [ main:1101 ] - [ INFO ]  Running hbm2ddl schema update
+2017-12-06 16:16:17  [ main:1101 ] - [ INFO ]  fetching database metadata
+2017-12-06 16:16:17  [ main:1132 ] - [ INFO ]  updating schema
+2017-12-06 16:16:17  [ main:1132 ] - [ INFO ]  schema update complete
+2017-12-06 16:16:22  [ AWT-EventQueue-0:6237 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6269 ] - [ INFO ]  [id: 0x322bfdf2] REGISTERED
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6269 ] - [ INFO ]  [id: 0x322bfdf2] CONNECT: /127.0.0.1:8080
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6269 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 => /127.0.0.1:8080] ACTIVE
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6269 ] - [ INFO ]  /127.0.0.1:55272,连接到远程主机: /127.0.0.1:8080
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6285 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6285 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:16:22  [ nioEventLoopGroup-2-1:6395 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:17:15  [ nioEventLoopGroup-2-1:59707 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 => /127.0.0.1:8080] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-06 16:17:15  [ nioEventLoopGroup-2-1:59723 ] - [ WARN ]  An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+	at java.lang.Thread.run(Unknown Source)
+2017-12-06 16:17:15  [ nioEventLoopGroup-2-1:59723 ] - [ INFO ]  [id: 0x322bfdf2, /127.0.0.1:55272 :> /127.0.0.1:8080] INACTIVE
+2017-12-06 16:19:20  [ main:8 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Wed Dec 06 16:19:20 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 16:19:20  [ main:62 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 16:19:20  [ main:368 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 16:19:20  [ main:368 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 16:19:20  [ main:368 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\jdbc.properties]
+2017-12-06 16:19:20  [ main:368 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 16:19:20  [ main:399 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2384fd7a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,dataSource,sessionFactory,hibernateTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 16:19:20  [ main:680 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-06 16:19:20  [ main:696 ] - [ INFO ]  Hibernate Annotations 3.5.6-Final
+2017-12-06 16:19:20  [ main:696 ] - [ INFO ]  Hibernate 3.5.6-Final
+2017-12-06 16:19:20  [ main:696 ] - [ INFO ]  hibernate.properties not found
+2017-12-06 16:19:20  [ main:696 ] - [ INFO ]  Bytecode provider name : javassist
+2017-12-06 16:19:20  [ main:696 ] - [ INFO ]  using JDK 1.4 java.sql.Timestamp handling
+2017-12-06 16:19:20  [ main:774 ] - [ INFO ]  Hibernate Commons Annotations 3.2.0.Final
+2017-12-06 16:19:20  [ main:790 ] - [ INFO ]  Hibernate Validator not found: ignoring
+2017-12-06 16:19:20  [ main:806 ] - [ INFO ]  Building new Hibernate SessionFactory
+2017-12-06 16:19:20  [ main:806 ] - [ INFO ]  Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-12-06 16:19:20  [ main:806 ] - [ INFO ]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2017-12-06 16:19:21  [ main:962 ] - [ INFO ]  RDBMS: MySQL, version: 5.1.73
+2017-12-06 16:19:21  [ main:962 ] - [ INFO ]  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw )
+2017-12-06 16:19:21  [ main:977 ] - [ INFO ]  Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Automatic flush during beforeCompletion(): disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Automatic session close at end of transaction: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  JDBC batch size: 15
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  JDBC batch updates for versioned data: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Scrollable result sets: enabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  JDBC3 getGeneratedKeys(): enabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Connection release mode: auto
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Maximum outer join fetch depth: 2
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Default batch fetch size: 1
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Generate SQL with comments: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Order SQL updates by primary key: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Order SQL inserts for batching: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Using ASTQueryTranslatorFactory
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Query language substitutions: {}
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  JPA-QL strict compliance: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Second-level cache: enabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Query cache: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Optimize cache for minimal puts: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Structured second-level cache entries: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Echoing all SQL to stdout
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Statistics: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Deleted entity synthetic identifier rollback: disabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Default entity-mode: pojo
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Named query checking : enabled
+2017-12-06 16:19:21  [ main:1009 ] - [ INFO ]  Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-12-06 16:19:21  [ main:1042 ] - [ INFO ]  building session factory
+2017-12-06 16:19:21  [ main:1042 ] - [ INFO ]  Not binding factory to JNDI, no JNDI name configured
+2017-12-06 16:19:21  [ main:1042 ] - [ INFO ]  Running hbm2ddl schema update
+2017-12-06 16:19:21  [ main:1042 ] - [ INFO ]  fetching database metadata
+2017-12-06 16:19:21  [ main:1089 ] - [ INFO ]  updating schema
+2017-12-06 16:19:21  [ main:1089 ] - [ INFO ]  schema update complete
+2017-12-06 16:19:27  [ AWT-EventQueue-0:7748 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7764 ] - [ INFO ]  [id: 0x67295b38] REGISTERED
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7764 ] - [ INFO ]  [id: 0x67295b38] CONNECT: /127.0.0.1:8080
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7764 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] ACTIVE
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7780 ] - [ INFO ]  /127.0.0.1:55334,连接到远程主机: /127.0.0.1:8080
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7780 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] WRITE: 26B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0e 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 06 31 32 33 34 35 36                   |be..123456      |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:19:27  [ nioEventLoopGroup-2-1:7780 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:19:28  [ nioEventLoopGroup-2-1:8128 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 28B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 0c |..9.............|
+|00000010| 08 01 12 04 4b 6f 62 65 18 01 20 00             |....Kobe.. .    |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:19:28  [ nioEventLoopGroup-2-1:8145 ] - [ INFO ]  注册并登录成功。playerId: 1,playerName: Kobe
+2017-12-06 16:20:11  [ main:16 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5243618: startup date [Wed Dec 06 16:20:11 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 16:20:11  [ main:62 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 16:20:12  [ main:374 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 16:20:12  [ main:374 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 16:20:12  [ main:374 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\jdbc.properties]
+2017-12-06 16:20:12  [ main:374 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 16:20:12  [ main:406 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2384fd7a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,dataSource,sessionFactory,hibernateTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 16:20:12  [ main:688 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-06 16:20:12  [ main:704 ] - [ INFO ]  Hibernate Annotations 3.5.6-Final
+2017-12-06 16:20:12  [ main:720 ] - [ INFO ]  Hibernate 3.5.6-Final
+2017-12-06 16:20:12  [ main:720 ] - [ INFO ]  hibernate.properties not found
+2017-12-06 16:20:12  [ main:720 ] - [ INFO ]  Bytecode provider name : javassist
+2017-12-06 16:20:12  [ main:720 ] - [ INFO ]  using JDK 1.4 java.sql.Timestamp handling
+2017-12-06 16:20:12  [ main:798 ] - [ INFO ]  Hibernate Commons Annotations 3.2.0.Final
+2017-12-06 16:20:12  [ main:831 ] - [ INFO ]  Hibernate Validator not found: ignoring
+2017-12-06 16:20:12  [ main:831 ] - [ INFO ]  Building new Hibernate SessionFactory
+2017-12-06 16:20:12  [ main:831 ] - [ INFO ]  Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-12-06 16:20:12  [ main:831 ] - [ INFO ]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2017-12-06 16:20:12  [ main:1002 ] - [ INFO ]  RDBMS: MySQL, version: 5.1.73
+2017-12-06 16:20:12  [ main:1002 ] - [ INFO ]  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw )
+2017-12-06 16:20:12  [ main:1018 ] - [ INFO ]  Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Automatic flush during beforeCompletion(): disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Automatic session close at end of transaction: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  JDBC batch size: 15
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  JDBC batch updates for versioned data: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Scrollable result sets: enabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  JDBC3 getGeneratedKeys(): enabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Connection release mode: auto
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Maximum outer join fetch depth: 2
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Default batch fetch size: 1
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Generate SQL with comments: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Order SQL updates by primary key: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Order SQL inserts for batching: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Using ASTQueryTranslatorFactory
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Query language substitutions: {}
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  JPA-QL strict compliance: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Second-level cache: enabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Query cache: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Optimize cache for minimal puts: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Structured second-level cache entries: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Echoing all SQL to stdout
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Statistics: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Deleted entity synthetic identifier rollback: disabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Default entity-mode: pojo
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Named query checking : enabled
+2017-12-06 16:20:12  [ main:1049 ] - [ INFO ]  Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-12-06 16:20:12  [ main:1080 ] - [ INFO ]  building session factory
+2017-12-06 16:20:12  [ main:1080 ] - [ INFO ]  Not binding factory to JNDI, no JNDI name configured
+2017-12-06 16:20:12  [ main:1080 ] - [ INFO ]  Running hbm2ddl schema update
+2017-12-06 16:20:12  [ main:1080 ] - [ INFO ]  fetching database metadata
+2017-12-06 16:20:12  [ main:1127 ] - [ INFO ]  updating schema
+2017-12-06 16:20:12  [ main:1127 ] - [ INFO ]  schema update complete
+2017-12-06 16:20:17  [ AWT-EventQueue-0:5905 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5920 ] - [ INFO ]  [id: 0xb5a0b95f] REGISTERED
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5920 ] - [ INFO ]  [id: 0xb5a0b95f] CONNECT: /127.0.0.1:8080
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5920 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] ACTIVE
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5920 ] - [ INFO ]  /127.0.0.1:55356,连接到远程主机: /127.0.0.1:8080
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5943 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] WRITE: 27B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 0f 0a 05 4a 61 |..9...........Ja|
+|00000010| 6d 65 73 12 06 31 32 33 34 35 36                |mes..123456     |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:5943 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:6099 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] RECEIVED: 29B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 01 00 00 00 00 00 00 00 0d |..9.............|
+|00000010| 08 02 12 05 4a 61 6d 65 73 18 01 20 00          |....James.. .   |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:17  [ nioEventLoopGroup-2-1:6114 ] - [ INFO ]  注册并登录成功。playerId: 2,playerName: James
+2017-12-06 16:20:25  [ nioEventLoopGroup-2-1:65633 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] WRITE: 21B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 09 08 02 12 05 |..9.............|
+|00000010| 48 65 6c 6c 6f                                  |Hello           |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:25  [ nioEventLoopGroup-2-1:65633 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:20:25  [ nioEventLoopGroup-2-1:65774 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 01 12 04 4b 6f 62 65 1a 05 4a 61 6d 65 73 20 |....Kobe..James |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:25  [ nioEventLoopGroup-2-1:14162 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] RECEIVED: 40B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 18 |..9....e........|
+|00000010| 08 01 12 04 4b 6f 62 65 1a 05 4a 61 6d 65 73 20 |....Kobe..James |
+|00000020| 00 2a 05 48 65 6c 6c 6f                         |.*.Hello        |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:25  [ nioEventLoopGroup-2-1:65807 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:32  [ nioEventLoopGroup-2-1:20797 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] WRITE: 18B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 06 08 01 12 02 |..9.............|
+|00000010| 48 69                                           |Hi              |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:32  [ nioEventLoopGroup-2-1:20797 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:20:32  [ nioEventLoopGroup-2-1:20938 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] RECEIVED: 37B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 15 |..9....e........|
+|00000010| 08 02 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 02 48 69                                  |.*.Hi           |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:32  [ nioEventLoopGroup-2-1:72550 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 37B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 15 |..9....e........|
+|00000010| 08 02 12 05 4a 61 6d 65 73 1a 04 4b 6f 62 65 20 |....James..Kobe |
+|00000020| 00 2a 02 48 69                                  |.*.Hi           |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:32  [ nioEventLoopGroup-2-1:20938 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 02 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:42  [ nioEventLoopGroup-2-1:82130 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] WRITE: 28B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 01 00 00 00 10 0a 0e 48 65 |..9...........He|
+|00000010| 6c 6c 6f 20 45 76 65 72 79 6f 6e 65             |llo Everyone    |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:42  [ nioEventLoopGroup-2-1:82130 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:20:42  [ nioEventLoopGroup-2-1:82209 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 42B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 1a |..9....e........|
+|00000010| 08 01 12 04 4b 6f 62 65 20 01 2a 0e 48 65 6c 6c |....Kobe .*.Hell|
+|00000020| 6f 20 45 76 65 72 79 6f 6e 65                   |o Everyone      |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:42  [ nioEventLoopGroup-2-1:30597 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] RECEIVED: 42B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 65 00 00 00 00 00 00 00 1a |..9....e........|
+|00000010| 08 01 12 04 4b 6f 62 65 20 01 2a 0e 48 65 6c 6c |....Kobe .*.Hell|
+|00000020| 6f 20 45 76 65 72 79 6f 6e 65                   |o Everyone      |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:20:42  [ nioEventLoopGroup-2-1:82209 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 02 00 01 00 00 00 00 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:21:08  [ main:15 ] - [ INFO ]  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c5b644b: startup date [Wed Dec 06 16:21:08 GMT+08:00 2017]; root of context hierarchy
+2017-12-06 16:21:09  [ main:78 ] - [ INFO ]  Loading XML bean definitions from class path resource [applicationContext.xml]
+2017-12-06 16:21:09  [ main:406 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\code.properties]
+2017-12-06 16:21:09  [ main:406 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\connection.properties]
+2017-12-06 16:21:09  [ main:406 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\jdbc.properties]
+2017-12-06 16:21:09  [ main:406 ] - [ INFO ]  Loading properties file from file [E:\GitResp\NettyChat\ChatClient\target\classes\log4j.properties]
+2017-12-06 16:21:09  [ main:437 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2384fd7a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,chatHandlerImpl,playerHandlerImpl,handlerScanner,resultCodeTip,swingClient,server,chatServiceImpl,playerDao,playerServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,william.main.Client#0,dataSource,sessionFactory,hibernateTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-12-06 16:21:09  [ main:718 ] - [ INFO ]  Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-12-06 16:21:09  [ main:734 ] - [ INFO ]  Hibernate Annotations 3.5.6-Final
+2017-12-06 16:21:09  [ main:734 ] - [ INFO ]  Hibernate 3.5.6-Final
+2017-12-06 16:21:09  [ main:734 ] - [ INFO ]  hibernate.properties not found
+2017-12-06 16:21:09  [ main:749 ] - [ INFO ]  Bytecode provider name : javassist
+2017-12-06 16:21:09  [ main:749 ] - [ INFO ]  using JDK 1.4 java.sql.Timestamp handling
+2017-12-06 16:21:09  [ main:812 ] - [ INFO ]  Hibernate Commons Annotations 3.2.0.Final
+2017-12-06 16:21:09  [ main:844 ] - [ INFO ]  Hibernate Validator not found: ignoring
+2017-12-06 16:21:09  [ main:844 ] - [ INFO ]  Building new Hibernate SessionFactory
+2017-12-06 16:21:09  [ main:844 ] - [ INFO ]  Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-12-06 16:21:09  [ main:860 ] - [ INFO ]  Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2017-12-06 16:21:09  [ main:1016 ] - [ INFO ]  RDBMS: MySQL, version: 5.1.73
+2017-12-06 16:21:09  [ main:1016 ] - [ INFO ]  JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.20 ( Revision: tonci.grgin@oracle.com-20111003110438-qfydx066wsbydkbw )
+2017-12-06 16:21:09  [ main:1031 ] - [ INFO ]  Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Automatic flush during beforeCompletion(): disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Automatic session close at end of transaction: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  JDBC batch size: 15
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  JDBC batch updates for versioned data: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Scrollable result sets: enabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  JDBC3 getGeneratedKeys(): enabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Connection release mode: auto
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Maximum outer join fetch depth: 2
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Default batch fetch size: 1
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Generate SQL with comments: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Order SQL updates by primary key: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Order SQL inserts for batching: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Using ASTQueryTranslatorFactory
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Query language substitutions: {}
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  JPA-QL strict compliance: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Second-level cache: enabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Query cache: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Optimize cache for minimal puts: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Structured second-level cache entries: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Echoing all SQL to stdout
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Statistics: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Deleted entity synthetic identifier rollback: disabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Default entity-mode: pojo
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Named query checking : enabled
+2017-12-06 16:21:10  [ main:1062 ] - [ INFO ]  Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-12-06 16:21:10  [ main:1094 ] - [ INFO ]  building session factory
+2017-12-06 16:21:10  [ main:1094 ] - [ INFO ]  Not binding factory to JNDI, no JNDI name configured
+2017-12-06 16:21:10  [ main:1094 ] - [ INFO ]  Running hbm2ddl schema update
+2017-12-06 16:21:10  [ main:1094 ] - [ INFO ]  fetching database metadata
+2017-12-06 16:21:10  [ main:1156 ] - [ INFO ]  updating schema
+2017-12-06 16:21:10  [ main:1156 ] - [ INFO ]  schema update complete
+2017-12-06 16:21:16  [ AWT-EventQueue-0:7082 ] - [ WARN ]  Unknown channel option: SO_TIMEOUT=1000
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7097 ] - [ INFO ]  [id: 0x463557e9] REGISTERED
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7097 ] - [ INFO ]  [id: 0x463557e9] CONNECT: /127.0.0.1:8080
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7097 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] ACTIVE
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7097 ] - [ INFO ]  /127.0.0.1:55384,连接到远程主机: /127.0.0.1:8080
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7113 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0c 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 04 31 32 33 34                         |be..1234        |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7113 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:21:16  [ nioEventLoopGroup-2-1:7161 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:22:28  [ nioEventLoopGroup-2-1:79164 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] WRITE: 24B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 0c 0a 04 4b 6f |..9...........Ko|
+|00000010| 62 65 12 04 31 32 33 34                         |be..1234        |
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:22:28  [ nioEventLoopGroup-2-1:79164 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] FLUSH
+2017-12-06 16:22:28  [ nioEventLoopGroup-2-1:79243 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] RECEIVED: 16B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| fe b9 39 f9 00 01 00 02 00 00 00 03 00 00 00 00 |..9.............|
++--------+-------------------------------------------------+----------------+
+2017-12-06 16:22:51  [ nioEventLoopGroup-2-1:102978 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 => /127.0.0.1:8080] CLOSE
+2017-12-06 16:22:51  [ nioEventLoopGroup-2-1:102978 ] - [ INFO ]  [id: 0x463557e9, /127.0.0.1:55384 :> /127.0.0.1:8080] INACTIVE
+2017-12-06 16:22:53  [ nioEventLoopGroup-2-1:161517 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 => /127.0.0.1:8080] CLOSE
+2017-12-06 16:22:53  [ nioEventLoopGroup-2-1:161532 ] - [ INFO ]  [id: 0xb5a0b95f, /127.0.0.1:55356 :> /127.0.0.1:8080] INACTIVE
+2017-12-06 16:22:54  [ nioEventLoopGroup-2-1:214306 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 => /127.0.0.1:8080] CLOSE
+2017-12-06 16:22:54  [ nioEventLoopGroup-2-1:214306 ] - [ INFO ]  [id: 0x67295b38, /127.0.0.1:55334 :> /127.0.0.1:8080] INACTIVE

@@ -1,6 +1,9 @@
 package william.invoker;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
+import william.util.LogUtil;
 
 /**
  * 
@@ -24,7 +27,13 @@ public class Invoker {
 	/**
 	 * 执行指定命令
 	 */
-	public Object invoke(Object... args) throws Exception{
-		return method.invoke(target, args);
+	public Object invoke(Object... args){
+		try {
+			return method.invoke(target, args);
+		} catch (IllegalAccessException | IllegalArgumentException
+				| InvocationTargetException e) {
+			LogUtil.error(e);
+			throw new RuntimeException(e);
+		}
 	}
 }
