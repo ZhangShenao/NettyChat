@@ -20,7 +20,7 @@
 	<context:component-scan base-package="william.client"></context:component-scan>
 	
 	<!-- 引入配置 -->
-	<context:property-placeholder location="*.properties" />
+	<context:property-placeholder location="classpath:/*.properties" />
 	
 	<bean class="william.client.main.Client" scope="singleton">
 		<property name="remoteHost" value="${remoteHost}"></property>
