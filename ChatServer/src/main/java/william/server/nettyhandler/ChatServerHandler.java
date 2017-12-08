@@ -114,6 +114,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 			throws Exception {
 		//检测到空闲事件,将玩家踢下线
 		if (evt instanceof IdleStateEvent){
+			//TODO 还应删除客户端Session,待优化
 			ctx.channel().close();
 			return;
 		}

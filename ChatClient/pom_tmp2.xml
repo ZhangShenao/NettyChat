@@ -5,29 +5,18 @@
     <artifactId>Netty-Chat-Base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>ChatServer</artifactId>
+  <artifactId>ChatClient</artifactId>
   
    <dependencies>
-	<dependency>
+   	<dependency>
 		<groupId>william</groupId>
     	<artifactId>ChatCommon</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
 	</dependency>
 	<dependency>
-		<groupId>mysql</groupId>
-		<artifactId>mysql-connector-java</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-log4j12</artifactId>
-	</dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-entitymanager</artifactId>
+		<groupId>william</groupId>
+    	<artifactId>ChatServer</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
 	</dependency>
   </dependencies>
   
@@ -37,24 +26,23 @@
         <plugin>  
             <groupId>org.apache.maven.plugins</groupId>  
             <artifactId>maven-assembly-plugin</artifactId>  
-            <configuration> 
+            <configuration>  
             	<!-- 包含的配置文件 --> 
             	<includes>
             		<include>*.properties</include>
             		<include>*.xml</include>
-            	</includes> 
+            	</includes>
                 <archive>  
                     <manifest>  
                     	<!-- 指定主类 -->
-                        <mainClass>william.server.main.ServerMain</mainClass>  
+                        <mainClass>william.server.main.ClientMain</mainClass>  
                     </manifest>  
                 </archive>  
                 <descriptorRefs>  
                 	<!-- 将可执行jar包和依赖jar包放在同一个包下 -->
                     <descriptorRef>jar-with-dependencies</descriptorRef>  
                 </descriptorRefs>  
-            </configuration>  
-            <!-- 执行package打包时，执行assembly:single，所以可以直接使用mvn package打包 -->
+            </configuration> 
             <executions>  
                 <execution>  
                     <id>make-assembly</id>  
@@ -63,7 +51,7 @@
                         <goal>single</goal>  
                     </goals>  
                 </execution>  
-            </executions>  
+            </executions>   
         </plugin>   
     </plugins>  
   </build>  

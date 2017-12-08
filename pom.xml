@@ -160,6 +160,32 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>1.2.1</version>
                 </plugin>
+                
+                <!-- Maven打jar包插件 -->
+                <plugin>  
+		            <groupId>org.apache.maven.plugins</groupId>  
+		            <artifactId>maven-jar-plugin</artifactId>  
+		            <version>2.6</version> 
+	            </plugin>
+	            
+	            <!-- Maven依赖包插件 -->
+	            <plugin>  
+		            <groupId>org.apache.maven.plugins</groupId>  
+		            <artifactId>maven-dependency-plugin</artifactId>  
+		            <version>2.10</version>
+	            </plugin>  
+	            
+	            <!-- Maven部署插件 -->
+                <plugin>
+			        <artifactId>maven-assembly-plugin</artifactId>
+			        <version>2.5.5</version>
+		        </plugin>
+		        
+		        <plugin>  
+		            <groupId>org.apache.maven.plugins</groupId>  
+		            <artifactId>maven-shade-plugin</artifactId>  
+		            <version>2.4.1</version>
+	            </plugin>
             </plugins>
         </pluginManagement>
     </build>

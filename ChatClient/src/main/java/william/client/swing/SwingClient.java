@@ -59,7 +59,7 @@ public class SwingClient extends JFrame implements ActionListener {
 	/**
 	 * 密码
 	 */
-	private JTextField passward;
+	private JTextField password;
 	
 	/**
 	 * 登录按钮
@@ -118,10 +118,10 @@ public class SwingClient extends JFrame implements ActionListener {
 		label.setBounds(76, 71, 54, 15);
 		getContentPane().add(label);
 		
-		passward = new JTextField();
-		passward.setColumns(10);
-		passward.setBounds(139, 68, 154, 21);
-		getContentPane().add(passward);
+		password = new JTextField();
+		password.setColumns(10);
+		password.setBounds(139, 68, 154, 21);
+		getContentPane().add(password);
 		
 		//登录
 		loginButton = new JButton("登录");
@@ -189,7 +189,7 @@ public class SwingClient extends JFrame implements ActionListener {
 		int w = (Toolkit.getDefaultToolkit().getScreenSize().width - weigh) / 2;
 		int h = (Toolkit.getDefaultToolkit().getScreenSize().height - heigh) / 2;
 		this.setLocation(w, h);
-		this.setTitle("聊天工具");
+		this.setTitle("多人聊天系统");
 		this.setSize(weigh, heigh);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(true);
@@ -203,12 +203,12 @@ public class SwingClient extends JFrame implements ActionListener {
 			try {
 				LoginRequest loginRequest = PlayerModule.LoginRequest.newBuilder()
 						.setPlayerName(playerName.getText())
-						.setPassword(passward.getText())
+						.setPassword(password.getText())
 						.build();
 				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.LOGIN, loginRequest.toByteArray());
 			} catch (Exception e) {
 				LogUtil.error(e);
-				tips.setText("无法连接服务器");
+				tips.setText("无法连接到服务器");
 			}
 			break;
 			
@@ -217,13 +217,13 @@ public class SwingClient extends JFrame implements ActionListener {
 			try {
 				RegisterRequest registerRequest = PlayerModule.RegisterRequest.newBuilder()
 						.setPlayerName(playerName.getText())
-						.setPassword(passward.getText())
+						.setPassword(password.getText())
 						.build();
 				
 				buildAndSendReq(ModuleId.PLAYER, PlayerCmd.REGISTER_AND_LOGIN, registerRequest.toByteArray());
 			} catch (Exception e) {
 				LogUtil.error(e);
-				tips.setText("无法连接服务器");
+				tips.setText("无法连接到服务器");
 			}
 			break;
 			
