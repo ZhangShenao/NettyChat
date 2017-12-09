@@ -26,4 +26,9 @@ public interface PlayerService {
 	 * @param passward 密码
 	 */
 	public PlayerResponse login(Session session, String playerName, String passward);
+	
+	/**
+	 * 用户下线
+	 */
+	public PlayerResponse logout(long playerKey);
 }

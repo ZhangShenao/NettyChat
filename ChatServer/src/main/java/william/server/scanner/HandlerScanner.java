@@ -16,6 +16,7 @@ import william.server.invoker.InvokerHolder;
 /**
  * 
  * <p>Description:Handler的扫描器,利用Spring的BeanPostProcessor,在启动时加载所有的Handler</p>
+ * <p>虽然使用了反射,但是是在服务器启动时进行处理,对性能没有太大的影响</p>
  * @author ZhangShenao
  * @date 2017年11月29日
  */
@@ -61,6 +62,7 @@ public class HandlerScanner implements BeanPostProcessor {
 				else {
 					invoker = Invoker.getInvoker(method, bean);
 					InvokerHolder.addInvoker(invoker, moduleId, cmdId);
+					LogUtil.info("注册Invoker,moduleId: " + moduleId + ",cmdId: " + cmdId);
 				}
 			}
 		}

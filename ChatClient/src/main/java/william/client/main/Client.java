@@ -12,10 +12,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import io.netty.handler.timeout.IdleStateHandler;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 import william.client.nettyhandler.ChatClientHandler;
 import william.client.swing.SwingClient;
@@ -46,6 +48,16 @@ public class Client {
 	@Autowired
 	private SwingClient swingClient;	//Swing客户端实例
 	
+	//超时配置相关
+	@Value(value = "${readerIdleTimeSeconds}")
+	private int readerIdleTimeSeconds;
+	
+	@Value(value = "${writerIdleTimeSeconds}")
+	private int writerIdleTimeSeconds;
+	
+	@Value(value = "${allIdleTimeSeconds}")
+	private int allIdleTimeSeconds;
+	
 	/**
 	 * Netty客户端初始化
 	 */
@@ -74,6 +86,7 @@ public class Client {
 					pipeline.addLast("Logging",new LoggingHandler(LogLevel.INFO))
 					.addLast("RequestEncoder",new RequestEncoder())
 					.addLast("ResponseDecoder",new ResponseDecoder())
+					.addLast("IdleStateHandler",new IdleStateHandler(readerIdleTimeSeconds, writerIdleTimeSeconds, allIdleTimeSeconds))
 					.addLast("ChatClientHandler", new ChatClientHandler(swingClient));
 				}
 			});

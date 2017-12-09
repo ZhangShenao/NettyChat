@@ -36,4 +36,13 @@ public interface PlayerHandler {
 	 */
 	@SocketCommand(cmd = PlayerCmd.LOGIN)
 	public Result<PlayerResponse> login(Session session, byte[] data);
+	
+	/**
+	 * 用户注销或被踢下线
+	 * @param session 会话实例
+	 * @param data {@link LoginRequest} 玩家数据
+	 * @return 结果
+	 */
+	@SocketCommand(cmd = PlayerCmd.LOGOUT)
+	public Result<PlayerResponse> logout(Session session, byte[] data);
 }

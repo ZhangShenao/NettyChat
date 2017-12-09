@@ -2,7 +2,6 @@ package william.client.module.player.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import william.client.swing.ResultCodeTip;
 import william.client.swing.SwingClient;
 import william.common.core.entity.ResultCode;
@@ -33,7 +32,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 				PlayerResponse playerResponse = PlayerModule.PlayerResponse.parseFrom(data);
 				
 				LogUtil.info("注册并登录成功。playerId: " + playerResponse.getPlayerKey() + ",playerName: " + playerResponse.getPlayerName());
-				swingClient.setPlayerResponse(playerResponse);
+				swingClient.loginSuccess(playerResponse);
 				swingClient.getTips().setText("注册并登录成功");
 			} catch (InvalidProtocolBufferException e) {
 				LogUtil.error(e);
@@ -49,7 +48,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			try {
 				PlayerResponse playerResponse = PlayerModule.PlayerResponse.parseFrom(data);
 				LogUtil.info("登录成功。playerId: " + playerResponse.getPlayerKey() + ",playerName: " + playerResponse.getPlayerName());
-				swingClient.setPlayerResponse(playerResponse);
+				swingClient.loginSuccess(playerResponse);
 				swingClient.getTips().setText("登录成功");
 			} catch (InvalidProtocolBufferException e) {
 				LogUtil.error(e);

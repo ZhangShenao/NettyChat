@@ -11,11 +11,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.handler.timeout.IdleStateHandler;
-
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
 import william.common.core.codec.RequestDecoder;
 import william.common.core.codec.ResponseEncoder;
 import william.common.util.LogUtil;
@@ -34,16 +30,6 @@ public class Server {
 	private EventLoopGroup bossGroup;
 	private EventLoopGroup workerGroup;
 	private ChannelFuture channelFuture;
-	
-	//超时配置相关
-	@Value(value = "${readerIdleTimeSeconds}")
-	private int readerIdleTimeSeconds;
-	
-	@Value(value = "${writerIdleTimeSeconds}")
-	private int writerIdleTimeSeconds;
-	
-	@Value(value = "${allIdleTimeSeconds}")
-	private int allIdleTimeSeconds;
 	
 	/**
 	 * 服务器启动
@@ -68,7 +54,6 @@ public class Server {
 					pipeline.addLast("Logging",new LoggingHandler(LogLevel.INFO))
 					.addLast("RequestDecoder",new RequestDecoder())
 					.addLast("ResponseEncoder",new ResponseEncoder())
-					.addLast("IdleStateHandler",new IdleStateHandler(readerIdleTimeSeconds, writerIdleTimeSeconds, allIdleTimeSeconds))
 					.addLast("ChatServerHandler",new ChatServerHandler());
 				}
 			});

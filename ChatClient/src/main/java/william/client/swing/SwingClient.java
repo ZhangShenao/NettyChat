@@ -50,7 +50,7 @@ public class SwingClient extends JFrame implements ActionListener {
 	 * 玩家信息
 	 */
 	private PlayerResponse playerResponse;
-	
+
 	/**
 	 * 用户名
 	 */
@@ -96,6 +96,11 @@ public class SwingClient extends JFrame implements ActionListener {
 	 * 操作提示
 	 */
 	private JLabel tips;
+	
+	/**
+	 * 客户端关联的playerKey
+	 */
+	private Long playerKey;
 
 
 	public SwingClient() {
@@ -284,6 +289,10 @@ public class SwingClient extends JFrame implements ActionListener {
 		Request request = Request.valueOf(moduleId,cmdId, data);
 		client.sendRequest(request);
 	}
+	
+	public void sendRequest(Request request){
+		client.sendRequest(request);
+	}
 
 	public JTextArea getChatContext() {
 		return chatContext;
@@ -292,9 +301,21 @@ public class SwingClient extends JFrame implements ActionListener {
 	public JLabel getTips() {
 		return tips;
 	}
-
-	public void setPlayerResponse(PlayerResponse playerResponse) {
+	
+	/**
+	 * 客户端登录成功,关联playerKey
+	 */
+	public void loginSuccess(PlayerResponse playerResponse) {
 		this.playerResponse = playerResponse;
+		this.playerKey = playerResponse.getPlayerKey();
+	}
+	
+	/**
+	 * 处理客户端注销或断线
+	 */
+	public void logout(){
+		this.playerResponse = null;
+		this.playerKey = null;
 	}
 
 	public PlayerResponse getPlayerResponse() {
@@ -303,5 +324,9 @@ public class SwingClient extends JFrame implements ActionListener {
 
 	public void setClient(Client client) {
 		this.client = client;
+	}
+	
+	public Long getPlayerKey(){
+		return playerKey;
 	}
 }

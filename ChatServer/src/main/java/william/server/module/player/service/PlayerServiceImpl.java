@@ -84,4 +84,21 @@ public class PlayerServiceImpl implements PlayerService{
 		return playerResponse;
 	}
 
+	@Override
+	public PlayerResponse logout(long playerKey) {
+		Player player = playerDao.getPlayerByKey(playerKey);
+		if (null == player){
+			throw new ErrorCodeException(ResultCode.PLAYER_NO_EXIST);
+		}
+		
+		//删除用户的Session
+		Session session = SessionManager.removeSession(playerKey);
+		if (null != session){
+			session.removeAttachment();
+			session.close();
+		}
+		PlayerResponse playerResponse = PlayerModule.PlayerResponse.newBuilder().setPlayerKey(playerKey).build();
+		return playerResponse;
+	}
+
 }

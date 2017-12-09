@@ -28,4 +28,5 @@ public interface PlayerHandler {
 	 */
 	@SocketCommand(cmd = PlayerCmd.LOGIN)
 	public void login(int resultCode, byte[] data);
+	
 }

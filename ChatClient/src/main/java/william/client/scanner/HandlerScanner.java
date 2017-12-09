@@ -62,6 +62,7 @@ public class HandlerScanner implements BeanPostProcessor {
 				else {
 					invoker = Invoker.getInvoker(method, bean);
 					InvokerHolder.addInvoker(invoker, moduleId, cmdId);
+					LogUtil.info("注册Invoker,moduleId: " + moduleId + ",cmdId: " + cmdId);
 				}
 			}
 		}

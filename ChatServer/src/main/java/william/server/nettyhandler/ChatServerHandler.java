@@ -2,7 +2,6 @@ package william.server.nettyhandler;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.timeout.IdleStateEvent;
 import william.common.core.entity.Request;
 import william.common.core.entity.Response;
 import william.common.core.entity.Result;
@@ -35,7 +34,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 	 * 处理请求消息
 	 */
 	private void handleMessage(Session session,Request request){
-		LogUtil.info("接收到客户端请求: " + request);
+		LogUtil.info("接收到客户端请求,moduleId: " + request.getModule() + ",cmdId: " + request.getCmd());
 		Response response = new Response(request);
 		
 		//查找Invoker
@@ -107,18 +106,6 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 		}
 		Player player = (Player)attachment;
 		return (Result<?>) invoker.invoke(player.getPlayerKey(),request.getData());
-	}
-	
-	@Override
-	public void userEventTriggered(ChannelHandlerContext ctx, Object evt)
-			throws Exception {
-		//检测到空闲事件,将玩家踢下线
-		if (evt instanceof IdleStateEvent){
-			//TODO 还应删除客户端Session,待优化
-			ctx.channel().close();
-			return;
-		}
-		super.userEventTriggered(ctx, evt);
 	}
 	
 }

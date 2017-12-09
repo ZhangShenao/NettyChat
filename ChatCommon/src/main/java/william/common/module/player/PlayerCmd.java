@@ -16,4 +16,9 @@ public class PlayerCmd {
 	 * 登录帐号
 	 */
 	public static final short LOGIN = 2;
+	
+	/**
+	 * 玩家下线
+	 */
+	public static final short LOGOUT = 3;
 }

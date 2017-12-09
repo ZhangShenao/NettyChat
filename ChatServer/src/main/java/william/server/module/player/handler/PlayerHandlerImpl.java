@@ -2,13 +2,13 @@ package william.server.module.player.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import william.common.core.entity.Result;
 import william.common.core.entity.ResultCode;
 import william.common.core.exception.ErrorCodeException;
 import william.common.core.session.Session;
 import william.common.module.player.proto.PlayerModule;
 import william.common.module.player.proto.PlayerModule.LoginRequest;
+import william.common.module.player.proto.PlayerModule.LogoutRequest;
 import william.common.module.player.proto.PlayerModule.PlayerResponse;
 import william.common.module.player.proto.PlayerModule.RegisterRequest;
 import william.common.util.EmptyUtil;
@@ -73,6 +73,23 @@ public class PlayerHandlerImpl implements PlayerHandler{
 		}catch (ErrorCodeException e) {
 			LogUtil.debug(e);
 			return Result.error(e.getErrorCode());
+		}
+	}
+
+	@Override
+	public Result<PlayerResponse> logout(Session session, byte[] data) {
+		try {
+			LogoutRequest logutRequest = PlayerModule.LogoutRequest.parseFrom(data);
+			long playerKey = logutRequest.getPlayerKey();
+			if (playerKey < 0){
+				LogUtil.error("要下线的玩家不存在,playerKey: " + playerKey);
+				return Result.error(ResultCode.PLAYER_NO_EXIST);
+			}
+			PlayerResponse response = playerService.logout(playerKey);
+			return Result.success(response);
+		} catch (InvalidProtocolBufferException e) {
+			LogUtil.error(e);
+			return Result.error(ResultCode.UNKOWN_EXCEPTION);
 		}
 	}
 }

@@ -978,6 +978,352 @@ public final class PlayerModule {
     // @@protoc_insertion_point(class_scope:RegisterRequest)
   }
   
+  public interface LogoutRequestOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int64 playerKey = 1;
+    boolean hasPlayerKey();
+    long getPlayerKey();
+  }
+  public static final class LogoutRequest extends
+      com.google.protobuf.GeneratedMessage
+      implements LogoutRequestOrBuilder {
+    // Use LogoutRequest.newBuilder() to construct.
+    private LogoutRequest(Builder builder) {
+      super(builder);
+    }
+    private LogoutRequest(boolean noInit) {}
+    
+    private static final LogoutRequest defaultInstance;
+    public static LogoutRequest getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public LogoutRequest getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return william.common.module.player.proto.PlayerModule.internal_static_LogoutRequest_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return william.common.module.player.proto.PlayerModule.internal_static_LogoutRequest_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required int64 playerKey = 1;
+    public static final int PLAYERKEY_FIELD_NUMBER = 1;
+    private long playerKey_;
+    public boolean hasPlayerKey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public long getPlayerKey() {
+      return playerKey_;
+    }
+    
+    private void initFields() {
+      playerKey_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasPlayerKey()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt64(1, playerKey_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, playerKey_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static william.common.module.player.proto.PlayerModule.LogoutRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(william.common.module.player.proto.PlayerModule.LogoutRequest prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements william.common.module.player.proto.PlayerModule.LogoutRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return william.common.module.player.proto.PlayerModule.internal_static_LogoutRequest_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return william.common.module.player.proto.PlayerModule.internal_static_LogoutRequest_fieldAccessorTable;
+      }
+      
+      // Construct using william.common.module.player.proto.PlayerModule.LogoutRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        playerKey_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return william.common.module.player.proto.PlayerModule.LogoutRequest.getDescriptor();
+      }
+      
+      public william.common.module.player.proto.PlayerModule.LogoutRequest getDefaultInstanceForType() {
+        return william.common.module.player.proto.PlayerModule.LogoutRequest.getDefaultInstance();
+      }
+      
+      public william.common.module.player.proto.PlayerModule.LogoutRequest build() {
+        william.common.module.player.proto.PlayerModule.LogoutRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private william.common.module.player.proto.PlayerModule.LogoutRequest buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        william.common.module.player.proto.PlayerModule.LogoutRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public william.common.module.player.proto.PlayerModule.LogoutRequest buildPartial() {
+        william.common.module.player.proto.PlayerModule.LogoutRequest result = new william.common.module.player.proto.PlayerModule.LogoutRequest(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.playerKey_ = playerKey_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof william.common.module.player.proto.PlayerModule.LogoutRequest) {
+          return mergeFrom((william.common.module.player.proto.PlayerModule.LogoutRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(william.common.module.player.proto.PlayerModule.LogoutRequest other) {
+        if (other == william.common.module.player.proto.PlayerModule.LogoutRequest.getDefaultInstance()) return this;
+        if (other.hasPlayerKey()) {
+          setPlayerKey(other.getPlayerKey());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasPlayerKey()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              playerKey_ = input.readInt64();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required int64 playerKey = 1;
+      private long playerKey_ ;
+      public boolean hasPlayerKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public long getPlayerKey() {
+        return playerKey_;
+      }
+      public Builder setPlayerKey(long value) {
+        bitField0_ |= 0x00000001;
+        playerKey_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearPlayerKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        playerKey_ = 0L;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:LogoutRequest)
+    }
+    
+    static {
+      defaultInstance = new LogoutRequest(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:LogoutRequest)
+  }
+  
   public interface PlayerResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
@@ -985,7 +1331,7 @@ public final class PlayerModule {
     boolean hasPlayerKey();
     long getPlayerKey();
     
-    // required string playerName = 2;
+    // optional string playerName = 2;
     boolean hasPlayerName();
     String getPlayerName();
     
@@ -1036,7 +1382,7 @@ public final class PlayerModule {
       return playerKey_;
     }
     
-    // required string playerName = 2;
+    // optional string playerName = 2;
     public static final int PLAYERNAME_FIELD_NUMBER = 2;
     private java.lang.Object playerName_;
     public boolean hasPlayerName() {
@@ -1100,10 +1446,6 @@ public final class PlayerModule {
       if (isInitialized != -1) return isInitialized == 1;
       
       if (!hasPlayerKey()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPlayerName()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -1374,10 +1716,6 @@ public final class PlayerModule {
           
           return false;
         }
-        if (!hasPlayerName()) {
-          
-          return false;
-        }
         return true;
       }
       
@@ -1451,7 +1789,7 @@ public final class PlayerModule {
         return this;
       }
       
-      // required string playerName = 2;
+      // optional string playerName = 2;
       private java.lang.Object playerName_ = "";
       public boolean hasPlayerName() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -1551,6 +1889,11 @@ public final class PlayerModule {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_RegisterRequest_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_LogoutRequest_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_LogoutRequest_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_PlayerResponse_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -1567,11 +1910,12 @@ public final class PlayerModule {
       "\n\034protofile/PlayerModule.proto\"4\n\014LoginR" +
       "equest\022\022\n\nplayerName\030\001 \002(\t\022\020\n\010password\030\002" +
       " \002(\t\"7\n\017RegisterRequest\022\022\n\nplayerName\030\001 " +
-      "\002(\t\022\020\n\010password\030\002 \002(\t\"[\n\016PlayerResponse\022" +
-      "\021\n\tplayerKey\030\001 \002(\003\022\022\n\nplayerName\030\002 \002(\t\022\020" +
-      "\n\005level\030\003 \001(\005:\0011\022\020\n\003exp\030\004 \001(\005:\003100B2\n\"wi" +
-      "lliam.common.module.player.protoB\014Player" +
-      "Module"
+      "\002(\t\022\020\n\010password\030\002 \002(\t\"\"\n\rLogoutRequest\022\021" +
+      "\n\tplayerKey\030\001 \002(\003\"[\n\016PlayerResponse\022\021\n\tp" +
+      "layerKey\030\001 \002(\003\022\022\n\nplayerName\030\002 \001(\t\022\020\n\005le" +
+      "vel\030\003 \001(\005:\0011\022\020\n\003exp\030\004 \001(\005:\003100B2\n\"willia" +
+      "m.common.module.player.protoB\014PlayerModu" +
+      "le"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -1594,8 +1938,16 @@ public final class PlayerModule {
               new java.lang.String[] { "PlayerName", "Password", },
               william.common.module.player.proto.PlayerModule.RegisterRequest.class,
               william.common.module.player.proto.PlayerModule.RegisterRequest.Builder.class);
-          internal_static_PlayerResponse_descriptor =
+          internal_static_LogoutRequest_descriptor =
             getDescriptor().getMessageTypes().get(2);
+          internal_static_LogoutRequest_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_LogoutRequest_descriptor,
+              new java.lang.String[] { "PlayerKey", },
+              william.common.module.player.proto.PlayerModule.LogoutRequest.class,
+              william.common.module.player.proto.PlayerModule.LogoutRequest.Builder.class);
+          internal_static_PlayerResponse_descriptor =
+            getDescriptor().getMessageTypes().get(3);
           internal_static_PlayerResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_PlayerResponse_descriptor,
