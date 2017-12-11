@@ -47,7 +47,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
 		} catch (ErrorCodeException e) {
-			LogUtil.debug(e);
+			LogUtil.error(e);
 			return Result.error(e.getErrorCode());
 		}
 	}
@@ -71,7 +71,7 @@ public class PlayerHandlerImpl implements PlayerHandler{
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
 		}catch (ErrorCodeException e) {
-			LogUtil.debug(e);
+			LogUtil.error(e);
 			return Result.error(e.getErrorCode());
 		}
 	}
@@ -90,6 +90,9 @@ public class PlayerHandlerImpl implements PlayerHandler{
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
+		}catch (ErrorCodeException e) {
+			LogUtil.error(e);
+			return Result.error(e.getErrorCode());
 		}
 	}
 }

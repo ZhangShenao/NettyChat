@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 
 import william.common.core.entity.Result;
 import william.common.core.entity.ResultCode;
+import william.common.core.exception.ErrorCodeException;
 import william.common.module.chat.proto.ChatModule;
 import william.common.module.chat.proto.ChatModule.PrivateChatRequest;
 import william.common.module.chat.proto.ChatModule.PublicChatRequest;
@@ -41,6 +42,9 @@ public class ChatHandlerImpl implements ChatHandler{
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
+		}catch (ErrorCodeException e) {
+			LogUtil.error(e);
+			return Result.error(e.getErrorCode());
 		}
 	}
 
@@ -60,6 +64,9 @@ public class ChatHandlerImpl implements ChatHandler{
 		} catch (InvalidProtocolBufferException e) {
 			LogUtil.error(e);
 			return Result.error(ResultCode.UNKOWN_EXCEPTION);
+		}catch (ErrorCodeException e) {
+			LogUtil.error(e);
+			return Result.error(e.getErrorCode());
 		}
 	}
 

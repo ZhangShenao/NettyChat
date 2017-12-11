@@ -81,7 +81,8 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Request>{
 			
 			//回写数据
 			session.write(response);
-		}catch (Exception e){
+		}
+		catch (Exception e){
 			LogUtil.error(e);
 			//系统未知异常
 			response.setStateCode(ResultCode.UNKOWN_EXCEPTION);
